@@ -2097,7 +2097,7 @@ nav li ul a:before , nav li ul a:after {
 }
 .main-search-input-item {
     float: left;
-    width: 33.3%;
+    /* width: 33.3%; */
     box-sizing: border-box;
     border-left: 1px solid #eee;
     height: 60px;
@@ -2165,8 +2165,8 @@ nav li ul a:before , nav li ul a:after {
 }
 .main-search-input-item .nice-select {
     background: #fff;
-    height: 60px;
-    line-height: 60px;
+    height: 36px;
+    line-height: 36px;
     border: none;
 }
 .main-search-input-wrap.msiw-column .main-search-input-item .nice-select {
@@ -7703,9 +7703,6 @@ section.single-par2  .scroll-down-wrap{
 	background-color: #DC0028;
 }
 
-header {
-	margin-bottom: 200px;
-}
 .footer-logo {
 	padding: 70px 0; 
 	text-align: left;
@@ -7740,4 +7737,16 @@ header {
 	border-left: none;
 	width: 130px;
 }
-
+.main-search-input-item__label {
+	padding-top: 4px;
+	text-align: left;
+	padding-left: 18px;
+}
+.main-search-input-item__label span {
+	font-weight: 400;
+	font-size: 12px;
+	line-height: 14px;
+	letter-spacing: -0.01em;
+	color: #838383;
+	padding-left: 4px;
+}
