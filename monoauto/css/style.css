@@ -2037,7 +2037,7 @@ nav li ul a:before , nav li ul a:after {
 }
 /*------hero ------------------------------------------------*/
 .hero-title h2{
-	color: #fff;
+	color: #black;
 	font-size: 40px;
 	line-height: 50px;
 	text-align: left;
@@ -2093,7 +2093,8 @@ nav li ul a:before , nav li ul a:after {
 	color: #fff;
 }
 .shadow_msiw .main-search-input {
-	box-shadow: 0px 0px 0px 6px rgba(255,255,255,0.2);
+	/* box-shadow: 0px 0px 0px 6px rgba(255,255,255,0.2); */
+	border: solid 2px #DEDEDE;
 }
 .main-search-input-item {
     float: left;
@@ -2143,6 +2144,10 @@ nav li ul a:before , nav li ul a:after {
     right: 0px;
     height: 60px;
     width: 120px;
+		font-weight: 700;
+		font-size: 15px;
+		line-height: 18px;
+		letter-spacing: -0.01em;
     color: #fff;
     top: 0;
     border: none;
@@ -7749,4 +7754,12 @@ section.single-par2  .scroll-down-wrap{
 	letter-spacing: -0.01em;
 	color: #838383;
 	padding-left: 4px;
+	padding-right: 20px;
 }
+.main-search-input-item:first-child {
+	width: 200px;
+}
+.main-search-input-item__label .city {
+	padding-right: 110px;
+}
+
