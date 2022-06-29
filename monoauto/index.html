@@ -52,8 +52,11 @@
                 </a>
               </div>
               <div class="header-auth">
-                <button class="btn color-bg-green">Добавить компанию</button>
-                <img src="images/icon/icon-login.svg" alt="icon:login" class="header-login">
+                <a href="#" class="btn color-bg-green">Добавить компанию</a>
+                <a href="#" class="header-login">
+                  <img src="images/icon/icon-login.svg" alt="icon:login" >                  
+                </a>
+
               </div>
             </div>
           </div>
@@ -68,7 +71,7 @@
                     </li>
                     <li class="nav-header-item">
                       <a href="#">Автосервисы</a>
-                      <img src="images/image/car.png" alt="icon:car" class="nav-header-item-icon">
+                      <img src="images/svg/car.svg" alt="icon:car" class="nav-header-item-icon">
                     </li>
                     <li class="nav-header-item">
                       <a href="#">Шиномонтаж</a>
@@ -91,9 +94,23 @@
                     <li class="nav-header-item">
                       <a href="#">Выездной сервис</a>
                     </li>
-                    <li class="nav-header-item">
+                    <li class="nav-header-item ">
                       <a href="#">Автоподбор</a>
                     </li>
+                    <!-- <li class="nav-header-item ">
+                      <a href="#">111</a>
+                    </li> -->
+                    <li сlass="nav-header-item" id="also-nav-item"> 
+                      <span class="item-open-text">Ещё</span>
+                      <img src="images/icon/icon-open-list.png" alt="" class="item-open-icon">
+                    </li>
+                    <div class="open-menu-list">
+                      <ul class="open-menu-list-items">
+                        <!-- <li class="open-menu-item">Автоподбор</li>
+                        <li class="open-menu-item">новый </li> -->
+                      </ul>
+                    </div>
+
                   </ul>
                 </nav>
               </div>
@@ -105,77 +122,72 @@
       <!-- wrapper  -->
       <div id="wrapper">
         <!-- content -->
-        <div class="content">
+        <div class="content-index">
 
-
-          <!--  section  Окно поиска Марка, улуга, город -->
-          <section class="index-page-search">
-            <div class="container">
-              <div class="hero-title hero-title_small">
-                <h2>Выберите лучший сервис</h2>
-              </div>
-              <div class="main-search-input-wrap shadow_msiw">
-                <div class="main-search-input fl-wrap">
-                  <div class="main-search-input-item">
-                    <div class="main-search-input-item__label">
-                      <img src="images/icon/icon-search-car.png" alt="icon: car">
-                       <span>ВЫБЕРИТЕ МАРКУ АВТО</span>
-                    </div>
-                    <select
-                      data-placeholder="All Categories"
-                      class="chosen-select">
-                      <option>Например, GEELY</option>
-                      <option>авто 1</option>
-                      <option>авто 2</option>
-                    </select>
-                  </div>
-                  <div class="main-search-input-item">
-                    <div class="main-search-input-item__label">
-                      <img src="images/icon/icon-search-repair-tool.png" alt="icon: car">
-                       <span>УКАЖИТЕ ВИД НЕОБХОДИМОЙ УСЛУГИ</span>
-                    </div>
-                    <select
-                      data-placeholder="All Categories"
-                      class="chosen-select">
-                      <option>Введите или выберите</option>
-                      <option>услуга 1</option>
-                      <option>услуга 2</option>
-                    </select>
-                  </div>
-                  <div class="main-search-input-item">
-                    <div class="main-search-input-item__label">
-                      <img src="images/icon/icon-search-filled-point.png" alt="icon: car">
-                      <span class="city">ГОРОД</span>
-                    </div>
-                    <select
-                      data-placeholder="All Categories"
-                      class="chosen-select">
-                      <option>Город</option>
-                      <option>Минск</option>
-                      <option>Брест</option>
-                      <option>Гродно</option>
-                      <option>Витебск</option>
-                      <option>Гомель</option>
-                      <option>Бобруйск</option>
-                      <option>Жодино</option>
-                      <option>Барановичи</option>
-                    </select>
-                  </div>
-                  <button class="main-search-button color-bg">
-                    Найти <i class="far fa-search"></i>
-                  </button>
-                </div>
-              </div>
-            </div>
-          </section>
-          <!--  section  end-->
-
-          <!--  section  марки авто список-->
+          <!--  section  марки авто список и поиск-->
           <section >
             <div class="container">
                 <div class="container-search-auto">
                     <!-- list-single-main-item -->
-                    <div class="fl-wrap">
+                    <div class="fl-wrap search-auto">
+                        <div class="container-index-page-search">
+                          <div class="hero-title hero-title_small">
+                            <h2>Выберите лучший сервис</h2>
+                          </div>
+                          <div class="main-search-input-wrap shadow_msiw">
+                            <div class="main-search-input fl-wrap">
+                              <div class="main-search-input-item">
+                                <div class="main-search-input-item__label">
+                                  <img src="images/icon/icon-search-car.png" alt="icon: car">
+                                   <span>ВЫБЕРИТЕ МАРКУ АВТО</span>
+                                </div>
+                                <select
+                                  data-placeholder="All Categories"
+                                  class="chosen-select">
+                                  <option>Например, GEELY</option>
+                                  <option>авто 1</option>
+                                  <option>авто 2</option>
+                                </select>
+                              </div>
+                              <div class="main-search-input-item">
+                                <div class="main-search-input-item__label">
+                                  <img src="images/icon/icon-search-repair-tool.png" alt="icon: car">
+                                   <span>УКАЖИТЕ ВИД НЕОБХОДИМОЙ УСЛУГИ</span>
+                                </div>
+                                <select
+                                  data-placeholder="All Categories"
+                                  class="chosen-select">
+                                  <option>Введите или выберите</option>
+                                  <option>услуга 1</option>
+                                  <option>услуга 2</option>
+                                </select>
+                              </div>
+                              <div class="main-search-input-item">
+                                <div class="main-search-input-item__label">
+                                  <img src="images/icon/icon-search-filled-point.png" alt="icon: car">
+                                  <span class="city">ГОРОД</span>
+                                </div>
+                                <select
+                                  data-placeholder="All Categories"
+                                  class="chosen-select">
+                                  <option>Город</option>
+                                  <option>Минск</option>
+                                  <option>Брест</option>
+                                  <option>Гродно</option>
+                                  <option>Витебск</option>
+                                  <option>Гомель</option>
+                                  <option>Бобруйск</option>
+                                  <option>Жодино</option>
+                                  <option>Барановичи</option>
+                                </select>
+                              </div>
+          
+                              <button class="main-search-button color-bg-red">
+                                Найти <i class="far fa-search"></i>
+                              </button>
+                            </div>
+                          </div>
+                        </div>
                         <div class="list-single-main-item-title">
                           <h3>Так же ищите услуги по марке</h3>
                         </div>
@@ -194,49 +206,61 @@
                                     <li> <img src="images/image/logo-auto-10.png" alt="logo-auto-1"></li>
                                 </ul>
                             </div>
-
-                            </div>
                             <div class="items-auto">
-                          <ul>
-                            <li>Audi <span class="auto-count-servise">45</span></li>
-                            <li>BMW <span class="auto-count-servise">19</span></li>
-                            <li>Chery <span class="auto-count-servise">40</span></li>
-                            <li>Chevrolet <span class="auto-count-servise">5</span></li>
-                            <li>Citroen <span class="auto-count-servise">37</span></li>
-                            <li>Dodge <span class="auto-count-servise">55</span></li>
-                          </ul>
-                          <ul>
-                            <li>Gelly <span class="auto-count-servise">45</span></li>
-                            <li>Haval <span class="auto-count-servise">19</span></li>
-                            <li>Honda <span class="auto-count-servise">45</span></li>
-                            <li>Hundai <span class="auto-count-servise">19</span></li>
-                            <li>Kia <span class="auto-count-servise">45</span></li>
-                            <li>LADA <span class="auto-count-servise">19</span></li>
-                          </ul>
-                          <ul>
-                            <li>Audi <span class="auto-count-servise">45</span></li>
-                            <li>BMW <span class="auto-count-servise">19</span></li>
-                            <li>Chery <span class="auto-count-servise">40</span></li>
-                            <li>Chevrolet <span class="auto-count-servise">5</span></li>
-                            <li>Citroen <span class="auto-count-servise">37</span></li>
-                            <li>Dodge <span class="auto-count-servise">55</span></li>
-                          </ul>
-                          <ul>
-                            <li>Gelly <span class="auto-count-servise">45</span></li>
-                            <li>Haval <span class="auto-count-servise">19</span></li>
-                            <li>Honda <span class="auto-count-servise">45</span></li>
-                            <li>Hundai <span class="auto-count-servise">19</span></li>
-                            <li>Kia <span class="auto-count-servise">45</span></li>
-                            <li>LADA <span class="auto-count-servise">19</span></li>
-                          </ul>
-                          <ul>
-                            <li>Gelly <span class="auto-count-servise">45</span></li>
-                            <li>Haval <span class="auto-count-servise">19</span></li>
-                            <li>Honda <span class="auto-count-servise">45</span></li>
-                            <li>Hundai <span class="auto-count-servise">19</span></li>
-                            <li>Land Rover <span class="auto-count-servise">45</span></li>
-                            <li class="all-item-auto">Все марки</li>
-                          </ul>
+                              <ul>
+                                <li>Audi <span class="auto-count-servise">45</span></li>
+                                <li>BMW <span class="auto-count-servise">19</span></li>
+                                <li>Chevrolet <span class="auto-count-servise">40</span></li>
+                                <li>Chrysler <span class="auto-count-servise">5</span></li>
+                                <li>Citroen <span class="auto-count-servise">37</span></li>
+                                <li>Dodge <span class="auto-count-servise">55</span></li>
+                              </ul>
+                              <ul>
+                                <li>Fiat <span class="auto-count-servise">45</span></li>
+                                <li>Ford <span class="auto-count-servise">19</span></li>
+                                <li>Geely <span class="auto-count-servise">45</span></li>
+                                <li>Haval <span class="auto-count-servise">19</span></li>
+                                <li>Honda <span class="auto-count-servise">45</span></li>
+                                <li>Hyundai <span class="auto-count-servise">19</span></li>
+                              </ul>
+                              <ul>
+                                <li>Kia <span class="auto-count-servise">45</span></li>
+                                <li>Lada <span class="auto-count-servise">19</span></li>
+                                <li>Land Rover <span class="auto-count-servise">40</span></li>
+                                <li>Lexus <span class="auto-count-servise">5</span></li>
+                                <li>Mazda <span class="auto-count-servise">37</span></li>
+                                <li>Mersedez-Benz <span class="auto-count-servise">55</span></li>
+                              </ul>
+                              <ul>
+                                <li>Mitsubishi <span class="auto-count-servise">45</span></li>
+                                <li>Nissan <span class="auto-count-servise">19</span></li>
+                                <li>Opel <span class="auto-count-servise">45</span></li>
+                                <li>Peugeot <span class="auto-count-servise">19</span></li>
+                                <li>Renault <span class="auto-count-servise">45</span></li>
+                                <li>Skoda <span class="auto-count-servise">19</span></li>
+                              </ul>
+                              <ul>
+                                <li>Subaru <span class="auto-count-servise">45</span></li>
+                                <li>Tesla <span class="auto-count-servise">19</span></li>
+                                <li>Toyota <span class="auto-count-servise">45</span></li>
+                                <li>Volkswagen <span class="auto-count-servise">19</span></li>
+                                <li>Volvo <span class="auto-count-servise">45</span></li>
+                                <li class="all-item-auto">Все марки</li>
+                              </ul>
+                            </div>
+                            <div class="items-auto items-auto-all">
+                              <ul class="item-auto-all">
+                              </ul>
+                              <ul class="item-auto-all">
+                              </ul>
+                              <ul class="item-auto-all">
+                              </ul>
+                              <ul class="item-auto-all">
+                              </ul>
+                              <ul class="item-auto-all">
+                              </ul>
+                              <div class="btn-disable ">Скрыть</div>
+                            </div>
                         </div>
 
                     </div>
@@ -272,13 +296,13 @@
                           <a href="#"
                             class="geodir-category-img_item">
                             <img
-                              src="images/image/uslugi1.png"
+                              src="images/image/uslugi-1.png"
                               alt="uslugi-abtoservis"
                             />
-                            <!-- <ul class="list-single-uslugi-btn">
+                            <ul class="list-single-uslugi-btn">
                               <li class="cat-opt-title-card"> <span>Автосервис</span></li>
                               <li class="cat-opt-btn-text"><span >Перейти</span></li>
-                            </ul> -->
+                            </ul>
                           </a>
                         </div>
                       </article>
@@ -289,15 +313,19 @@
                   <!-- slick-slide-item -->
                   <div class="slick-slide-item">
                     <!--  agent card item -->
-                    <div class="listing-item listing-item-uslugi">
+                    <div class="listing-item">
                       <article class="geodir-category-listing fl-wrap">
                         <div class="geodir-category-img fl-wrap agent_card">
                           <a href="#"
                             class="geodir-category-img_item">
                             <img
-                              src="images/image/uslugi2.png"
+                              src="images/image/uslugi-1.png"
                               alt="uslugi-abtoservis"
                             />
+                            <ul class="list-single-uslugi-btn">
+                              <li class="cat-opt-title-card"> <span>Эвакуатор</span></li>
+                              <li class="cat-opt-btn-text"><span >Перейти</span></li>
+                            </ul>
                           </a>
                         </div>
                       </article>
@@ -305,18 +333,21 @@
                     <!--  agent card item end -->
                   </div>
                   <!-- slick-slide-item end-->
-                  <!-- slick-slide-item -->
                   <div class="slick-slide-item">
                     <!--  agent card item -->
-                    <div class="listing-item listing-item-uslugi">
+                    <div class="listing-item">
                       <article class="geodir-category-listing fl-wrap">
                         <div class="geodir-category-img fl-wrap agent_card">
                           <a href="#"
                             class="geodir-category-img_item">
                             <img
-                              src="images/image/uslugi3.png"
+                              src="images/image/uslugi-1.png"
                               alt="uslugi-abtoservis"
                             />
+                            <ul class="list-single-uslugi-btn">
+                              <li class="cat-opt-title-card"> <span>Детейлинг</span></li>
+                              <li class="cat-opt-btn-text"><span >Перейти</span></li>
+                            </ul>
                           </a>
                         </div>
                       </article>
@@ -324,18 +355,21 @@
                     <!--  agent card item end -->
                   </div>
                   <!-- slick-slide-item end-->
-                  <!-- slick-slide-item -->
                   <div class="slick-slide-item">
                     <!--  agent card item -->
-                    <div class="listing-item listing-item-uslugi">
+                    <div class="listing-item">
                       <article class="geodir-category-listing fl-wrap">
                         <div class="geodir-category-img fl-wrap agent_card">
                           <a href="#"
                             class="geodir-category-img_item">
                             <img
-                              src="images/image/uslugi9.png"
+                              src="images/image/uslugi-1.png"
                               alt="uslugi-abtoservis"
                             />
+                            <ul class="list-single-uslugi-btn">
+                              <li class="cat-opt-title-card"> <span>Кузовной и покраска</span></li>
+                              <li class="cat-opt-btn-text"><span >Перейти</span></li>
+                            </ul>
                           </a>
                         </div>
                       </article>
@@ -343,18 +377,21 @@
                     <!--  agent card item end -->
                   </div>
                   <!-- slick-slide-item end-->
-                  <!-- slick-slide-item -->
                   <div class="slick-slide-item">
                     <!--  agent card item -->
-                    <div class="listing-item listing-item-uslugi">
+                    <div class="listing-item">
                       <article class="geodir-category-listing fl-wrap">
                         <div class="geodir-category-img fl-wrap agent_card">
                           <a href="#"
                             class="geodir-category-img_item">
                             <img
-                              src="images/image/uslugi4.png"
+                              src="images/image/uslugi-1.png"
                               alt="uslugi-abtoservis"
                             />
+                            <ul class="list-single-uslugi-btn">
+                              <li class="cat-opt-title-card"> <span>Шиномонтаж</span></li>
+                              <li class="cat-opt-btn-text"><span >Перейти</span></li>
+                            </ul>
                           </a>
                         </div>
                       </article>
@@ -362,18 +399,21 @@
                     <!--  agent card item end -->
                   </div>
                   <!-- slick-slide-item end-->
-                  <!-- slick-slide-item -->
                   <div class="slick-slide-item">
                     <!--  agent card item -->
-                    <div class="listing-item listing-item-uslugi">
+                    <div class="listing-item">
                       <article class="geodir-category-listing fl-wrap">
                         <div class="geodir-category-img fl-wrap agent_card">
                           <a href="#"
                             class="geodir-category-img_item">
                             <img
-                              src="images/image/uslugi5.png"
+                              src="images/image/uslugi-1.png"
                               alt="uslugi-abtoservis"
                             />
+                            <ul class="list-single-uslugi-btn">
+                              <li class="cat-opt-title-card"> <span>Автоподбор</span></li>
+                              <li class="cat-opt-btn-text"><span >Перейти</span></li>
+                            </ul>
                           </a>
                         </div>
                       </article>
@@ -381,18 +421,21 @@
                     <!--  agent card item end -->
                   </div>
                   <!-- slick-slide-item end-->
-                  <!-- slick-slide-item -->
                   <div class="slick-slide-item">
                     <!--  agent card item -->
-                    <div class="listing-item listing-item-uslugi">
+                    <div class="listing-item">
                       <article class="geodir-category-listing fl-wrap">
                         <div class="geodir-category-img fl-wrap agent_card">
                           <a href="#"
                             class="geodir-category-img_item">
                             <img
-                              src="images/image/uslugi6.png"
+                              src="images/image/uslugi-1.png"
                               alt="uslugi-abtoservis"
                             />
+                            <ul class="list-single-uslugi-btn">
+                              <li class="cat-opt-title-card"> <span>Тюнинг</span></li>
+                              <li class="cat-opt-btn-text"><span >Перейти</span></li>
+                            </ul>
                           </a>
                         </div>
                       </article>
@@ -400,18 +443,21 @@
                     <!--  agent card item end -->
                   </div>
                   <!-- slick-slide-item end-->
-                  <!-- slick-slide-item -->
                   <div class="slick-slide-item">
                     <!--  agent card item -->
-                    <div class="listing-item listing-item-uslugi">
+                    <div class="listing-item">
                       <article class="geodir-category-listing fl-wrap">
                         <div class="geodir-category-img fl-wrap agent_card">
                           <a href="#"
                             class="geodir-category-img_item">
                             <img
-                              src="images/image/uslugi7.png"
+                              src="images/image/uslugi-1.png"
                               alt="uslugi-abtoservis"
                             />
+                            <ul class="list-single-uslugi-btn">
+                              <li class="cat-opt-title-card"> <span>Выездной сервис</span></li>
+                              <li class="cat-opt-btn-text"><span >Перейти</span></li>
+                            </ul>
                           </a>
                         </div>
                       </article>
@@ -419,25 +465,28 @@
                     <!--  agent card item end -->
                   </div>
                   <!-- slick-slide-item end-->
-                                    <!-- slick-slide-item -->
-                                    <div class="slick-slide-item">
-                                        <!--  agent card item -->
-                                        <div class="listing-item listing-item-uslugi">
-                                          <article class="geodir-category-listing fl-wrap">
-                                            <div class="geodir-category-img fl-wrap agent_card">
-                                              <a href="#"
-                                                class="geodir-category-img_item">
-                                                <img
-                                                  src="images/image/uslugi8.png"
-                                                  alt="uslugi-abtoservis"
-                                                />
-                                              </a>
-                                            </div>
-                                          </article>
-                                        </div>
-                                        <!--  agent card item end -->
-                                      </div>
-                                      <!-- slick-slide-item end-->
+                  <div class="slick-slide-item">
+                    <!--  agent card item -->
+                    <div class="listing-item">
+                      <article class="geodir-category-listing fl-wrap">
+                        <div class="geodir-category-img fl-wrap agent_card">
+                          <a href="#"
+                            class="geodir-category-img_item">
+                            <img
+                              src="images/image/uslugi-1.png"
+                              alt="uslugi-abtoservis"
+                            />
+                            <ul class="list-single-uslugi-btn">
+                              <li class="cat-opt-title-card"> <span>Автомойка</span></li>
+                              <li class="cat-opt-btn-text"><span >Перейти</span></li>
+                            </ul>
+                          </a>
+                        </div>
+                      </article>
+                    </div>
+                    <!--  agent card item end -->
+                  </div>
+                  <!-- slick-slide-item end-->
                 </div>
 
                 <div class="swiper-button-prev lc-wbtn lc-wbtn_prev">
@@ -450,6 +499,7 @@
             </div>
           </section>
           <!-- section end-->
+
 
           <!-- section Где обслуживать-->
           <section>
@@ -536,6 +586,438 @@
             </div>
           </section>
           <!-- section end-->
+
+          <!-- section Специальные предложения-->
+          <section>
+            <div class="container">
+              <!-- section-title -->
+              <div class="section-title fl-wrap">
+                <h2>Специальные предложения</h2>
+              </div>
+              <!-- section-title end -->
+              <div class="clearfix"></div>
+              <div
+                class="listing-carousel-wrapper lc_hero carousel-wrap fl-wrap"
+              >
+
+              <div class="listing-carousel carousel">
+                <!-- slick-slide-item -->
+                <div class="slick-slide-item">
+                  <!--  agent card item -->
+                  <div class="listing-item">
+                    <article class="geodir-category-listing fl-wrap">
+                      <div class="slide-item-spec">
+                      <div class="geodir-category-img fl-wrap agent_card item-spec">
+                        <a href="#"
+                          class="geodir-category-img_item img-spec">
+                          <img
+                            src="images/image/uslugi-1.png"
+                            alt="uslugi-abtoservis"
+                          />
+                          <ul class="list-single-uslugi-btn">
+                            <li class="cat-opt-title-card"> <span>Автосервис</span></li>
+                            <li class="cat-opt-btn-text"><span >Перейти</span></li>
+                            <!-- <li class="btn-sale color-bg-red">Акции</li> -->
+                          </ul>
+                        </a>
+                      </div>
+                      <button class="btn-sale color-bg-red">Акции</button>
+                      </div>
+                    </article>
+                  </div>
+                  <!--  agent card item end -->
+                </div>
+                <!-- slick-slide-item end-->
+                <!-- slick-slide-item -->
+                <div class="slick-slide-item">
+                  <!--  agent card item -->
+                  <div class="listing-item">
+                    <article class="geodir-category-listing fl-wrap">
+                      <div class="slide-item-spec">
+                      <div class="geodir-category-img fl-wrap agent_card item-spec">
+                        <a href="#"
+                          class="geodir-category-img_item img-spec">
+                          <img
+                            src="images/image/uslugi-1.png"
+                            alt="uslugi-abtoservis"
+                          />
+                          <ul class="list-single-uslugi-btn">
+                            <li class="cat-opt-title-card"> <span>Эвакуатор</span></li>
+                            <li class="cat-opt-btn-text"><span >Перейти</span></li>
+                            <!-- <li class="btn-sale color-bg-red">Акции</li> -->
+                          </ul>
+                        </a>
+                      </div>
+                      <button class="btn-sale color-bg-red">Акции</button>
+                      </div>
+                    </article>
+                  </div>
+                  <!--  agent card item end -->
+                </div>
+                <!-- slick-slide-item end-->
+                <!-- slick-slide-item -->
+                <div class="slick-slide-item">
+                  <!--  agent card item -->
+                  <div class="listing-item">
+                    <article class="geodir-category-listing fl-wrap">
+                      <div class="slide-item-spec">
+                      <div class="geodir-category-img fl-wrap agent_card item-spec">
+                        <a href="#"
+                          class="geodir-category-img_item img-spec">
+                          <img
+                            src="images/image/uslugi-1.png"
+                            alt="uslugi-abtoservis"
+                          />
+                          <ul class="list-single-uslugi-btn">
+                            <li class="cat-opt-title-card"> <span>Детейлинг</span></li>
+                            <li class="cat-opt-btn-text"><span >Перейти</span></li>
+                            <!-- <li class="btn-sale color-bg-red">Акции</li> -->
+                          </ul>
+                        </a>
+                      </div>
+                      <button class="btn-sale color-bg-red">Акции</button>
+                      </div>
+                    </article>
+                  </div>
+                  <!--  agent card item end -->
+                </div>
+                <!-- slick-slide-item end-->
+                <!-- slick-slide-item -->
+                <div class="slick-slide-item">
+                  <!--  agent card item -->
+                  <div class="listing-item">
+                    <article class="geodir-category-listing fl-wrap">
+                      <div class="slide-item-spec">
+                      <div class="geodir-category-img fl-wrap agent_card item-spec">
+                        <a href="#"
+                          class="geodir-category-img_item img-spec">
+                          <img
+                            src="images/image/uslugi-1.png"
+                            alt="uslugi-abtoservis"
+                          />
+                          <ul class="list-single-uslugi-btn">
+                            <li class="cat-opt-title-card"> <span>Кузовной и покраска</span></li>
+                            <li class="cat-opt-btn-text"><span >Перейти</span></li>
+                            <!-- <li class="btn-sale color-bg-red">Акции</li> -->
+                          </ul>
+                        </a>
+                      </div>
+                      <button class="btn-sale color-bg-red">Акции</button>
+                      </div>
+                    </article>
+                  </div>
+                  <!--  agent card item end -->
+                </div>
+                <!-- slick-slide-item end-->
+                <!-- slick-slide-item -->
+                <div class="slick-slide-item">
+                  <!--  agent card item -->
+                  <div class="listing-item">
+                    <article class="geodir-category-listing fl-wrap">
+                      <div class="slide-item-spec">
+                      <div class="geodir-category-img fl-wrap agent_card item-spec">
+                        <a href="#"
+                          class="geodir-category-img_item img-spec">
+                          <img
+                            src="images/image/uslugi-1.png"
+                            alt="uslugi-abtoservis"
+                          />
+                          <ul class="list-single-uslugi-btn">
+                            <li class="cat-opt-title-card"> <span>Шиномонтаж</span></li>
+                            <li class="cat-opt-btn-text"><span >Перейти</span></li>
+                            <!-- <li class="btn-sale color-bg-red">Акции</li> -->
+                          </ul>
+                        </a>
+                      </div>
+                      <button class="btn-sale color-bg-red">Акции</button>
+                      </div>
+                    </article>
+                  </div>
+                  <!--  agent card item end -->
+                </div>
+                <!-- slick-slide-item end-->
+                <!-- slick-slide-item -->
+                <div class="slick-slide-item">
+                  <!--  agent card item -->
+                  <div class="listing-item">
+                    <article class="geodir-category-listing fl-wrap">
+                      <div class="slide-item-spec">
+                      <div class="geodir-category-img fl-wrap agent_card item-spec">
+                        <a href="#"
+                          class="geodir-category-img_item img-spec">
+                          <img
+                            src="images/image/uslugi-1.png"
+                            alt="uslugi-abtoservis"
+                          />
+                          <ul class="list-single-uslugi-btn">
+                            <li class="cat-opt-title-card"> <span>Автоподбор</span></li>
+                            <li class="cat-opt-btn-text"><span >Перейти</span></li>
+                            <!-- <li class="btn-sale color-bg-red">Акции</li> -->
+                          </ul>
+                        </a>
+                      </div>
+                      <button class="btn-sale color-bg-red">Акции</button>
+                      </div>
+                    </article>
+                  </div>
+                  <!--  agent card item end -->
+                </div>
+                <!-- slick-slide-item end-->
+                <!-- slick-slide-item -->
+                <div class="slick-slide-item">
+                  <!--  agent card item -->
+                  <div class="listing-item">
+                    <article class="geodir-category-listing fl-wrap">
+                      <div class="slide-item-spec">
+                      <div class="geodir-category-img fl-wrap agent_card item-spec">
+                        <a href="#"
+                          class="geodir-category-img_item img-spec">
+                          <img
+                            src="images/image/uslugi-1.png"
+                            alt="uslugi-abtoservis"
+                          />
+                          <ul class="list-single-uslugi-btn">
+                            <li class="cat-opt-title-card"> <span>Тюнинг</span></li>
+                            <li class="cat-opt-btn-text"><span >Перейти</span></li>
+                            <!-- <li class="btn-sale color-bg-red">Акции</li> -->
+                          </ul>
+                        </a>
+                      </div>
+                      <button class="btn-sale color-bg-red">Акции</button>
+                      </div>
+                    </article>
+                  </div>
+                  <!--  agent card item end -->
+                </div>
+                <!-- slick-slide-item end-->
+                <!-- slick-slide-item -->
+                <div class="slick-slide-item">
+                  <!--  agent card item -->
+                  <div class="listing-item">
+                    <article class="geodir-category-listing fl-wrap">
+                      <div class="slide-item-spec">
+                      <div class="geodir-category-img fl-wrap agent_card item-spec">
+                        <a href="#"
+                          class="geodir-category-img_item img-spec">
+                          <img
+                            src="images/image/uslugi-1.png"
+                            alt="uslugi-abtoservis"
+                          />
+                          <ul class="list-single-uslugi-btn">
+                            <li class="cat-opt-title-card"> <span>Выездной сервис</span></li>
+                            <li class="cat-opt-btn-text"><span >Перейти</span></li>
+                            <!-- <li class="btn-sale color-bg-red">Акции</li> -->
+                          </ul>
+                        </a>
+                      </div>
+                      <button class="btn-sale color-bg-red">Акции</button>
+                      </div>
+                    </article>
+                  </div>
+                  <!--  agent card item end -->
+                </div>
+                <!-- slick-slide-item end-->
+                <!-- slick-slide-item -->
+                <div class="slick-slide-item">
+                  <!--  agent card item -->
+                  <div class="listing-item">
+                    <article class="geodir-category-listing fl-wrap">
+                      <div class="slide-item-spec">
+                      <div class="geodir-category-img fl-wrap agent_card item-spec">
+                        <a href="#"
+                          class="geodir-category-img_item img-spec">
+                          <img
+                            src="images/image/uslugi-1.png"
+                            alt="uslugi-abtoservis"
+                          />
+                          <ul class="list-single-uslugi-btn">
+                            <li class="cat-opt-title-card"> <span>Автомойка</span></li>
+                            <li class="cat-opt-btn-text"><span >Перейти</span></li>
+                            <!-- <li class="btn-sale color-bg-red">Акции</li> -->
+                          </ul>
+                        </a>
+                      </div>
+                      <button class="btn-sale color-bg-red">Акции</button>
+                      </div>
+                    </article>
+                  </div>
+                  <!--  agent card item end -->
+                </div>
+                <!-- slick-slide-item end-->
+
+              </div>
+
+                <div class="swiper-button-prev lc-wbtn lc-wbtn_prev">
+                  <i class="far fa-angle-left"></i>
+                </div>
+                <div class="swiper-button-next lc-wbtn lc-wbtn_next">
+                  <i class="far fa-angle-right"></i>
+                </div>
+              </div>
+            </div>
+          </section>
+          <!-- section end-->
+
+          <!-- section Последние отзывы-->
+          <section>
+            <div class="container">
+              <!-- section-title -->
+              <div class="section-title fl-wrap">
+                <h2>Последние отзывы</h2>
+              </div>
+              <!-- section-title end-->
+
+              <div class="testimonials-slider-wrap">
+                <div class="testimonials-slider">
+                    <!--slick-item -->
+                    <div class="slick-item">
+                        <div class="text-carousel-item fl-wrap">
+                            <div class="text-carousel-item-header fl-wrap">
+                                <div class="popup-avatar"><img src="images/image/where-1.jpeg" alt=""></div>
+                                <div class="review-owner fl-wrap">Отзыв о компании TopCar</div>
+                                <div class="listing-rating card-popup-rainingvis" data-starrating2="5"> </div>
+                            </div>
+                            <div class="text-carousel-content fl-wrap">
+                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been 
+                                  the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled 
+                                  it to make a type specimen book. It has survived not only five centuries, but also the leap into...</p>
+                                <p class="open-review-item">читать весь отзыв</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!--slick-item end -->							
+                    <!--slick-item -->
+                    <div class="slick-item">
+                      <div class="text-carousel-item fl-wrap">
+                          <div class="text-carousel-item-header fl-wrap">
+                              <div class="popup-avatar"><img src="images/image/where-1.jpeg" alt=""></div>
+                              <div class="review-owner fl-wrap">Отзыв о компании TopCar</div>
+                              <div class="listing-rating card-popup-rainingvis" data-starrating2="5"> </div>
+                          </div>
+                          <div class="text-carousel-content fl-wrap">
+                              <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been 
+                                the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled 
+                                it to make a type specimen book. It has survived not only five centuries, but also the leap into...</p>
+                              <p class="open-review-item">читать весь отзыв</p>
+                          </div>
+                      </div>
+                    </div>
+                    <!--slick-item end -->
+                    <!--slick-item -->
+                    <div class="slick-item">
+                      <div class="text-carousel-item fl-wrap">
+                          <div class="text-carousel-item-header fl-wrap review-item-title">
+                              <div class="popup-avatar"><img src="images/image/where-1.jpeg" alt=""></div>
+                              <div class="review-owner fl-wrap">Отзыв о компании TopCar</div>
+                              <div class="listing-rating card-popup-rainingvis" data-starrating2="5"> </div>
+                          </div>
+                          <div class="text-carousel-content fl-wrap">
+                              <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been 
+                                the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled 
+                                it to make a type specimen book. It has survived not only five centuries, but also the leap into...</p>
+                              <p class="open-review-item">читать весь отзыв</p>
+                          </div>
+                      </div>
+                    </div>
+                    <!--slick-item end -->								
+                    <!--slick-item -->
+                    <div class="slick-item">
+                      <div class="text-carousel-item fl-wrap">
+                          <div class="text-carousel-item-header fl-wrap">
+                              <div class="popup-avatar"><img src="images/image/where-1.jpeg" alt=""></div>
+                              <div class="review-owner fl-wrap">Отзыв о компании TopCar</div>
+                              <div class="listing-rating card-popup-rainingvis" data-starrating2="5"> </div>
+                          </div>
+                          <div class="text-carousel-content fl-wrap">
+                              <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been 
+                                the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled 
+                                it to make a type specimen book. It has survived not only five centuries, but also the leap into...</p>
+                              <p class="open-review-item">читать весь отзыв</p>
+                          </div>
+                      </div>
+                    </div>
+                    <!--slick-item end -->								
+              </div>
+            </div>
+
+            </div>
+          </section>
+          <!-- section end-->
+
+          <!-- section Блог автосервисов>-->
+          <section>
+            <div class="container">
+              <div class="section-blog">
+                <div class="blog-title">
+                  <div class="section-title  blog-title-name">
+                    <h2>Блог автосервисов</h2>
+                  </div>
+                  <a href="#" class="blog-btn-open-all">
+                    Читать все
+                  </a>
+                </div>
+                <div class="blog-items">
+                  <div class="blog-item">
+                    <img src="images/image/blog-foto-min-1.jpg" alt="img blog" class="blog-item-img">
+                    <p class="blog-item-title">
+                      Как правильно выбрать свой первый автомобиль?
+                      Как правильно выбрать свой первый автомобиль?
+                    </p>
+                    <div class="blog-item-footer">
+                      <div class="blog-item-count">
+                        <img src="images/icon/view.svg" alt="icon: view" class="blog-item-count-icon">
+                        <span class="count">2 350</span>
+                      </div>
+                      <a href="#" class="blog-item-read">Читать статью</a>
+                    </div>
+                  </div>
+                  <div class="blog-item">
+                    <img src="images/image/blog-foto-min-1.jpg" alt="img blog" class="blog-item-img">
+                    <p class="blog-item-title">
+                      Как правильно выбрать свой первый автомобиль?
+                      Как правильно выбрать свой первый автомобиль?
+                    </p>
+                    <div class="blog-item-footer">
+                      <div class="blog-item-count">
+                        <img src="images/icon/view.svg" alt="icon: view" class="blog-item-count-icon">
+                        <span class="count">2 350</span>
+                      </div>
+                      <a href="#" class="blog-item-read">Читать статью</a>
+                    </div>
+                  </div>
+                  <div class="blog-item">
+                    <img src="images/image/blog-foto-min-1.jpg" alt="img blog" class="blog-item-img">
+                    <p class="blog-item-title">
+                      Как правильно выбрать свой первый автомобиль?
+                      Как правильно выбрать свой первый автомобиль?
+                    </p>
+                    <div class="blog-item-footer">
+                      <div class="blog-item-count">
+                        <img src="images/icon/view.svg" alt="icon: view" class="blog-item-count-icon">
+                        <span class="count">2 350</span>
+                      </div>
+                      <a href="#" class="blog-item-read">Читать статью</a>
+                    </div>
+                  </div>
+                  <div class="blog-item">
+                    <img src="images/image/blog-foto-min-1.jpg" alt="img blog" class="blog-item-img">
+                    <p class="blog-item-title">
+                      Как правильно выбрать свой первый автомобиль?
+                      Как правильно выбрать свой первый автомобиль?
+                    </p>
+                    <div class="blog-item-footer">
+                      <div class="blog-item-count">
+                        <img src="images/icon/view.svg" alt="icon: view" class="blog-item-count-icon">
+                        <span class="count">2 350</span>
+                      </div>
+                      <a href="#" class="blog-item-read">Читать статью</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <!-- section end Блог автосервисов-->
 
         </div>
         <!-- content end-->

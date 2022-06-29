@@ -500,7 +500,7 @@ p {
 .slider-progress-bar.act-slider .circ1 {
 	stroke-dashoffset: 220px; transition: linear 6s stroke-dashoffset;
 }
-.gradient-bg  , #subscribe-button:hover , .cf_btn:hover , .btn:hover    {
+.gradient-bg  , #subscribe-button:hover , .cf_btn:hover {
     background: linear-gradient(to left, #3C6AFD, #57C7FA);
 }
 .contact-form-wrap  {
