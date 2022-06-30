@@ -641,7 +641,7 @@ initIsotope();
             $('.price-item').removeClass('year-mont');
         }
     });
-    $('.chosen-select').niceSelect();
+    //$('.chosen-select').niceSelect();
     // date picker------------------
     $('input[name="datepicker-here"]').daterangepicker({
         autoUpdateInput: false,
