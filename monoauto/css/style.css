@@ -2072,7 +2072,7 @@ nav li ul a:before , nav li ul a:after {
 	width: 50px;
 }
 .main-search-input-wrap {
-	max-width: 800px;
+	max-width: 900px;
     position: relative;	
 }
 .main-search-input-wrap.msiw-center {
@@ -2116,6 +2116,9 @@ nav li ul a:before , nav li ul a:after {
 }
 .main-search-input .main-search-input-item:first-child , .main-search-input-wrap.msiw-column .main-search-input-item:first-child {
 	border:none;
+}
+.main-search-input-item:nth-child(2) {
+	width: 385px;
 }
 .main-search-input-item input {
     float: left;
@@ -7872,9 +7875,11 @@ section.single-par2  .scroll-down-wrap{
 .img-spec {
 	border-radius: 6px;
 }
-
-
-
+span.current {
+	display:block;
+	white-space: nowrap; /* Отменяем перенос текста */
+	overflow: hidden;
+}
 
 /* footer */
 .footer-logo {
@@ -7907,3 +7912,200 @@ section.single-par2  .scroll-down-wrap{
 	min-width: 65px;
 }
 /* footer end*/
+
+
+/* catalog-servises */
+
+.catalog-list {
+	width: 100%;
+	background-color: #0C78ED;
+	border-radius: 10px 0 0 10px;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 17px;
+	color: #FFFFFF;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 15px 30px;
+}
+.catalog-map {
+	width: 100%;
+	background-color: #F5F5F5;
+	border-radius: 0 10px 10px 0;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 17px;	
+	color: #000000;
+	display: flex;
+  flex-direction: column;
+  align-items: center;
+	padding: 15px 30px;
+}
+.catalog-list-icon, .catalog-map-icon {
+	/* width: 12px; */
+}
+.toggle-catalog {
+	max-height: 60px;
+	width: 30%;
+	align-items: center;
+	display: flex;
+  justify-content: space-between;  
+	margin-top: auto;
+	margin-bottom: 50px;
+}
+
+.catalog-servise-item {
+	background: #FAFAFA;
+	border-radius: 30px;
+	padding: 33px 25px;
+}
+.servise-title-block {
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 10px;
+}
+.servise-flag {
+	margin-left: 29px;
+}
+.servise-title {
+	font-weight: 600;
+	font-size: 21px;
+	line-height: 25px;
+	color: #000000;
+}
+.servise-official {
+	margin-left: auto;
+	margin-right: 20px;
+	background-color: #FFC774;
+	border-radius: 10px;
+	padding: 6px 15px;
+	font-weight: 400;
+	font-size: 12px;
+	line-height: 15px;
+	color: #FFFFFF;
+	border: none;
+}
+.servise-verified {
+	background-color: #69ACF3;
+	border-radius: 10px;
+	padding: 6px 15px;
+	font-weight: 400;
+	font-size: 12px;
+	line-height: 15px;
+	color: #FFFFFF;
+	border: none;
+}
+.servise-item-rating {
+	display: flex;
+	margin-right: auto;
+	margin-bottom: 20px;
+}
+.rating-count {
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 17px;
+	color: #000000;
+	margin-right: 10px;
+}
+.rating-kol {
+	margin-left: 20px;
+	margin-right: 10px;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 17px;
+	color: #7D7D7D;
+}
+.servise-info-all {
+	display: flex;
+	justify-content: space-between;
+	margin-top: 23px;
+	margin-bottom: 24px;
+}
+.servise-info {
+	margin-right: 72px;
+	text-align: left;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 17px;
+	color: #000000;
+}
+.servise-address {
+	margin-bottom: 15px;
+}
+.servise-address-icon, .servise-time-icon {
+	margin-right: 12px;
+}
+.time-open {
+	color: #00A92F;
+	margin: 0 6px;
+}
+.servise-info-auto {
+	margin-right: auto;
+	display: flex;
+	flex-direction: column;
+	text-align: left;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 17px;
+	color: #7D7D7D;
+}
+.servise-info-auto span {
+	margin-bottom: 8px;
+}
+.servise-auto-icon {
+	margin: 0 7px;
+}
+.servise-bonus-icon {
+	margin-left: 12px;
+}
+.servise-info-uslugi {
+	display: flex;
+	justify-content: space-between;
+}
+.servise-usluga {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background: #FFFFFF;
+	border-radius: 10px;
+	filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+	width: 877px;
+	padding: 14px 30px;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 19px;
+	color: #000000;
+}
+.servise-usluga-count {
+	margin-left: auto;
+	margin-right: 30px;
+}
+.servise-usluga-submit {
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 17px;
+	color: #FFFFFF;
+	background-color: #00A92F;
+	padding: 9px 37px;
+	border-radius: 30px;
+}
+.servise-info-tel {
+	display: flex;
+	flex-direction: column;
+	text-align: right;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 17px;
+	color: #000000;
+}
+.servise-coll {
+	margin-bottom: 13px;
+}
+.servise-descr {
+	text-decoration: underline;
+}
+
+.carusel-servise-item {
+	position: relative;
+}
