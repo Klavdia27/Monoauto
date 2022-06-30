@@ -7586,7 +7586,7 @@ section.single-par2  .scroll-down-wrap{
 .banner-monoauto {
 	display: flex;
 	flex-direction: column;
-	width: 16%;
+	width: 22%;
 	align-items: center;
 	padding-top: 150px;
 }
@@ -7598,7 +7598,6 @@ section.single-par2  .scroll-down-wrap{
 	justify-content: space-between;
 	align-items: center;
 	padding: 10px;
-	max-width: 880px;
 }
 .logo-auto__items img {
 	cursor: pointer;
