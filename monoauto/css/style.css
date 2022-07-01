@@ -8054,12 +8054,17 @@ span.current {
 .servise-address-icon, .servise-time-icon {
 	margin-right: 12px;
 }
-.time-open {
+.time-open-ligth {
+	display:flex;
+	align-items: center;
 	color: #00A92F;
 }
 .servise-time {
 	display: flex;
 	align-items: center;
+}
+.servise-time-icon.img-svg path {
+	stroke: #00A92F;
 }
 .servise-time-open {
 	cursor: pointer;
@@ -8117,6 +8122,9 @@ span.current {
 	background-color: #00A92F;
 	padding: 9px 37px;
 	border-radius: 30px;
+}
+.servise-usluga-submit:hover {
+	background-color: #028626;
 }
 .servise-info-tel {
 	display: flex;
