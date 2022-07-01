@@ -969,3 +969,18 @@ $(document).ready(function () {
     initHomeradar();
     initparallax();
 });
+
+
+
+$(document).ready(function(){
+    $('.slider-servise').slick({
+        arrows: true,
+        dots: false,
+        adaptiveHeight:true,
+        slidesToShow: 3.5,
+        slidesToScroll: 1,
+        speed: 200,
+        easing: 'linear',
+        infinite: false, //слайдер  бесконечный
+    });
+  })

@@ -12,10 +12,8 @@ const navMenuList = ["Автосервисы", "Шиномонтаж", "Авто
 
 const navItems = document.querySelectorAll('.nav-header-item');
 
-
 openMenu.addEventListener('click', () => {
   openMenuList.classList.toggle("open-menu-item-active");
-
 });
 
 if (navItems.length >= 11) {
@@ -30,3 +28,6 @@ if (navItems.length >= 11) {
   document.getElementById('also-nav-item').classList.add('active') 
 
 }
+
+
+
