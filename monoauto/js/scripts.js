@@ -970,7 +970,6 @@ $(document).ready(function () {
     initparallax();
 });
 
-
 // слайдер на странице каталога
 $(document).ready(function(){
     $('.slider-servise').slick({
@@ -985,8 +984,21 @@ $(document).ready(function(){
     });
   })
 
+// слайдер на странице каталога c map
+$(document).ready(function(){
+    $('.slider-servise-map').slick({
+        arrows: true,
+        dots: false,
+        adaptiveHeight:true,
+        slidesToShow: 3.1,
+        slidesToScroll: 1,
+        speed: 200,
+        easing: 'linear',
+        infinite: false, //слайдер  бесконечный
+    });
+  })
 
-  
+// изменение цвета svg картинок
   $("img.img-svg").each(function () {
     var $img = $(this);
     var imgClass = $img.attr("class");
