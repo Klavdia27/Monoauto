@@ -998,6 +998,20 @@ $(document).ready(function(){
     });
   })
 
+  // слайдер на странице сервиса
+$(document).ready(function(){
+    $('.slider-servise-item').slick({
+        arrows: true,
+        dots: false,
+        adaptiveHeight:true,
+        slidesToShow: 2,
+        slidesToScroll: 1,
+        speed: 200,
+        easing: 'linear',
+        infinite: false, //слайдер  бесконечный
+    });
+  })
+
 // изменение цвета svg картинок
   $("img.img-svg").each(function () {
     var $img = $(this);
