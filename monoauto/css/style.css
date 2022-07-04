@@ -9995,10 +9995,18 @@ span.current {
 
 .servise-coll-ligth {
   margin-top: 10px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  color: #000000;
 }
 
 .servise-coll-number {
   margin-right: 12px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  color: #000000;
 }
 
 .servise-descr, .servise-descr-ligth {
@@ -10009,6 +10017,17 @@ span.current {
 .servise-descr-ligth {
   margin-top: 20px;
   display: block;
+}
+
+.servise-descr-ligth-pmap {
+  text-decoration: underline;
+  cursor: pointer;
+  display: block;
+  text-align: left;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  color: #000000;
 }
 
 .servise-info-tel-ligth {

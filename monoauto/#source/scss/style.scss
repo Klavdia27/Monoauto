@@ -8181,9 +8181,17 @@ span.current {
 }
 .servise-coll-ligth {
 	margin-top: 10px;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 17px;
+	color: $black;
 }
 .servise-coll-number {
 	margin-right: 12px;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 17px;
+	color: $black;
 }
 
 .servise-descr, .servise-descr-ligth{
@@ -8194,6 +8202,17 @@ span.current {
  margin-top: 20px;
  display: block;
 }
+.servise-descr-ligth-pmap {
+	text-decoration: underline;
+	cursor: pointer;
+	display: block;
+	text-align: left;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 17px;
+	color: $black;
+}
+
 .servise-info-tel-ligth {
 	display: flex;
 	flex-direction: column;
