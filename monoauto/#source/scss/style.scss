@@ -174,8 +174,9 @@ blockquote p {
 #wrapper {
     float: left;
     width: 100%;
-    /* position: relative; */
-    /* z-index: 25; */
+
+    position: relative; 
+    z-index: 25; 
 }
 .respimg {
 	width: 100%;
@@ -1095,6 +1096,7 @@ nav li ul a:before , nav li ul a:after {
 .main-footer {
     padding: 70px 0 0;
 		border-top: solid 1px black;
+		// position: relative;
 }
 .footer-widget-logo img {
     width: auto;
@@ -5439,12 +5441,15 @@ section.single-par2  .scroll-down-wrap{
 	top: 150px;
 }
 .map-container.column-map.right-position-map {
-	left: inherit;
-	right: 80px;
+	// left: inherit;
+	// right: 80px;
 }
 .map-container.column-map.no-top_search {
-	position: relative;
-	top: 70px;
+	z-index: 10;
+	position: sticky;
+	top: 0;
+	// position: relative;
+	// top: 70px;
 }
 .map-close {
 	position:absolute;
@@ -8492,4 +8497,9 @@ height: 44px;
 }
 .section-servise-item-uslugi {
 padding-top: 0;
+}
+
+.content-sevrises-map {
+	// position: absolute;
+	
 }
