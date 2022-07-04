@@ -5432,7 +5432,7 @@ section.single-par2  .scroll-down-wrap{
     z-index: 990;
 }
 .map-container.column-map {
-	width:calc(100% - 930px);
+	width:calc(100% - 850px);
 	position: fixed;
  	overflow:hidden;
 	left:80px;
@@ -5443,6 +5443,7 @@ section.single-par2  .scroll-down-wrap{
 	right: 80px;
 }
 .map-container.column-map.no-top_search {
+	position: relative;
 	top: 70px;
 }
 .map-close {
@@ -8488,9 +8489,7 @@ height: 44px;
 }
 .servise-item-singup {
 	display: flex;
-	
 }
 .section-servise-item-uslugi {
 padding-top: 0;
-
 }

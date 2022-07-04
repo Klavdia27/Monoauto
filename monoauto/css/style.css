@@ -6541,7 +6541,7 @@ section.single-par2 .scroll-down-wrap {
 }
 
 .map-container.column-map {
-  width: calc(100% - 930px);
+  width: calc(100% - 850px);
   position: fixed;
   overflow: hidden;
   left: 80px;
@@ -6554,6 +6554,7 @@ section.single-par2 .scroll-down-wrap {
 }
 
 .map-container.column-map.no-top_search {
+  position: relative;
   top: 70px;
 }
 
