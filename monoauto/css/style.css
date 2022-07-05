@@ -3652,6 +3652,9 @@ section.single-par2 .scroll-down-wrap {
   float: left;
   width: 100%;
 }
+.pagination .pagination__number.active {
+  border: 1px solid red;
+}
 
 .pagination.float-pagination {
   margin-top: 30px;
@@ -9896,6 +9899,7 @@ span.current {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  position: relative;
 }
 
 .servise-item-time {
@@ -9909,6 +9913,52 @@ span.current {
 .servise-time-open {
   cursor: pointer;
   margin-left: 6px;
+  position: relative;
+}
+
+.servise-time .dropdown-list-time-work {
+  list-style-type: none;
+  margin: 0;
+  position: absolute;
+  top: 100%;
+  left: 30%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  padding: 5px 10px;
+  background-color: #fff;
+  -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+          box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  opacity: 0;
+  visibility: hidden;
+  z-index: 15;
+}
+.servise-time .dropdown-list-time-work li {
+  color: #141221;
+  font-size: 14px;
+  line-height: 1.43;
+  font-family: "Commissioner Regular";
+  padding: 5px 10px;
+  text-align: center;
+  display: block;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.servise-time .open .dropdown-list-time-work {
+  visibility: visible;
+  opacity: 1;
+}
+
+.btn-servise-time-open {
+  border: none;
+  background-color: #fafafa;
+}
+
+.open .servise-time-open {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+  position: relative;
 }
 
 .servise-info-auto {

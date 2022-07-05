@@ -1029,3 +1029,61 @@ $(document).ready(function(){
         $img.replaceWith($svg);
     }, "xml");
 });
+
+// открытие время работы сервиса
+const btnServiseTime = document.querySelectorAll('.btn-servise-time-open')
+
+btnServiseTime.forEach((btn) => {
+    btn.addEventListener('click', () => {
+        btn.classList.toggle('open');
+    })
+})
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// scroll
+// const look = document.querySelector('.section-catalog-search-auto');
+// const rect = look.getBoundingClientRect();
+
+// const isInViewport = rect.top >= 0 &&
+//         rect.left >= 0 &&
+//         rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+//         rect.right <= (window.innerWidth || document.documentElement.clientWidth);
+
+// console.log("isInViewport = ", isInViewport);
+
+const box = document.querySelector('.map-container');
+
+// console.log(rect);
+// console.log(rect.top)
+
+
+let intElemScrollTop = box.scrollTop;
+console.log(intElemScrollTop);
+
+document.addEventListener('scroll', (event) => {
+    let rect = box.getBoundingClientRect();
+    //console.log(rect.top);
+    if (rect.top < 0) {
+        console.log('top < 0')
+    };
+
+
+});
+
+// let top = $('.section-catalog-search-auto').offset().top;
+// console.log(top)

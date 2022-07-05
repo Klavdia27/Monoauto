@@ -1,7 +1,3 @@
-
-
-console.log(42);
-
 //меню "еще"
 const openMenu = document.querySelector(".item-open-icon");
 const openMenuList= document.querySelector(".open-menu-list");
@@ -22,12 +18,8 @@ if (navItems.length >= 11) {
     let openMenuListItem = document.querySelector('.open-menu-list-items');
     let li = document.createElement('li');
     li.innerHTML = `${navMenuList[i-1]}`
-    li.classList.add('open-menu-item')
-    openMenuListItem.appendChild(li)
+    li.classList.add('open-menu-item');
+    openMenuListItem.appendChild(li);
   }
-  document.getElementById('also-nav-item').classList.add('active') 
-
+  document.getElementById('also-nav-item').classList.add('active');
 }
-
-
-
