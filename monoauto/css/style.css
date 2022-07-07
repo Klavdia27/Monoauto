@@ -6545,16 +6545,34 @@ section.single-par2 .scroll-down-wrap {
 
 .map-container.column-map {
   width: calc(100% - 850px);
-  position: fixed;
   overflow: hidden;
-  left: 80px;
   top: 150px;
+}
+
+.empty {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  color: #ffffff;
+  font-size: 8px;
 }
 
 .map-container.column-map.no-top_search {
   z-index: 10;
-  position: sticky;
   top: 0;
+  position: relative;
+  height: 1472px !important;
+}
+
+.map-container.column-map.no-top_search.map-container-fixed {
+  position: fixed;
+  left: 850px;
+}
+
+.map-container img {
+  width: 100%;
+  height: 100%;
 }
 
 .map-close {
@@ -9733,6 +9751,22 @@ span.current {
   margin-bottom: 0;
 }
 
+.servise-item-count-foto {
+  height: 191px;
+  width: 107px;
+  background: #F5F5F5;
+  border-radius: 10px;
+}
+.servise-item-count-foto span {
+  display: block;
+  text-align: left;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 15px;
+  color: #7D7D7D;
+  padding: 59px 12px 87px 15px;
+}
+
 .servise-title-block {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -10048,6 +10082,21 @@ span.current {
   background-color: #028626;
 }
 
+.servise-usluga-submit-count {
+  display: none;
+  width: 20px;
+  border-radius: 50%;
+  background-color: #ffffff;
+  padding: 0 6px;
+  color: #000000;
+  float: right;
+  margin-left: 6px;
+}
+
+.d-block {
+  display: block;
+}
+
 .servise-info-tel, .servise-item-info-tel {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -10280,7 +10329,7 @@ span.current {
 
 .slider-servise-item .slick-arrow {
   position: absolute;
-  top: 50%;
+  top: 65%;
   margin: -20px 0px 0px 0px;
   z-index: 10;
   font-size: 0;
@@ -10422,8 +10471,32 @@ span.current {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  width: 370px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .section-servise-item-uslugi {
   padding-top: 0;
+}
+
+.servise-item-uslugi-right .servise-item-social {
+  margin-top: 20px;
+  width: 287px;
+  height: 41px;
+  background: #F5F5F5;
+  border-radius: 10px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.servise-item-uslugi-right .servise-item-social img {
+  margin: 0 10px;
 }

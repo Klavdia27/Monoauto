@@ -5439,21 +5439,35 @@ section.single-par2  .scroll-down-wrap{
 }
 .map-container.column-map {
 	width:calc(100% - 850px);
-	position: fixed;
- 	overflow:hidden;
-	left:80px;
+	//position: fixed;
+ 	overflow: hidden;
+	// left:80px;
 	top: 150px;
 }
 .map-container.column-map.right-position-map {
 	// left: inherit;
 	// right: 80px;
 }
+.empty {
+	user-select: none;
+	color: $white;
+	font-size: 8px;
+}
 .map-container.column-map.no-top_search {
 	z-index: 10;
-	position: sticky;
 	top: 0;
-	// position: relative;
-	// top: 70px;
+	position: relative;
+	height: 1472px !important;
+}
+.map-container.column-map.no-top_search.map-container-fixed {
+	position: fixed;
+	left: 850px;
+}
+.map-container {
+	img {
+		width: 100%;
+		height: 100%;
+	}
 }
 .map-close {
 	position:absolute;
@@ -8005,6 +8019,21 @@ span.current {
 .catalog-servise-item-ligth:last-child {
 	margin-bottom: 0;
 }
+.servise-item-count-foto {
+	height: 191px;
+	width: 107px;
+	background: #F5F5F5;
+	border-radius: 10px;
+	span {
+		display: block;
+		text-align: left;
+		font-weight: 400;
+		font-size: 12px;
+		line-height: 15px;
+		color: #7D7D7D;
+		padding: 59px 12px 87px 15px;
+	}
+}
 
 .servise-title-block {
 	display: flex;
@@ -8255,6 +8284,19 @@ span.current {
 .servise-usluga-submit:hover {
 	background-color: $green-hover;
 }
+.servise-usluga-submit-count {
+	display: none;
+	width: 20px;
+	border-radius: 50%;
+	background-color: $white;
+	padding: 0 6px;
+	color: $black;
+	float: right;
+  margin-left: 6px;
+}
+.d-block {
+	display: block;
+}
 .servise-info-tel, .servise-item-info-tel {
 	display: flex;
 	flex-direction: column;
@@ -8443,7 +8485,7 @@ height: 44px;
 }
 .slider-servise-item .slick-arrow{
 	position: absolute;
-	top: 50%;
+	top: 65%;
 	margin: -20px 0px 0px 0px;
 	z-index: 10;
 	font-size: 0;
@@ -8559,12 +8601,33 @@ height: 44px;
 }
 .servise-item-singup {
 	display: flex;
+	width: 370px;
+	justify-content: space-between;
 }
 .section-servise-item-uslugi {
 padding-top: 0;
 }
 
-.content-sevrises-map {
-	// position: absolute;
+.servise-item-uslugi {
+
+}
+
+.servise-item-uslugi-right {
 	
+	.servise-item-map {
+
+	}
+	.servise-item-social {
+		margin-top: 20px;
+		width: 287px;
+		height: 41px;
+		background: #F5F5F5;
+		border-radius: 10px;
+		align-items: center;
+    display: flex;
+    justify-content: center;
+		img {
+			margin: 0 10px;
+		}
+	}
 }

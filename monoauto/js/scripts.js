@@ -994,7 +994,7 @@ $(document).ready(function(){
         slidesToScroll: 1,
         speed: 200,
         easing: 'linear',
-        infinite: false, //слайдер  бесконечный
+        infinite: false, 
     });
   })
 
@@ -1008,7 +1008,7 @@ $(document).ready(function(){
         slidesToScroll: 1,
         speed: 200,
         easing: 'linear',
-        infinite: false, //слайдер  бесконечный
+        infinite: false, 
     });
   })
 
@@ -1030,7 +1030,7 @@ $(document).ready(function(){
     }, "xml");
 });
 
-// открытие время работы сервиса
+// время работы сервиса
 const btnServiseTime = document.querySelectorAll('.btn-servise-time-open')
 
 btnServiseTime.forEach((btn) => {
@@ -1039,51 +1039,28 @@ btnServiseTime.forEach((btn) => {
     })
 })
 
+// catalog-servises-map
+const mapContainer = document.querySelector('.map-container');
+const contLeft = document.querySelector('.col-list-wrap_left')
+const footer = document.querySelector('.main-footer');
+const empty = document.querySelector('.empty');
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// scroll
-// const look = document.querySelector('.section-catalog-search-auto');
-// const rect = look.getBoundingClientRect();
-
-// const isInViewport = rect.top >= 0 &&
-//         rect.left >= 0 &&
-//         rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
-//         rect.right <= (window.innerWidth || document.documentElement.clientWidth);
-
-// console.log("isInViewport = ", isInViewport);
-
-const box = document.querySelector('.map-container');
-
-// console.log(rect);
-// console.log(rect.top)
-
-
-let intElemScrollTop = box.scrollTop;
-console.log(intElemScrollTop);
+let intElemScrollTop = mapContainer.scrollTop;
 
 document.addEventListener('scroll', (event) => {
-    let rect = box.getBoundingClientRect();
-    //console.log(rect.top);
-    if (rect.top < 0) {
-        console.log('top < 0')
-    };
+    let rectMap = mapContainer.getBoundingClientRect();
+    let rectLeft = contLeft.getBoundingClientRect();
+    let rectEmpty = empty.getBoundingClientRect();
 
+    if (rectMap.top < 0) {
+        mapContainer.classList.add('map-container-fixed')
+    };
+    if (rectLeft.top > 0) {
+        mapContainer.classList.remove('map-container-fixed')
+    };
+    if (rectEmpty.bottom < 908) {
+        mapContainer.classList.remove('map-container-fixed')
+    }
 
 });
 
-// let top = $('.section-catalog-search-auto').offset().top;
-// console.log(top)
