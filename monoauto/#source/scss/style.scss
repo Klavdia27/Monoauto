@@ -4,6 +4,7 @@ $white: #ffffff;
 $green: #00A92F;
 $green-hover:  #028626;
 $red: #DC0028;
+$blue: #69ACF3;
 
 
 @charset "utf-8";
@@ -8024,14 +8025,20 @@ span.current {
 	width: 107px;
 	background: #F5F5F5;
 	border-radius: 10px;
+	margin-left: 5px;
+
 	span {
 		display: block;
-		text-align: left;
+		text-align: center;
 		font-weight: 400;
 		font-size: 12px;
 		line-height: 15px;
 		color: #7D7D7D;
-		padding: 59px 12px 87px 15px;
+    padding: 50px 14px 40px 14px;
+		img {
+			width: 50px;
+			height: 50px;
+		}
 	}
 }
 
@@ -8040,14 +8047,61 @@ span.current {
 	justify-content: space-between;
 	margin-bottom: 10px;
 }
+.section-catalog-items {
+	.servise-title-block {
+		.servise-title-flag {
+			width: 700px;
+			display: flex;
+			align-items: center;
+		}
+	}
+}
 .servise-title-block-ligth {
 	display: flex;
 	margin-bottom: 10px;
 	margin-right: auto;
 }
-.servise-flag {
-	margin-left: 29px;
+.section-catalog-items {
+	.servise-title-block-ligth {
+		.servise-title-flag {
+			width: 700px;
+			display: flex;
+			align-items: center;
+		}
+	}
 }
+.content-sevrises-map {
+	.servise-title-block {
+		.servise-title-flag {
+			width: 475px; //поменять на 500
+			display: flex;
+			align-items: center;
+		}
+	}
+}
+.content-sevrises-map {
+	.servise-title-block-ligth {
+		.servise-title-flag {
+			width: 475px; // поменять на 500
+			display: flex;
+			align-items: center;
+		}
+	}
+}
+
+.servise-flag {
+	margin-left: 15px;
+}
+.flag.active {
+	.servise-flag {
+		
+			path {
+				fill: $blue;
+			}
+		
+	}
+} 
+
 .servise-title {
 	font-weight: 600;
 	font-size: 21px;
@@ -8055,7 +8109,7 @@ span.current {
 	color: $black;
 	white-space: nowrap;
   overflow: hidden;
-  max-width: 650px;
+  // max-width: 650px;
 }
 .servise-official {
 	margin-left: auto;
@@ -8070,7 +8124,7 @@ span.current {
 	border: none;
 }
 .servise-verified {
-	background-color: #69ACF3;
+	background-color: $blue;
 	border-radius: 10px;
 	padding: 6px 15px;
 	font-weight: 400;
@@ -8080,7 +8134,7 @@ span.current {
 	border: none;
 }
 .servise-verified-item {
-	background-color: #69ACF3;
+	background-color: $blue;
 	border-radius: 10px;
 	padding: 6px 15px;
 	font-weight: 400;
@@ -8589,7 +8643,7 @@ height: 44px;
 	margin-bottom: 15px;
 }
 .servise-item-club {
-	background-color: #69ACF3;
+	background-color: $blue;
 	border-radius: 10px;
 	padding: 6px 15px;
 	font-weight: 400;
@@ -8604,30 +8658,65 @@ height: 44px;
 	width: 370px;
 	justify-content: space-between;
 }
-.section-servise-item-uslugi {
-padding-top: 0;
-}
-
-.servise-item-uslugi {
-
-}
-
-.servise-item-uslugi-right {
-	
-	.servise-item-map {
-
-	}
-	.servise-item-social {
-		margin-top: 20px;
-		width: 287px;
-		height: 41px;
-		background: #F5F5F5;
+.servise-item-fotos {
+	display: flex;
+	img {
+		width: 255px;
+		height: 191px;
 		border-radius: 10px;
-		align-items: center;
-    display: flex;
-    justify-content: center;
-		img {
-			margin: 0 10px;
-		}
+		margin: 0 5px;
 	}
 }
+
+// страница автосервиса 
+.section-servise-item-uslugi {
+	padding-top: 0;
+	.servise-item-uslugi {
+		display: flex;
+		justify-content: space-between;
+		.servise-item-menu {
+			ul {
+				display: flex;
+				justify-items: space-beetween;
+				padding: 10px 15px;
+				li {
+					font-weight: 400;
+					font-size: 14px;
+					line-height: 17px;
+					color: black;
+					padding: 11px 37px;
+					background: #F5F5F5;
+					border-radius: 10px;
+					margin: 0 4px;
+
+				}
+				.active {
+					background: #0C78ED;
+					color: white;
+				}
+			}
+		}
+
+
+		.servise-item-uslugi-right {
+			.servise-item-social {
+				margin-top: 20px;
+				width: 287px;
+				height: 41px;
+				background: #F5F5F5;
+				border-radius: 10px;
+				align-items: center;
+				display: flex;
+				justify-content: center;
+				img {
+					margin: 0 10px;
+				}
+			}
+		}
+	} 
+}
+
+
+
+
+

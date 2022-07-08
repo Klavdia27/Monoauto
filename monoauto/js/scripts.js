@@ -1039,6 +1039,16 @@ btnServiseTime.forEach((btn) => {
     })
 })
 
+
+// flag
+const flag = document.querySelectorAll('.flag');
+
+flag.forEach(elem => {
+    elem.addEventListener('click', () => {
+        elem.classList.toggle('active')
+    })
+})
+
 // catalog-servises-map
 const mapContainer = document.querySelector('.map-container');
 const contLeft = document.querySelector('.col-list-wrap_left')
@@ -1061,6 +1071,5 @@ document.addEventListener('scroll', (event) => {
     if (rectEmpty.bottom < 908) {
         mapContainer.classList.remove('map-container-fixed')
     }
-
 });
 
