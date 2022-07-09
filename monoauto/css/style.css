@@ -2973,7 +2973,7 @@ section.parallax-section .bg {
 }
 
 .section-title h2 {
-  color: #144273;
+  color: #000000;
   font-size: 26px;
   text-align: left;
   font-weight: 600;
@@ -10109,6 +10109,13 @@ span.current {
   font-size: 16px;
   line-height: 19px;
   color: #000000;
+  cursor: pointer;
+}
+
+.servise-usluga-name {
+  white-space: nowrap;
+  overflow: hidden;
+  width: 480px;
 }
 
 .servise-usluga-count {
@@ -10273,7 +10280,11 @@ span.current {
 /* slader-servise */
 .slider-servise,
 .slider-servise-map,
-.slider-servise-item {
+.slider-servise-item,
+.slider-servise-marki,
+.slider-servise-serv,
+.slider-servise-sale,
+.slider-servise-fotos {
   min-width: 0;
   position: relative;
 }
@@ -10288,9 +10299,95 @@ span.current {
   height: 157px;
 }
 
+.slider-servise-item {
+  width: 93%;
+  margin: auto;
+}
 .slider-servise-item .slider__item-item {
   width: 265px;
   height: 191px;
+}
+
+.slider-servise-serv .slider__item-serv {
+  width: 121px;
+}
+.slider-servise-serv .slider__item-serv .item {
+  width: 95%;
+  background: #F5F5F5;
+  border-radius: 10px;
+  padding: 10px 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.slider-servise-serv .slider__item-serv .item .text {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 15px;
+  color: #000000;
+}
+
+.slider-servise-marki .slider__item-marki {
+  height: 24px;
+}
+
+.slider-servise-fotos {
+  width: 90%;
+  margin: auto;
+}
+.slider-servise-fotos .slider__item-fotos {
+  height: 277px;
+  width: 370px;
+}
+
+.slider-servise-sale {
+  width: 90%;
+  margin: auto;
+}
+.slider-servise-sale .slider__item-sale .sale {
+  width: 95%;
+  padding: 20px 20px 25px 20px;
+  border: 1px solid #C2C2C2;
+  border-radius: 20px;
+  -webkit-box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+  text-align: left;
+}
+.slider-servise-sale .slider__item-sale .sale img {
+  border-radius: 10px;
+  width: 100%;
+  height: 185px;
+}
+.slider-servise-sale .slider__item-sale .sale .sale-title {
+  margin-top: 20px;
+  font-weight: 600;
+  font-size: 21px;
+  line-height: 35px;
+  color: #000000;
+}
+.slider-servise-sale .slider__item-sale .sale .sale-text {
+  margin-top: 15px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  color: #000000;
+}
+.slider-servise-sale .slider__item-sale .sale .sale-finish-date {
+  margin-top: 15px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  color: #000000;
+}
+.slider-servise-sale .slider__item-sale .sale .sale-finish-date img {
+  display: inline;
+  width: 14px;
+  height: 14px;
+  margin-right: 13px;
 }
 
 .slider-servise .slider__item img {
@@ -10311,6 +10408,22 @@ span.current {
   border-radius: 10px;
 }
 
+.slider-servise-marki .slider__item img {
+  height: 24px;
+  display: inline;
+}
+
+.slider-servise-serv .slider__item img {
+  height: 20px;
+  margin-bottom: 10px;
+}
+
+.slider-servise-fotos .slider__item img {
+  height: 100%;
+  width: 94%;
+  border-radius: 10px;
+}
+
 /* Ограничивающая оболочка */
 .slider-servise .slick-list {
   overflow: hidden;
@@ -10321,6 +10434,22 @@ span.current {
 }
 
 .slider-servise-item .slick-list {
+  overflow: hidden;
+}
+
+.slider-servise-marki .slick-list {
+  overflow: hidden;
+}
+
+.slider-servise-serv .slick-list {
+  overflow: hidden;
+}
+
+.slider-servise-sale .slick-list {
+  overflow: hidden;
+}
+
+.slider-servise-fotos .slick-list {
   overflow: hidden;
 }
 
@@ -10344,6 +10473,42 @@ span.current {
 }
 
 .slider-servise-item .slick-track {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.slider-servise-marki .slick-track {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.slider-servise-serv .slick-track {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.slider-servise-sale .slick-track {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.slider-servise-fotos .slick-track {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -10377,7 +10542,51 @@ span.current {
 
 .slider-servise-item .slick-arrow {
   position: absolute;
-  top: 65%;
+  top: 53%;
+  margin: -20px 0px 0px 0px;
+  z-index: 10;
+  font-size: 0;
+  width: 41px;
+  height: 41px;
+  border: none;
+}
+
+.slider-servise-marki .slick-arrow {
+  position: absolute;
+  top: 53%;
+  margin: -20px 0px 0px 0px;
+  z-index: 10;
+  font-size: 0;
+  width: 41px;
+  height: 41px;
+  border: none;
+}
+
+.slider-servise-serv .slick-arrow {
+  position: absolute;
+  top: 53%;
+  margin: -20px 0px 0px 0px;
+  z-index: 10;
+  font-size: 0;
+  width: 41px;
+  height: 41px;
+  border: none;
+}
+
+.slider-servise-sale .slick-arrow {
+  position: absolute;
+  top: 53%;
+  margin: -20px 0px 0px 0px;
+  z-index: 10;
+  font-size: 0;
+  width: 41px;
+  height: 41px;
+  border: none;
+}
+
+.slider-servise-fotos .slick-arrow {
+  position: absolute;
+  top: 53%;
   margin: -20px 0px 0px 0px;
   z-index: 10;
   font-size: 0;
@@ -10398,8 +10607,21 @@ span.current {
   opacity: 0;
 }
 
+.slider-servise-marki .slick-arrow.slick-disabled {
+  opacity: 0;
+}
+
+.slider-servise-serv .slick-arrow.slick-disabled {
+  opacity: 0;
+}
+
+.slider-servise-sale .slick-arrow.slick-disabled {
+  opacity: 0;
+}
+
 /* Стрелка влево */
 .slider-servise .slick-arrow.slick-prev {
+  top: 48%;
   left: 0;
   background: url("../images/icon/arrow-next.svg") 0 0/100% no-repeat;
   /* Для Firefox */
@@ -10411,6 +10633,7 @@ span.current {
 }
 
 .slider-servise-map .slick-arrow.slick-prev {
+  top: 48%;
   left: 0;
   background: url("../images/icon/arrow-next.svg") 0 0/100% no-repeat;
   /* Для Firefox */
@@ -10422,8 +10645,57 @@ span.current {
 }
 
 .slider-servise-item .slick-arrow.slick-prev {
-  left: 0;
+  top: 51%;
+  left: -60px;
   background: url("../images/icon/arrow-next.svg") 0 0/100% no-repeat;
+  /* Для Firefox */
+  /* Для IE */
+  -webkit-transform: rotate(180deg);
+  /* Для Safari, Chrome, iOS */
+  /* Для Opera */
+  transform: rotate(180deg);
+}
+
+.slider-servise-marki .slick-arrow.slick-prev {
+  top: 51%;
+  left: -40px;
+  background: url("../images/icon/arrow-next.svg") 0 0/100% no-repeat;
+  /* Для Firefox */
+  /* Для IE */
+  -webkit-transform: rotate(180deg);
+  /* Для Safari, Chrome, iOS */
+  /* Для Opera */
+  transform: rotate(180deg);
+}
+
+.slider-servise-serv .slick-arrow.slick-prev {
+  top: 51%;
+  left: -40px;
+  background: url("../images/icon/arrow-next.svg") 0 0/100% no-repeat;
+  /* Для Firefox */
+  /* Для IE */
+  -webkit-transform: rotate(180deg);
+  /* Для Safari, Chrome, iOS */
+  /* Для Opera */
+  transform: rotate(180deg);
+}
+
+.slider-servise-sale .slick-arrow.slick-prev {
+  top: 51%;
+  left: -60px;
+  background: url("/images/icon/arrow-next.svg") 0 0/100% no-repeat;
+  /* Для Firefox */
+  /* Для IE */
+  -webkit-transform: rotate(180deg);
+  /* Для Safari, Chrome, iOS */
+  /* Для Opera */
+  transform: rotate(180deg);
+}
+
+.slider-servise-fotos .slick-arrow.slick-prev {
+  top: 51%;
+  left: -60px;
+  background: url("/images/icon/arrow-next.svg") 0 0/100% no-repeat;
   /* Для Firefox */
   /* Для IE */
   -webkit-transform: rotate(180deg);
@@ -10435,17 +10707,37 @@ span.current {
 /* Стрелка вправо */
 .slider-servise .slick-arrow.slick-next {
   right: 0;
-  background: url("../images/icon/arrow-next.svg") 0 0/100% no-repeat;
+  background: url("/images/icon/arrow-next.svg") 0 0/100% no-repeat;
 }
 
 .slider-servise-map .slick-arrow.slick-next {
   right: 0;
-  background: url("../images/icon/arrow-next.svg") 0 0/100% no-repeat;
+  background: url("/images/icon/arrow-next.svg") 0 0/100% no-repeat;
 }
 
 .slider-servise-item .slick-arrow.slick-next {
   right: -43px;
-  background: url("../images/icon/arrow-next.svg") 0 0/100% no-repeat;
+  background: url("/images/icon/arrow-next.svg") 0 0/100% no-repeat;
+}
+
+.slider-servise-marki .slick-arrow.slick-next {
+  right: -43px;
+  background: url("/images/icon/arrow-next.svg") 0 0/100% no-repeat;
+}
+
+.slider-servise-serv .slick-arrow.slick-next {
+  right: -43px;
+  background: url("/images/icon/arrow-next.svg") 0 0/100% no-repeat;
+}
+
+.slider-servise-sale .slick-arrow.slick-next {
+  right: -43px;
+  background: url("/images/icon/arrow-next.svg") 0 0/100% no-repeat;
+}
+
+.slider-servise-fotos .slick-arrow.slick-next {
+  right: -43px;
+  background: url("/images/icon/arrow-next.svg") 0 0/100% no-repeat;
 }
 
 .catalog-servise-item-pmap {
@@ -10478,10 +10770,6 @@ span.current {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-}
-
-.slider-servise-item {
-  width: 530px;
 }
 
 .servise-item-descr {
@@ -10548,14 +10836,32 @@ span.current {
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
-.section-servise-item-uslugi .servise-item-uslugi .servise-item-menu ul {
+.section-servise-item-uslugi .servise-item-uslugi .servise-item-uslugi-left {
+  width: 870px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.section-servise-item-uslugi .servise-item-uslugi .servise-item-uslugi-left .servise-item-menu {
+  background: #F5F5F5;
+  border-radius: 10px;
+  width: 100%;
+}
+.section-servise-item-uslugi .servise-item-uslugi .servise-item-uslugi-left .servise-item-menu ul {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 10px 1fr 10px 1fr 10px 1fr 10px 1fr;
+  grid-template-columns: repeat(5, 1fr);
+  grid-gap: 10px;
   justify-items: space-beetween;
   padding: 10px 15px;
 }
-.section-servise-item-uslugi .servise-item-uslugi .servise-item-menu ul li {
+.section-servise-item-uslugi .servise-item-uslugi .servise-item-uslugi-left .servise-item-menu ul li {
+  cursor: pointer;
   font-weight: 400;
   font-size: 14px;
   line-height: 17px;
@@ -10564,10 +10870,126 @@ span.current {
   background: #F5F5F5;
   border-radius: 10px;
   margin: 0 4px;
+  white-space: nowrap;
+  overflow: hidden;
 }
-.section-servise-item-uslugi .servise-item-uslugi .servise-item-menu ul .active {
+.section-servise-item-uslugi .servise-item-uslugi .servise-item-uslugi-left .servise-item-menu ul .active {
   background: #0C78ED;
   color: white;
+}
+.section-servise-item-uslugi .servise-item-uslugi .servise-item-uslugi-left .servise-item-usluga-title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
+  margin-top: 25px;
+}
+.section-servise-item-uslugi .servise-item-uslugi .servise-item-uslugi-left .servise-item-usluga-title .title {
+  font-weight: 600;
+  font-size: 31px;
+  line-height: 35px;
+  color: #000000;
+  margin-right: 30px;
+}
+.section-servise-item-uslugi .servise-item-uslugi .servise-item-uslugi-left .servise-item-usluga-title .price {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 35px;
+  color: #898989;
+}
+.section-servise-item-uslugi .servise-item-uslugi .servise-item-uslugi-left .servise-item-usluga-subtitle {
+  margin-top: 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.section-servise-item-uslugi .servise-item-uslugi .servise-item-uslugi-left .servise-item-usluga-subtitle .subtitle-menu {
+  background: #F5F5F5;
+  border-radius: 10px;
+  width: 224px;
+  padding: 15px 20px;
+}
+.section-servise-item-uslugi .servise-item-uslugi .servise-item-uslugi-left .servise-item-usluga-subtitle .subtitle-menu li {
+  cursor: pointer;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  color: #000000;
+  margin-bottom: 15px;
+  text-align: left;
+  padding-bottom: 5px;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.section-servise-item-uslugi .servise-item-uslugi .servise-item-uslugi-left .servise-item-usluga-subtitle .subtitle-menu li:last-child {
+  margin-bottom: 0;
+}
+.section-servise-item-uslugi .servise-item-uslugi .servise-item-uslugi-left .servise-item-usluga-subtitle .subtitle-menu .subtitle-menu-item.active {
+  border-bottom: 1px solid #0C78ED;
+}
+.section-servise-item-uslugi .servise-item-uslugi .servise-item-uslugi-left .servise-item-usluga-subtitle .uslugi-block {
+  background: #F5F5F5;
+  border-radius: 10px;
+  width: 224px;
+  padding: 15px;
+  width: 630px;
+}
+.section-servise-item-uslugi .servise-item-uslugi .servise-item-uslugi-left .servise-item-usluga-subtitle .uslugi-block .car-type {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 12px;
+}
+.section-servise-item-uslugi .servise-item-uslugi .servise-item-uslugi-left .servise-item-usluga-subtitle .uslugi-block .car-type .car-type-item {
+  margin-right: 55px;
+  width: 60px;
+  height: 32px;
+  cursor: pointer;
+}
+.section-servise-item-uslugi .servise-item-uslugi .servise-item-uslugi-left .servise-item-usluga-subtitle .uslugi-block .car-type .car-type-item.active {
+  border-bottom: 1px solid black;
+}
+.section-servise-item-uslugi .servise-item-uslugi .servise-item-uslugi-left .servise-item-usluga-subtitle .uslugi-block .car-type .car-type-item.active .img-svg path {
+  fill: #69ACF3;
+}
+.section-servise-item-uslugi .servise-item-uslugi .servise-item-uslugi-left .servise-item-usluga-subtitle .uslugi-block .uslugi-items .servise-usluga {
+  width: 600px;
+  font-size: 14px;
+  padding: 10px 0;
+  line-height: 17px;
+  margin-bottom: 10px;
+  position: relative;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
+}
+.section-servise-item-uslugi .servise-item-uslugi .servise-item-uslugi-left .servise-item-usluga-subtitle .uslugi-block .uslugi-items .servise-usluga .servise-usluga-name {
+  padding-left: 30px;
+  width: 365px;
+  text-align: left;
+  white-space: nowrap;
+  overflow: hidden;
+  margin-right: 20px;
+}
+.section-servise-item-uslugi .servise-item-uslugi .servise-item-uslugi-left .servise-item-usluga-subtitle .uslugi-block .uslugi-items .servise-usluga .servise-usluga-count {
+  margin-left: 0;
+  margin-right: 0;
+}
+.section-servise-item-uslugi .servise-item-uslugi .servise-item-uslugi-left .servise-item-usluga-subtitle .uslugi-block .uslugi-items .servise-usluga .servise-usluga-submit {
+  position: absolute;
+  right: 0;
+  border-radius: 10px;
+  height: 100%;
+}
+.section-servise-item-uslugi .servise-item-uslugi .servise-item-uslugi-left .servise-item-usluga-subtitle .uslugi-block .uslugi-items .servise-usluga .servise-usluga-submit.selected {
+  border: 1px solid #00A92F;
+  background: #ffffff;
+  color: #00A92F;
 }
 .section-servise-item-uslugi .servise-item-uslugi .servise-item-uslugi-right .servise-item-social {
   margin-top: 20px;
@@ -10587,4 +11009,173 @@ span.current {
 }
 .section-servise-item-uslugi .servise-item-uslugi .servise-item-uslugi-right .servise-item-social img {
   margin: 0 10px;
+}
+
+.section-about-servise .about-servise-item-menu {
+  background: #F5F5F5;
+  border-radius: 10px;
+  width: 100%;
+  margin-bottom: 20px;
+}
+.section-about-servise .about-servise-item-menu ul {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 10px 1fr 10px 1fr 10px 1fr 10px 1fr;
+  grid-template-columns: repeat(5, 1fr);
+  grid-gap: 10px;
+  justify-items: space-beetween;
+  padding: 10px 15px;
+}
+.section-about-servise .about-servise-item-menu ul li {
+  cursor: pointer;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  color: black;
+  padding: 11px 37px;
+  background: #F5F5F5;
+  border-radius: 10px;
+  margin: 0 4px;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.section-about-servise .about-servise-item-menu ul .active {
+  background: #0C78ED;
+  color: white;
+}
+.section-about-servise .about-servise {
+  padding: 35px;
+  background: #F5F5F5;
+  border-radius: 20px;
+  margin-bottom: 30px;
+}
+.section-about-servise .about-servise .section-title {
+  margin-bottom: 25px;
+}
+.section-about-servise .about-servise .about-servise-text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  color: #000000;
+  text-align: left;
+}
+.section-about-servise .reviews {
+  margin-bottom: 30px;
+}
+.section-about-servise .reviews .review-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 35px;
+  background: #F5F5F5;
+  border-radius: 20px 20px 0 0;
+  margin-bottom: 1px;
+}
+.section-about-servise .reviews .review-header .review-title .section-title {
+  margin-bottom: 25px;
+}
+.section-about-servise .reviews .review-header .review-title .servise-ratings {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.section-about-servise .reviews .review-header .review-title .servise-ratings .rating-client,
+.section-about-servise .reviews .review-header .review-title .servise-ratings .rating-quality,
+.section-about-servise .reviews .review-header .review-title .servise-ratings .rating-price {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background: #FFFFFF;
+  border-radius: 30px;
+  padding: 8px 20px;
+  margin-right: 30px;
+}
+.section-about-servise .reviews .review-header .review-title .servise-ratings .rating-client .text,
+.section-about-servise .reviews .review-header .review-title .servise-ratings .rating-quality .text,
+.section-about-servise .reviews .review-header .review-title .servise-ratings .rating-price .text {
+  display: block;
+  margin-right: 15px;
+}
+.section-about-servise .reviews .review-header .review-submit .review-submit-btn {
+  background: #FC9700;
+  border-radius: 20px;
+  padding: 13px 35px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  color: #FFFFFF;
+}
+.section-about-servise .reviews .review-wrapper .review-item {
+  background: #F5F5F5;
+  padding: 45px 35px 35px 35px;
+  margin-bottom: 1px;
+}
+.section-about-servise .reviews .review-wrapper .review-item .review-client-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 25px;
+}
+.section-about-servise .reviews .review-wrapper .review-item .review-client-header .foto {
+  border-radius: 50%;
+  width: 57px;
+  height: 57px;
+}
+.section-about-servise .reviews .review-wrapper .review-item .review-client-header .client {
+  margin-right: auto;
+  margin-left: 16px;
+}
+.section-about-servise .reviews .review-wrapper .review-item .review-client-header .rating-client .rating-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.section-about-servise .reviews .review-wrapper .review-item .review-client-header .rating-client .rating-block .rating-count {
+  display: block;
+}
+.section-about-servise .reviews .review-wrapper .review-item .review-client-header .rating-client .client-data {
+  margin-top: 5px;
+}
+.section-about-servise .reviews .review-wrapper .review-item .review-client-text {
+  text-align: left;
+}
+.section-about-servise .reviews .review-wrapper .review-item:last-child {
+  margin-bottom: 0;
+}
+.section-about-servise .reviews .review-footer {
+  background: #F5F5F5;
+  padding: 25px 35px 35px 35px;
+  border-radius: 0 0 20px 20px;
+}
+.section-about-servise .reviews .review-footer .btn-also-review {
+  border: 1px solid black;
+  padding: 9px 22px;
+  border-radius: 20px;
+}
+.section-about-servise .documents {
+  padding: 35px;
+  background: #F5F5F5;
+  border-radius: 20px;
+  margin-bottom: 30px;
+}
+.section-about-servise .documents .section-title {
+  margin-bottom: 25px;
+}
+.section-about-servise .documents .documents-img {
+  margin-left: auto;
+}
+.section-about-servise .documents .documents-img img {
+  margin-left: 20px;
 }

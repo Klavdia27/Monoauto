@@ -998,17 +998,73 @@ $(document).ready(function(){
     });
   })
 
-  // слайдер на странице сервиса
+  // слайдер на странице сервиса (будет в мадольном окне)
 $(document).ready(function(){
     $('.slider-servise-item').slick({
         arrows: true,
         dots: false,
         adaptiveHeight:true,
-        slidesToShow: 2,
+        slidesToShow: 3,
         slidesToScroll: 1,
         speed: 200,
         easing: 'linear',
-        infinite: false, 
+        infinite: true, 
+    });
+  })
+
+// слайдер на странице сервиса акции
+$(document).ready(function(){
+    $('.slider-servise-sale').slick({
+        arrows: true,
+        dots: false,
+        adaptiveHeight:true,
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        speed: 200,
+        easing: 'linear',
+        infinite: true, 
+    });
+})
+
+// слайдер на странице сервиса предоставляемый сервис
+$(document).ready(function(){
+    $('.slider-servise-serv').slick({
+        arrows: false,
+        dots: false,
+        adaptiveHeight:true,
+        slidesToShow: 7,
+        slidesToScroll: 1,
+        speed: 200,
+        easing: 'linear',
+        infinite: true, 
+    });
+    })
+
+
+// слайдер на странице сервиса марки авто
+$(document).ready(function(){
+    $('.slider-servise-marki').slick({
+        arrows: false,
+        dots: false,
+        adaptiveHeight:true,
+        slidesToShow: 10,
+        slidesToScroll: 1,
+        speed: 200,
+        easing: 'linear',
+        infinite: true, 
+    });
+  })
+  // слайдер на странице сервиса марки авто
+$(document).ready(function(){
+    $('.slider-servise-fotos').slick({
+        arrows: true,
+        dots: false,
+        adaptiveHeight:true,
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        speed: 200,
+        easing: 'linear',
+        infinite: true, 
     });
   })
 
@@ -1039,13 +1095,22 @@ btnServiseTime.forEach((btn) => {
     })
 })
 
-
 // flag
 const flag = document.querySelectorAll('.flag');
 
 flag.forEach(elem => {
     elem.addEventListener('click', () => {
         elem.classList.toggle('active')
+    })
+})
+
+// servise-item uslugi menu 
+console.log("uslugi");
+const menuUslugi = document.querySelectorAll('.menu-uslugi-item');
+console.log(menuUslugi);
+menuUslugi.forEach(usl => {
+    usl.addEventListener('click', () => {
+        usl.classList.toggle('active')
     })
 })
 
@@ -1072,4 +1137,7 @@ document.addEventListener('scroll', (event) => {
         mapContainer.classList.remove('map-container-fixed')
     }
 });
+
+
+
 

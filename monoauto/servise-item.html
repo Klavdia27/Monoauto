@@ -12,7 +12,7 @@
     <link type="text/css" rel="stylesheet" href="css/style.css" />
     <link type="text/css" rel="stylesheet" href="css/color.css" />
     <!--  favicons  -->
-    <link rel="shortcut icon" href="images/favicon.ico" />
+    <link rel="shortcut icon" href="../images/favicon.ico" />
   </head>
   <body>
     <!--loader-->
@@ -54,7 +54,7 @@
               <div class="header-auth">
                 <a href="#" class="btn color-bg-green">Добавить компанию</a>
                 <a href="#" class="header-login">
-                  <img src="images/icon/icon-login.svg" alt="icon:login">
+                  <img src="../images/icon/icon-login.svg" alt="icon:login">
                 </a>
 
               </div>
@@ -67,11 +67,11 @@
                   <ul>
                     <li class="nav-header-item">
                       <a href="#" class="act-link">Акции</a>
-                      <img src="images/image/emoji.png" alt="icon: emoji" class="nav-header-item-icon">
+                      <img src="../images/image/emoji.png" alt="icon: emoji" class="nav-header-item-icon">
                     </li>
                     <li class="nav-header-item">
                       <a href="#">Автосервисы</a>
-                      <img src="images/svg/car.svg" alt="icon:car" class="nav-header-item-icon">
+                      <img src="../images/svg/car.svg" alt="icon:car" class="nav-header-item-icon">
                     </li>
                     <li class="nav-header-item">
                       <a href="#">Шиномонтаж</a>
@@ -102,7 +102,7 @@
                     </li> -->
                     <li сlass="nav-header-item" id="also-nav-item"> 
                       <span class="item-open-text">Ещё</span>
-                      <img src="images/icon/icon-open-list.png" alt="" class="item-open-icon">
+                      <img src="../images/icon/icon-open-list.png" alt="" class="item-open-icon">
                     </li>
                     <div class="open-menu-list">
                       <ul class="open-menu-list-items">
@@ -134,50 +134,245 @@
                   <span class="rating-count">4.1</span>
                   <div class="listing-rating card-popup-rainingvis" data-starrating2="4"></div>
                   <span class="rating-kol">14</span>
-                  <img src="images/svg/think.svg" alt="" class="icon-think">
+                  <img src="../images/svg/think.svg" alt="" class="icon-think">
                 </div>
                 <button class="servise-item-club">
-                  <img src="images/svg/cool.svg" alt="icon: cool" class="servise-verified-icon">
+                  <img src="../images/svg/cool.svg" alt="icon: cool" class="servise-verified-icon">
                   Клубный сервис
                 </button>
                 <div class="servise-item-address">
-                  <img src="images/svg/location.svg" alt="icon: location" class="servise-address-icon">
+                  <img src="../images/svg/location.svg" alt="icon: location" class="servise-address-icon">
                   <span>г. Минск, пр. Партизанский 22А</span>
                 </div>
-                <div class="servise-item-time">
-                  <img src="images/svg/time.svg" alt="icon: time" class="servise-time-icon">
-                  <span>10:00 – 19:00  <span class="time-open-text"">открыто</span> </span>
-                  <img src="images/svg/open-time.svg" alt="icon: time open" class="servise-time-open">
+                <div class="servise-time servise-item-time">
+                  <img src="../images/svg/time.svg" alt="icon: time" class="servise-time-icon">
+                  <span>10:00 – 19:00  <span class="time-open-text">открыто</span> </span>
+                  <button class="btn-servise-time-open ">
+                    <img src="../images/svg/open-time.svg" alt="icon: time open" class="servise-time-open">
+                    <span class="dropdown-list-time-work">
+                      <li> Пн - 10:00 - 21:00 </li>
+                      <li> Вт - 10:00 - 21:00 </li>
+                      <li> Ср - 10:00 - 21:00 </li>
+                      <li> Чт - 10:00 - 21:00 </li>
+                      <li> Пт - 10:00 - 21:00 </li>
+                      <li> Сб - 10:00 - 21:00 </li>
+                      <li> Вск - 10:00 - 21:00 </li>
+                    </span>
+                  </button>
                 </div>
                 <div class="servise-item-singup">
-                  <a href="#" class="servise-usluga-submit">Записаться онлайн</a>
+                  <a href="#" class="servise-usluga-submit">
+                    Записаться онлайн
+                    <span class="servise-usluga-submit-count d-block">
+                      2
+                    </span>
+                  </a>
                   <div class="servise-item-info-tel">
                     <span class="servise-coll">
-                      <img src="images/svg/phone-voice.svg" alt="icon: coll" class="servise-coll-number">
+                      <img src="../images/svg/phone-voice.svg" alt="icon: coll" class="servise-coll-number">
                       Позвонить
                     </span>
                   </div>
                 </div>
               </div>
-              <div class="servise-item-slider">
-                <div class="slider-servise-item">
-                  <div class="slider__item slider__item-item">
-                    <img src="images/image/servise-auto-1.jpg" alt="slide-item">
+              <div class="servise-item-fotos">
+                <img src="../images/image/servise-auto-1.jpg" alt="foso servise" class="servise-item-foto">
+                <img src="../images/image/servise-auto-1.jpg" alt="foto servise" class="servise-item-foto">
+                <a href="#" class="servise-item-count-foto">
+                  <span>
+                    <img src="../images/icon/icon-camera.svg" alt="icon: camera">
+                    Посмотреть <br> ещё <br>
+                    32 фото
+                  </span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- услуги -->
+        <section class="section-servise-item-uslugi">
+          <div class="container">
+            <div class="servise-item-uslugi">
+
+              <div class="servise-item-uslugi-left">
+                <div class="servise-item-menu">
+                  <ul>
+                    <li class="menu-uslugi-item active">Автосервис</li>
+                    <li class="menu-uslugi-item">Шиномонтаж</li>
+                    <li class="menu-uslugi-item">Тюнинг</li>
+                    <li class="menu-uslugi-item">Автомойка</li>
+                  </ul>
+                </div>
+                <div class="servise-item-usluga-title">
+                  <h2 class="title">Автосервис</h2>
+                  <span class="price">Прайс обновлён <span class="price-data"> 25.04.2022 </span> </span>
+                </div>
+                <div class="servise-item-usluga-subtitle">
+                  <div class="subtitle-menu">
+                    <ul>
+                      <li class="subtitle-menu-item active">Техническое обслуживание</li>
+                      <li class="subtitle-menu-item">Подвеска</li>
+                      <li class="subtitle-menu-item">Рулевое управление</li>
+                      <li class="subtitle-menu-item">Двигатель</li>
+                      <li class="subtitle-menu-item">Трансмиссия</li>
+                    </ul>
                   </div>
-                  <div class="slider__item slider__item-item">
-                    <img src="images/image/servise-auto-1.jpg" alt="slide-item">
+                  <div class="uslugi-block">
+                    <div class="car-type">
+                      <span class="car-type-item active">
+                        <img src="../images/svg/sedan.svg" alt="sedan" class="img-svg">
+                      </span>
+                      <span class="car-type-item">
+                        <img src="../images/svg/jeep.svg" alt="jeep" class="img-svg">
+                      </span>
+                      <span class="car-type-item">
+                        <img src="../images/svg/bus.svg" alt="bus" class="img-svg">
+                      </span>
+                    </div>
+                    <div class="uslugi-items">
+
+                      <div class="servise-usluga">
+                        <span class="servise-usluga-name">Заправка кондиционера</span>
+                        <span class="servise-usluga-count">от 30 byn</span>
+                        <a href="#" class="servise-usluga-submit selected">Выбрать</a>
+                      </div>
+
+                      <div class="servise-usluga">
+                        <span class="servise-usluga-name">Заправка кондиционера</span>
+                        <span class="servise-usluga-count">от 30 byn</span>
+                        <a href="#" class="servise-usluga-submit">Выбрать</a>
+                      </div>
+
+                      <div class="servise-usluga">
+                        <span class="servise-usluga-name">Заправка кондиционера</span>
+                        <span class="servise-usluga-count">от 30 byn</span>
+                        <a href="#" class="servise-usluga-submit">Выбрать</a>
+                      </div>
+
+                      <div class="servise-usluga">
+                        <span class="servise-usluga-name">Заправка кондиционера</span>
+                        <span class="servise-usluga-count">от 30 byn</span>
+                        <a href="#" class="servise-usluga-submit">Выбрать</a>
+                      </div>
+
+                      <div class="servise-usluga">
+                        <span class="servise-usluga-name">Заправка кондиционера</span>
+                        <span class="servise-usluga-count">от 30 byn</span>
+                        <a href="#" class="servise-usluga-submit">Выбрать</a>
+                      </div>
+
+                      <div class="servise-usluga">
+                        <span class="servise-usluga-name">Заправка кондиционера</span>
+                        <span class="servise-usluga-count">от 30 byn</span>
+                        <a href="#" class="servise-usluga-submit">Выбрать</a>
+                      </div>
+
+                    </div>
                   </div>
-                  <div class="slider__item slider__item-item">
-                    <img src="images/image/servise-auto-1.jpg" alt="slide-item">
+                </div>
+              </div>
+
+              <div class="servise-item-uslugi-right">
+                <div class="servise-item-map">
+                  <img src="../images/image/servise-item-map.jpg" alt="">
+                </div>
+                <div class="servise-item-social">
+                  <img src="../images/icon/icon-instagram.svg" alt="" class="servise-item-social-icon">
+                  <img src="../images/icon/icon-vk.svg" alt="" class="servise-item-social-icon">
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </section>
+
+        <!--  акции -->
+        <section>
+          <div class="container">
+            <div class="section-title">
+              <h2>Акции</h2>
+            </div>
+            <div class="clearfix"></div>
+
+            <div class="servise-item-slider">
+              <div class="slider-servise-sale">
+                <div class="slider__item slider__item-sale">
+                  <div class="sale">
+                    <img src="../images/image/servise-auto-1.jpg" alt="slide-item">
+                    <div class="sale-title">Диагностика - бесплатно!</div>
+                    <div class="sale-text">Автосервис и автомагазин Oiler 
+                      специализируется на обслуживании и ремонте автомобилей всех типов
+                    </div>
+                    <div class="sale-finish-date">
+                      <img src="../images/svg/time.svg" alt="icon-time" class="sale-time">
+                      Акция действует до 30.06.2022
+                    </div>
                   </div>
-                  <div class="slider__item slider__item-item">
-                    <img src="images/image/servise-auto-1.jpg" alt="slide-item">
+                </div>
+                <div class="slider__item slider__item-sale">
+                  <div class="sale">
+                    <img src="../images/image/servise-auto-1.jpg" alt="slide-item">
+                    <div class="sale-title">Диагностика - бесплатно!</div>
+                    <div class="sale-text">Автосервис и автомагазин Oiler 
+                      специализируется на обслуживании и ремонте автомобилей всех типов
+                    </div>
+                    <div class="sale-finish-date">
+                      <img src="../images/svg/time.svg" alt="icon-time" class="sale-time">
+                      Акция действует до 30.06.2022
+                    </div>
                   </div>
-                  <div class="slider__item slider__item-item">
-                    <img src="images/image/servise-auto-1.jpg" alt="slide-item">
+                </div>
+                <div class="slider__item slider__item-sale">
+                  <div class="sale">
+                    <img src="../images/image/servise-auto-1.jpg" alt="slide-item">
+                    <div class="sale-title">Диагностика - бесплатно!</div>
+                    <div class="sale-text">Автосервис и автомагазин Oiler 
+                      специализируется на обслуживании и ремонте автомобилей всех типов
+                    </div>
+                    <div class="sale-finish-date">
+                      <img src="../images/svg/time.svg" alt="icon-time" class="sale-time">
+                      Акция действует до 30.06.2022
+                    </div>
                   </div>
-                  <div class="slider__item slider__item-item">
-                    <img src="images/image/servise-auto-1.jpg" alt="slide-item">
+                </div>
+                <div class="slider__item slider__item-sale">
+                  <div class="sale">
+                    <img src="../images/image/servise-auto-1.jpg" alt="slide-item">
+                    <div class="sale-title">Диагностика - бесплатно!</div>
+                    <div class="sale-text">Автосервис и автомагазин Oiler 
+                      специализируется на обслуживании и ремонте автомобилей всех типов
+                    </div>
+                    <div class="sale-finish-date">
+                      <img src="../images/svg/time.svg" alt="icon-time" class="sale-time">
+                      Акция действует до 30.06.2022
+                    </div>
+                  </div>
+                </div>
+                <div class="slider__item slider__item-sale">
+                  <div class="sale">
+                    <img src="../images/image/servise-auto-1.jpg" alt="slide-item">
+                    <div class="sale-title">Диагностика - бесплатно!</div>
+                    <div class="sale-text">Автосервис и автомагазин Oiler 
+                      специализируется на обслуживании и ремонте автомобилей всех типов
+                    </div>
+                    <div class="sale-finish-date">
+                      <img src="../images/svg/time.svg" alt="icon-time" class="sale-time">
+                      Акция действует до 30.06.2022
+                    </div>
+                  </div>
+                </div>
+                <div class="slider__item slider__item-sale">
+                  <div class="sale">
+                    <img src="../images/image/servise-auto-1.jpg" alt="slide-item">
+                    <div class="sale-title">Диагностика - бесплатно!</div>
+                    <div class="sale-text">Автосервис и автомагазин Oiler 
+                      специализируется на обслуживании и ремонте автомобилей всех типов
+                    </div>
+                    <div class="sale-finish-date">
+                      <img src="../images/svg/time.svg" alt="icon-time" class="sale-time">
+                      Акция действует до 30.06.2022
+                    </div>
                   </div>
                 </div>
               </div>
@@ -185,13 +380,400 @@
           </div>
         </section>
 
-        <section class="section-servise-item-uslugi">
+        <!--  сервис -->
+        <section>
           <div class="container">
-            рроб
+            <div class="section-title">
+              <h2>Сервис</h2>
+            </div>
+            <div class="clearfix"></div>
+
+            <div class="servise-item-slider">
+              <div class="slider-servise-serv">
+                <div class="slider__item slider__item-serv">
+                  <div class="item">                  
+                    <img src="../images/svg/wi-fi.svg" alt="slide-item">
+                    <span class="text">Wi-Fi</span>
+                  </div>
+                </div>
+                <div class="slider__item slider__item-serv">
+                  <div class="item">
+                    <img src="../images/svg/beznal.svg" alt="slide-item">
+                    <span class="text">Безнал с НДС</span>
+                  </div>
+                </div>
+                <div class="slider__item slider__item-serv">
+                  <div class="item">
+                    <img src="../images/svg/air-conditioner.svg" alt="slide-item">
+                    <span class="text">Кондиционер</span>
+                  </div>
+                </div>
+                <div class="slider__item slider__item-serv">
+                  <div class="item">
+                    <img src="../images/svg/bitcoin.svg" alt="slide-item">
+                    <span class="text">Оплата Bitcoin</span>
+                  </div>
+                </div>
+                <div class="slider__item slider__item-serv">
+                  <div class="item">
+                    <img src="../images/svg/coffe.svg" alt="slide-item">
+                    <span class="text">Кофе</span>
+                  </div>
+                </div>
+                <div class="slider__item slider__item-serv">
+                  <div class="item">
+                    <img src="../images/svg/cctv.svg" alt="slide-item">
+                    <span class="text">Видеонаблюдение</span>
+                  </div>
+                </div>
+                <div class="slider__item slider__item-serv">
+                  <div class="item">
+                    <img src="../images/svg/disc-brake.svg" alt="slide-item">
+                    <span class="text">Заказ запчастей</span>
+                  </div>
+                </div>
+                <div class="slider__item slider__item-serv">
+                  <div class="item">
+                    <img src="../images/svg/credit-card.svg" alt="slide-item">
+                    <span class="text">Оплата Visa/Mastercard</span>
+                  </div>
+                </div>
+                <div class="slider__item slider__item-serv">
+                  <div class="item">
+                    <img src="../images/svg/taxi.svg" alt="slide-item">
+                    <span class="text">Бесплатное такси </span>
+                  </div>
+                </div>
+                <div class="slider__item slider__item-serv">
+                  <div class="item">
+                    <img src="../images/svg/replace-auto.svg" alt="slide-item">
+                    <span class="text">Подменный автомобиль</span>
+                  </div>
+                </div>
+                <div class="slider__item slider__item-serv">
+                  <div class="item">
+                    <img src="../images/svg/insurance.svg" alt="slide-item">
+                    <span class="text">Страхование</span>
+                  </div>
+                </div>
+            </div>
           </div>
         </section>
 
+        <!--  марки авто -->
+        <section>
+          <div class="container">
+            <div class="section-title">
+              <h2>Обслуживаемые марки</h2>
+            </div>
+            <div class="clearfix"></div>
 
+            <div class="servise-item-slider">
+              <div class="slider-servise-marki">
+                <div class="slider__item slider__item-marki">
+                  <img src="../images/image/logo-auto-1.png" alt="slide-item">
+                  <span class="text">Volkswagen</span>
+                </div>
+                <div class="slider__item slider__item-marki">
+                  <img src="../images/image/logo-auto-2.png" alt="slide-item">
+                  <span class="text">BMW</span>
+                </div>
+                <div class="slider__item slider__item-marki">
+                  <img src="../images/image/logo-auto-3.png" alt="slide-item">
+                  <span class="text">AUDI</span>
+                </div>
+                <div class="slider__item slider__item-marki">
+                  <img src="../images/image/logo-auto-4.png" alt="slide-item">
+                  <span class="text">Honda</span>
+                </div>
+                <div class="slider__item slider__item-marki">
+                  <img src="../images/image/logo-auto-5.png" alt="slide-item">
+                  <span class="text">Honda</span>
+                </div>
+                <div class="slider__item slider__item-marki">
+                  <img src="../images/image/logo-auto-6.png" alt="slide-item">
+                  <span class="text">Honda</span>
+                </div>
+                <div class="slider__item slider__item-marki">
+                  <img src="../images/image/logo-auto-7.png" alt="slide-item">
+                  <span class="text">Honda</span>
+                </div>
+                <div class="slider__item slider__item-marki">
+                  <img src="../images/image/logo-auto-8.png" alt="slide-item">
+                  <span class="text">Honda</span>
+                </div>
+                <div class="slider__item slider__item-marki">
+                  <img src="../images/image/logo-auto-9.png" alt="slide-item">
+                  <span class="text">Honda</span>
+                </div>
+                <div class="slider__item slider__item-marki">
+                  <img src="../images/image/logo-auto-10.png" alt="slide-item">
+                  <span class="text">Honda</span>
+                </div>
+                <div class="slider__item slider__item-marki">
+                  <img src="../images/image/logo-auto-6.png" alt="slide-item">
+                  <span class="text">Honda</span>
+                </div>
+                <div class="slider__item slider__item-marki">
+                  <img src="../images/image/logo-auto-7.png" alt="slide-item">
+                  <span class="text">Honda</span>
+                </div>
+                <div class="slider__item slider__item-marki">
+                  <img src="../images/image/logo-auto-8.png" alt="slide-item">
+                  <span class="text">Honda</span>
+                </div>
+                <div class="slider__item slider__item-marki">
+                  <img src="../images/image/logo-auto-9.png" alt="slide-item">
+                  <span class="text">Honda</span>
+                </div>
+                <div class="slider__item slider__item-marki">
+                  <img src="../images/image/logo-auto-10.png" alt="slide-item">
+                  <span class="text">Honda</span>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- о компании -->
+        <section class="section-about-servise">
+          <div class="container">
+            <div class="about-servise-item-menu">
+              <ul>
+                <li class="about-servise-item active">О компании</li>
+                <li class="about-servise-item">Отзывы <span>(5)</span></li>
+                <li class="about-servise-item">Блог компании</li>
+                <li class="about-servise-item">Сертификаты и документы</li>
+              </ul>
+            </div>
+            <div class="about-servise">
+              <div class="section-title">
+                <h2>О нас</h2>
+              </div>
+              <div class="about-servise-text">
+                Автосервис и автомагазин Oiler специализируется на обслуживании и ремонте 
+                автомобилей всех типов и марок, предоставляет услуги по продаже запчастей, 
+                являясь официальным сервисом Sachs, Kayaba, официальным участником сети 
+                Partner Elit, а также партнером NORA Professional Service и Vianor. 
+                <br><br>
+                Почему автовладельцы выбирают сервис Oiler? 
+                <br><br>
+                Целостность. Магазин и СТО представляют собой единое целое. Все запчасти, детали,
+                сопутствующие товары и сам ремонт авто территориально едины. Также специалисты 
+                сервиса внимательно следят за постоянным наличием ассортимента. 
+                <br><br>
+                Команда специалистов. Здесь собрана лучшая команда мастеров которая развивается 
+                и обеспечена всем необходимым! Каждый мастер в компании владеет не только опытом, 
+                но и дополнительно обучен семинарами, тренингами и курсами от ведущих международных 
+                компаний. Мастера Oiler специализируются на всех марках авто. 
+                <br><br>
+                Гарантии. В отличии от многих технических станций, которые осуществляют ремонт авто, 
+                Oiler именно тот автосервис, который уверенно предоставит вам гарантию на все 
+                приобретенные у нас запчасти и выполненные работы. 
+                <br><br>
+                Цены. Наши цены всегда ниже, чем у официальных автосервисов. Работая напрямую с 
+                производителем в качестве поставщика, у нас есть возможность устанавливать более 
+                чем приемлемую политику ценообразования и таким образом идти навстречу клиентам. 
+              </div>
+            </div>
+            <div class="reviews">
+              <div class="review-header">
+                <div class="review-title">
+                  <div class="section-title">
+                    <h2>Отзывы</h2>
+                  </div>
+                  <div class="servise-item-rating">
+                    <span class="rating-count">4.1</span>
+                    <div class="listing-rating card-popup-rainingvis" data-starrating2="4"></div>
+                    <span class="rating-kol">/ 14 отзывов</span>
+                  </div>
+                  <div class="servise-ratings">
+                    <div class="rating-client">
+                      <span class="text">Клиентский сервис</span>
+                      <div class="listing-rating card-popup-rainingvis" data-starrating2="4"></div>
+                    </div>
+                    <div class="rating-quality">
+                      <span class="text">Качество обслуживания</span>
+                      <div class="listing-rating card-popup-rainingvis" data-starrating2="4"></div>
+                    </div>
+                    <div class="rating-price">
+                      <span class="text">Стоимость</span>
+                      <div class="listing-rating card-popup-rainingvis" data-starrating2="4"></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="review-submit">
+                  <a href="#" class="review-submit-btn">Оставить отзыв</a>
+                </div>
+              </div>
+              <div class="review-wrapper">
+                <div class="review-item">
+                  <div class="review-client-header">
+                    <div class="review-foto">
+                      <img src="../images/image/foto-client.jpg" alt="foto client" class="foto">
+                    </div>
+                    <div class="client">
+                      <div class="client-name">Пинчук Катя</div>
+                      <div class="client-auto">Peugeot 807</div>
+                    </div>
+                    <div class="rating-client">
+                      <div class="rating-block">
+                        <span class="rating-count">4.1</span>
+                        <div class="listing-rating card-popup-rainingvis" data-starrating2="4"></div>
+                      </div>
+                      <div class="client-data">17 апреля 2022</div>
+                    </div>
+                  </div>
+                  <div class="review-client-text">
+                    Автосервис и автомагазин Oiler специализируется на обслуживании и ремонте 
+                    автомобилей всех типов и марок, предоставляет услуги по продаже запчастей, 
+                    являясь официальным сервисом Sachs, Kayaba, официальным участником сети Partner 
+                    Elit, а также партнером NORA Professional Service и Vianor.
+                  </div>
+                </div>
+                <div class="review-item">
+                  <div class="review-client-header">
+                    <div class="review-foto">
+                      <img src="../images/image/foto-client.jpg" alt="foto client" class="foto">
+                    </div>
+                    <div class="client">
+                      <div class="client-name">Пинчук Катя</div>
+                      <div class="client-auto">Peugeot 807</div>
+                    </div>
+                    <div class="rating-client">
+                      <div class="rating-block">
+                        <span class="rating-count">4.1</span>
+                        <div class="listing-rating card-popup-rainingvis" data-starrating2="4"></div>
+                      </div>
+                      <div class="client-data">17 апреля 2022</div>
+                    </div>
+                  </div>
+                  <div class="review-client-text">
+                    Автосервис и автомагазин Oiler специализируется на обслуживании и ремонте 
+                    автомобилей всех типов и марок, предоставляет услуги по продаже запчастей, 
+                    являясь официальным сервисом Sachs, Kayaba, официальным участником сети Partner 
+                    Elit, а также партнером NORA Professional Service и Vianor.
+                  </div>
+                </div>
+              </div>
+              <div class="review-footer">
+                <a href="#" class="btn-also-review">Загрузить ещё</a>
+              </div>
+            </div>
+            <div class="documents">
+              <div class="section-title">
+                <h2>Сертификаты и документы</h2>
+              </div>
+              <div class="documents-img">
+                <img src="../images/image/sertificate.jpg" alt="sertificate">
+                <img src="../images/image/sertificate.jpg" alt="sertificate">
+                <img src="../images/image/sertificate.jpg" alt="sertificate">
+              </div>
+            </div>
+            <div class="section-blog">
+              <div class="blog-title">
+                <div class="section-title  blog-title-name">
+                  <h2>Блог автосервисa</h2>
+                </div>
+                <a href="#" class="blog-btn-open-all">
+                  Читать все
+                </a>
+              </div>
+              <div class="blog-items">
+                <div class="blog-item">
+                  <img src="../images/image/blog-foto-min-1.jpg" alt="img blog" class="blog-item-img">
+                  <p class="blog-item-title">
+                    Как правильно выбрать свой первый автомобиль?
+                    Как правильно выбрать свой первый автомобиль?
+                  </p>
+                  <div class="blog-item-footer">
+                    <div class="blog-item-count">
+                      <img src="../images/icon/view.svg" alt="icon: view" class="blog-item-count-icon">
+                      <span class="count">2 350</span>
+                    </div>
+                    <a href="#" class="blog-item-read">Читать статью</a>
+                  </div>
+                </div>
+                <div class="blog-item">
+                  <img src="../images/image/blog-foto-min-1.jpg" alt="img blog" class="blog-item-img">
+                  <p class="blog-item-title">
+                    Как правильно выбрать свой первый автомобиль?
+                    Как правильно выбрать свой первый автомобиль?
+                  </p>
+                  <div class="blog-item-footer">
+                    <div class="blog-item-count">
+                      <img src="../images/icon/view.svg" alt="icon: view" class="blog-item-count-icon">
+                      <span class="count">2 350</span>
+                    </div>
+                    <a href="#" class="blog-item-read">Читать статью</a>
+                  </div>
+                </div>
+                <div class="blog-item">
+                  <img src="../images/image/blog-foto-min-1.jpg" alt="img blog" class="blog-item-img">
+                  <p class="blog-item-title">
+                    Как правильно выбрать свой первый автомобиль?
+                    Как правильно выбрать свой первый автомобиль?
+                  </p>
+                  <div class="blog-item-footer">
+                    <div class="blog-item-count">
+                      <img src="../images/icon/view.svg" alt="icon: view" class="blog-item-count-icon">
+                      <span class="count">2 350</span>
+                    </div>
+                    <a href="#" class="blog-item-read">Читать статью</a>
+                  </div>
+                </div>
+                <div class="blog-item">
+                  <img src="../images/image/blog-foto-min-1.jpg" alt="img blog" class="blog-item-img">
+                  <p class="blog-item-title">
+                    Как правильно выбрать свой первый автомобиль?
+                    Как правильно выбрать свой первый автомобиль?
+                  </p>
+                  <div class="blog-item-footer">
+                    <div class="blog-item-count">
+                      <img src="../images/icon/view.svg" alt="icon: view" class="blog-item-count-icon">
+                      <span class="count">2 350</span>
+                    </div>
+                    <a href="#" class="blog-item-read">Читать статью</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!--  фотогалерея -->
+        <section>
+          <div class="container">
+            <div class="section-title">
+              <h2>Фотогалерея автосервиса</h2>
+            </div>
+            <div class="clearfix"></div>
+
+            <div class="servise-item-slider">
+              <div class="slider-servise-fotos">
+                <div class="slider__item slider__item-fotos">
+                  <img src="../images/image/servise-auto-1.jpg" alt="slide-item">
+                </div>
+                <div class="slider__item slider__item-fotos">
+                  <img src="../images/image/servise-auto-1.jpg" alt="slide-item">
+                </div>
+                <div class="slider__item slider__item-fotos">
+                  <img src="../images/image/servise-auto-1.jpg" alt="slide-item">
+                </div>
+                <div class="slider__item slider__item-fotos">
+                  <img src="../images/image/servise-auto-1.jpg" alt="slide-item">
+                </div>
+                <div class="slider__item slider__item-fotos">
+                  <img src="../images/image/servise-auto-1.jpg" alt="slide-item">
+                </div>
+                <div class="slider__item slider__item-fotos">
+                  <img src="../images/image/servise-auto-1.jpg" alt="slide-item">
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
 
       </div>
       <!-- wrapper end -->
@@ -260,12 +842,12 @@
                     </div>
                     <ul class="footer-contacts ">
                       <li>
-                        <span> <img src="images/icon/icon-email.png" alt="icon: email" class="footer-contact__icon">Email:</span>
+                        <span> <img src="../images/icon/icon-email.png" alt="icon: email" class="footer-contact__icon">Email:</span>
                         <a href="#" target="_blank">hello@monoauto.by</a>
                       </li>
                       <li>
                         <a href="#" target="_blank" >
-                          <span class="footer-telegram"><img src="images/icon/icon-telegram.png" alt="icon: telegram" class="footer-contact__icon">Telegram</span>
+                          <span class="footer-telegram"><img src="../images/icon/icon-telegram.png" alt="icon: telegram" class="footer-contact__icon">Telegram</span>
                         </a>
                         
                       </li>
@@ -275,7 +857,7 @@
                 <!-- footer end служба поддержки-->
               </div>
               <div class="footer-info">
-                <img src="images/icon/icon-age.png" alt="icon:age" class="footer-info-icon">
+                <img src="../images/icon/icon-age.png" alt="icon:age" class="footer-info-icon">
                 <p>Информация, опубликованная на данном сайте, предназначена для любой аудитории,<br> если иное не указано дополнительно в отношении отдельных материалов.</p>
               </div>
             </div>
