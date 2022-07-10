@@ -9025,7 +9025,9 @@ height: 44px;
 							border-bottom: 1px solid black;
 							.img-svg {
 								path {
-									fill: $blue;
+
+									stroke: green;
+
 								}
 							}
 						}

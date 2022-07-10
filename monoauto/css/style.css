@@ -10957,7 +10957,7 @@ span.current {
   border-bottom: 1px solid black;
 }
 .section-servise-item-uslugi .servise-item-uslugi .servise-item-uslugi-left .servise-item-usluga-subtitle .uslugi-block .car-type .car-type-item.active .img-svg path {
-  fill: #69ACF3;
+  stroke: green;
 }
 .section-servise-item-uslugi .servise-item-uslugi .servise-item-uslugi-left .servise-item-usluga-subtitle .uslugi-block .uslugi-items {
   display: none;
