@@ -5430,14 +5430,14 @@ section.single-par2  .scroll-down-wrap{
 .contacts-map #singleMap {
 	height: 275px;
 }
-.map-container #map-main{
-    position: absolute;
-	top:0;
-	left:0;
-    height: 100%;
-	width:100%;
-    z-index: 990;
-}
+// .map-container #map-main{
+//     position: absolute;
+// 	top:0;
+// 	left:0;
+//     height: 100%;
+// 	width:100%;
+//     z-index: 990;
+// }
 .map-container.column-map {
 	width:calc(100% - 850px);
 	//position: fixed;
@@ -5458,11 +5458,15 @@ section.single-par2  .scroll-down-wrap{
 	z-index: 10;
 	top: 0;
 	position: relative;
-	height: 1472px !important;
+	height: 100vh;
+
+	
+	// height: 1472px !important;
 }
 .map-container.column-map.no-top_search.map-container-fixed {
 	position: fixed;
 	left: 850px;
+	height: 100vh;
 }
 .map-container {
 	img {
@@ -8322,13 +8326,16 @@ span.current {
 	cursor: pointer;
 }
 .servise-usluga-name {
-	white-space: nowrap;
+	//white-space: nowrap;
 	overflow: hidden;
-	width: 480px;
+	width: 440px;
+	margin-right: 10px;
+	text-align: left;
 }
 .servise-usluga-count {
 	margin-left: auto;
 	margin-right: 30px;
+	white-space: nowrap;
 }
 .servise-usluga-submit {
 	font-weight: 400;
@@ -8338,6 +8345,7 @@ span.current {
 	background-color: $green;
 	padding: 9px 37px;
 	border-radius: 30px;
+	white-space: nowrap;
 }
 .servise-usluga-submit:hover {
 	background-color: $green-hover;
@@ -8909,7 +8917,7 @@ height: 44px;
 		display: flex;
 		justify-content: space-between;
 		.servise-item-uslugi-left {
-			width: 870px;
+			width: 890px;
 			display: flex;
 			flex-direction: column;
 			.servise-item-menu {
@@ -8992,7 +9000,7 @@ height: 44px;
 					border-radius: 10px;
 					width: 224px;
 					padding: 15px;
-					width: 630px;
+					width: 650px;
 					.car-type {
 						display: flex;
 						margin-bottom: 12px;
@@ -9012,9 +9020,11 @@ height: 44px;
 						}
 					}
 					.uslugi-items {
-
+						overflow: scroll;
+						height: 300px;
 						.servise-usluga {
 							width: 600px;
+							margin-left: 5px;
 							font-size: 14px;
 							padding: 10px 0;
 							line-height: 17px;
@@ -9025,19 +9035,22 @@ height: 44px;
 								padding-left: 30px;
 								width: 365px;
 								text-align: left;
-								white-space: nowrap;
+								//white-space: nowrap;
 								overflow: hidden;
 								margin-right: 20px;
 							}
 							.servise-usluga-count {
 								margin-left: 0;
 								margin-right: 0;
+
 							}
 							.servise-usluga-submit {
 								position: absolute;
 								right: 0;
 								border-radius: 10px;
 								height: 100%;
+								display: flex;
+    						align-items: center;
 							}
 							.servise-usluga-submit.selected {
 								border: 1px solid $green;
@@ -9049,7 +9062,6 @@ height: 44px;
 				}
 			}
 		}
-
 
 		.servise-item-uslugi-right {
 			.servise-item-social {
@@ -9229,6 +9241,7 @@ height: 44px;
 		}
 	}
 }
+
 
 
 

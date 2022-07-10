@@ -6534,15 +6534,6 @@ section.single-par2 .scroll-down-wrap {
   height: 275px;
 }
 
-.map-container #map-main {
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
-  z-index: 990;
-}
-
 .map-container.column-map {
   width: calc(100% - 850px);
   overflow: hidden;
@@ -6562,12 +6553,13 @@ section.single-par2 .scroll-down-wrap {
   z-index: 10;
   top: 0;
   position: relative;
-  height: 1472px !important;
+  height: 100vh;
 }
 
 .map-container.column-map.no-top_search.map-container-fixed {
   position: fixed;
   left: 850px;
+  height: 100vh;
 }
 
 .map-container img {
@@ -10113,14 +10105,16 @@ span.current {
 }
 
 .servise-usluga-name {
-  white-space: nowrap;
   overflow: hidden;
-  width: 480px;
+  width: 440px;
+  margin-right: 10px;
+  text-align: left;
 }
 
 .servise-usluga-count {
   margin-left: auto;
   margin-right: 30px;
+  white-space: nowrap;
 }
 
 .servise-usluga-submit {
@@ -10131,6 +10125,7 @@ span.current {
   background-color: #00A92F;
   padding: 9px 37px;
   border-radius: 30px;
+  white-space: nowrap;
 }
 
 .servise-usluga-submit:hover {
@@ -10837,7 +10832,7 @@ span.current {
           justify-content: space-between;
 }
 .section-servise-item-uslugi .servise-item-uslugi .servise-item-uslugi-left {
-  width: 870px;
+  width: 890px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -10937,7 +10932,7 @@ span.current {
   border-radius: 10px;
   width: 224px;
   padding: 15px;
-  width: 630px;
+  width: 650px;
 }
 .section-servise-item-uslugi .servise-item-uslugi .servise-item-uslugi-left .servise-item-usluga-subtitle .uslugi-block .car-type {
   display: -webkit-box;
@@ -10957,8 +10952,13 @@ span.current {
 .section-servise-item-uslugi .servise-item-uslugi .servise-item-uslugi-left .servise-item-usluga-subtitle .uslugi-block .car-type .car-type-item.active .img-svg path {
   fill: #69ACF3;
 }
+.section-servise-item-uslugi .servise-item-uslugi .servise-item-uslugi-left .servise-item-usluga-subtitle .uslugi-block .uslugi-items {
+  overflow: scroll;
+  height: 300px;
+}
 .section-servise-item-uslugi .servise-item-uslugi .servise-item-uslugi-left .servise-item-usluga-subtitle .uslugi-block .uslugi-items .servise-usluga {
   width: 600px;
+  margin-left: 5px;
   font-size: 14px;
   padding: 10px 0;
   line-height: 17px;
@@ -10972,7 +10972,6 @@ span.current {
   padding-left: 30px;
   width: 365px;
   text-align: left;
-  white-space: nowrap;
   overflow: hidden;
   margin-right: 20px;
 }
@@ -10985,6 +10984,12 @@ span.current {
   right: 0;
   border-radius: 10px;
   height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 .section-servise-item-uslugi .servise-item-uslugi .servise-item-uslugi-left .servise-item-usluga-subtitle .uslugi-block .uslugi-items .servise-usluga .servise-usluga-submit.selected {
   border: 1px solid #00A92F;
