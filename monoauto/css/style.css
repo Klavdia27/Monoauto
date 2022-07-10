@@ -10618,7 +10618,7 @@ span.current {
 .slider-servise .slick-arrow.slick-prev {
   top: 48%;
   left: 0;
-  background: url("../images/icon/arrow-next.svg") 0 0/100% no-repeat;
+  background: url("/images/icon/arrow-next.svg") 0 0/100% no-repeat;
   /* Для Firefox */
   /* Для IE */
   -webkit-transform: rotate(180deg);
@@ -10630,7 +10630,7 @@ span.current {
 .slider-servise-map .slick-arrow.slick-prev {
   top: 48%;
   left: 0;
-  background: url("../images/icon/arrow-next.svg") 0 0/100% no-repeat;
+  background: url("/images/icon/arrow-next.svg") 0 0/100% no-repeat;
   /* Для Firefox */
   /* Для IE */
   -webkit-transform: rotate(180deg);
@@ -10642,7 +10642,7 @@ span.current {
 .slider-servise-item .slick-arrow.slick-prev {
   top: 51%;
   left: -60px;
-  background: url("../images/icon/arrow-next.svg") 0 0/100% no-repeat;
+  background: url("/images/icon/arrow-next.svg") 0 0/100% no-repeat;
   /* Для Firefox */
   /* Для IE */
   -webkit-transform: rotate(180deg);
@@ -10654,7 +10654,7 @@ span.current {
 .slider-servise-marki .slick-arrow.slick-prev {
   top: 51%;
   left: -40px;
-  background: url("../images/icon/arrow-next.svg") 0 0/100% no-repeat;
+  background: url("/images/icon/arrow-next.svg") 0 0/100% no-repeat;
   /* Для Firefox */
   /* Для IE */
   -webkit-transform: rotate(180deg);
@@ -10666,7 +10666,7 @@ span.current {
 .slider-servise-serv .slick-arrow.slick-prev {
   top: 51%;
   left: -40px;
-  background: url("../images/icon/arrow-next.svg") 0 0/100% no-repeat;
+  background: url("/images/icon/arrow-next.svg") 0 0/100% no-repeat;
   /* Для Firefox */
   /* Для IE */
   -webkit-transform: rotate(180deg);
@@ -10894,6 +10894,9 @@ span.current {
   line-height: 35px;
   color: #898989;
 }
+.section-servise-item-uslugi .servise-item-uslugi .servise-item-uslugi-left .servise-item-usluga-title.disable {
+  display: none;
+}
 .section-servise-item-uslugi .servise-item-uslugi .servise-item-uslugi-left .servise-item-usluga-subtitle {
   margin-top: 25px;
   display: -webkit-box;
@@ -10904,6 +10907,7 @@ span.current {
           justify-content: space-between;
 }
 .section-servise-item-uslugi .servise-item-uslugi .servise-item-uslugi-left .servise-item-usluga-subtitle .subtitle-menu {
+  display: none;
   background: #F5F5F5;
   border-radius: 10px;
   width: 224px;
@@ -10926,6 +10930,9 @@ span.current {
 }
 .section-servise-item-uslugi .servise-item-uslugi .servise-item-uslugi-left .servise-item-usluga-subtitle .subtitle-menu .subtitle-menu-item.active {
   border-bottom: 1px solid #0C78ED;
+}
+.section-servise-item-uslugi .servise-item-uslugi .servise-item-uslugi-left .servise-item-usluga-subtitle .subtitle-menu.active {
+  display: bleck;
 }
 .section-servise-item-uslugi .servise-item-uslugi .servise-item-uslugi-left .servise-item-usluga-subtitle .uslugi-block {
   background: #F5F5F5;
@@ -10953,6 +10960,7 @@ span.current {
   fill: #69ACF3;
 }
 .section-servise-item-uslugi .servise-item-uslugi .servise-item-uslugi-left .servise-item-usluga-subtitle .uslugi-block .uslugi-items {
+  display: none;
   overflow: scroll;
   height: 300px;
 }
@@ -10969,7 +10977,7 @@ span.current {
           justify-content: left;
 }
 .section-servise-item-uslugi .servise-item-uslugi .servise-item-uslugi-left .servise-item-usluga-subtitle .uslugi-block .uslugi-items .servise-usluga .servise-usluga-name {
-  padding-left: 30px;
+  padding-left: 10px;
   width: 365px;
   text-align: left;
   overflow: hidden;
@@ -10995,6 +11003,9 @@ span.current {
   border: 1px solid #00A92F;
   background: #ffffff;
   color: #00A92F;
+}
+.section-servise-item-uslugi .servise-item-uslugi .servise-item-uslugi-left .servise-item-usluga-subtitle .uslugi-block .uslugi-items.active {
+  display: block;
 }
 .section-servise-item-uslugi .servise-item-uslugi .servise-item-uslugi-right .servise-item-social {
   margin-top: 20px;
@@ -11049,6 +11060,7 @@ span.current {
   color: white;
 }
 .section-about-servise .about-servise {
+  display: none;
   padding: 35px;
   background: #F5F5F5;
   border-radius: 20px;
@@ -11064,7 +11076,11 @@ span.current {
   color: #000000;
   text-align: left;
 }
+.section-about-servise .about-servise.show {
+  display: block;
+}
 .section-about-servise .reviews {
+  display: none;
   margin-bottom: 30px;
 }
 .section-about-servise .reviews .review-header {
@@ -11169,7 +11185,11 @@ span.current {
   padding: 9px 22px;
   border-radius: 20px;
 }
+.section-about-servise .reviews.show {
+  display: block;
+}
 .section-about-servise .documents {
+  display: none;
   padding: 35px;
   background: #F5F5F5;
   border-radius: 20px;
@@ -11183,4 +11203,82 @@ span.current {
 }
 .section-about-servise .documents .documents-img img {
   margin-left: 20px;
+}
+.section-about-servise .documents.show {
+  display: block;
+}
+.section-about-servise .section-blog {
+  display: none;
+}
+.section-about-servise .section-blog.show {
+  display: block;
+}
+
+.section-servise-near {
+  background: #F5F5F5;
+}
+.section-servise-near .servise-near-items ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-beetwen;
+      -ms-flex-pack: space-beetwen;
+          justify-content: space-beetwen;
+}
+.section-servise-near .servise-near-items .servise-near-item {
+  width: 300px;
+  text-align: left;
+}
+.section-servise-near .servise-near-items .servise-near-item .foto {
+  width: 286px;
+  height: 216px;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+.section-servise-near .servise-near-items .servise-near-item .servise-name {
+  font-weight: 600;
+  font-size: 21px;
+  line-height: 25px;
+  color: #000000;
+  margin-bottom: 15px;
+}
+.section-servise-near .servise-near-items .servise-near-item .servise-item-rating {
+  margin-bottom: 15px;
+}
+.section-servise-near .servise-near-items .servise-near-item .servise-address {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  color: #000000;
+}
+
+.total {
+  top: 90%;
+  left: 40%;
+  position: fixed;
+  z-index: 100;
+  float: left;
+  margin: auto;
+  display: none;
+  background: #F5F5F5;
+  border-radius: 30px;
+  padding: 11px 0 11px 22px;
+  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.total span {
+  margin-left: 12px;
+  margin-right: 70px;
+}
+.total .submit-online {
+  color: #ffffff;
+  right: 0;
+  background: #00A92F;
+  border: 1px solid #00A92F;
+  border-radius: 30px;
+  padding: 11px 22px;
+}
+
+.total.active {
+  display: block;
 }

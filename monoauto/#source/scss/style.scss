@@ -8746,7 +8746,7 @@ height: 44px;
 .slider-servise .slick-arrow.slick-prev{
 	top: 48%;
 	left: 0;
-	background: url('../images/icon/arrow-next.svg') 0 0 / 100% no-repeat;
+	background: url('/images/icon/arrow-next.svg') 0 0 / 100% no-repeat;
 	-moz-transform: rotate(180deg); /* Для Firefox */
 	-ms-transform: rotate(180deg); /* Для IE */
 	-webkit-transform: rotate(180deg); /* Для Safari, Chrome, iOS */
@@ -8756,7 +8756,7 @@ height: 44px;
 .slider-servise-map .slick-arrow.slick-prev{
 	top: 48%;
 	left: 0;
-	background: url('../images/icon/arrow-next.svg') 0 0 / 100% no-repeat;
+	background: url('/images/icon/arrow-next.svg') 0 0 / 100% no-repeat;
 	-moz-transform: rotate(180deg); /* Для Firefox */
 	-ms-transform: rotate(180deg); /* Для IE */
 	-webkit-transform: rotate(180deg); /* Для Safari, Chrome, iOS */
@@ -8766,7 +8766,7 @@ height: 44px;
 .slider-servise-item .slick-arrow.slick-prev{
 	top: 51%;
 	left: -60px;
-	background: url('../images/icon/arrow-next.svg') 0 0 / 100% no-repeat;
+	background: url('/images/icon/arrow-next.svg') 0 0 / 100% no-repeat;
 	-moz-transform: rotate(180deg); /* Для Firefox */
 	-ms-transform: rotate(180deg); /* Для IE */
 	-webkit-transform: rotate(180deg); /* Для Safari, Chrome, iOS */
@@ -8776,7 +8776,7 @@ height: 44px;
 .slider-servise-marki .slick-arrow.slick-prev{
 	top: 51%;
 	left: -40px;
-	background: url('../images/icon/arrow-next.svg') 0 0 / 100% no-repeat;
+	background: url('/images/icon/arrow-next.svg') 0 0 / 100% no-repeat;
 	-moz-transform: rotate(180deg); /* Для Firefox */
 	-ms-transform: rotate(180deg); /* Для IE */
 	-webkit-transform: rotate(180deg); /* Для Safari, Chrome, iOS */
@@ -8786,7 +8786,7 @@ height: 44px;
 .slider-servise-serv .slick-arrow.slick-prev{
 	top: 51%;
 	left: -40px;
-	background: url('../images/icon/arrow-next.svg') 0 0 / 100% no-repeat;
+	background: url('/images/icon/arrow-next.svg') 0 0 / 100% no-repeat;
 	-moz-transform: rotate(180deg); /* Для Firefox */
 	-ms-transform: rotate(180deg); /* Для IE */
 	-webkit-transform: rotate(180deg); /* Для Safari, Chrome, iOS */
@@ -8967,11 +8967,19 @@ height: 44px;
 					color: #898989;
 				}
 			}
+			// .servise-item-usluga-title.none {
+			// 	display: none;
+			// }
+			.servise-item-usluga-title.disable {
+				display: none;
+				// text-align: left;
+			}
 			.servise-item-usluga-subtitle {
 				margin-top: 25px;
 				display: flex;
 				justify-content: space-between;
 				.subtitle-menu {
+					display: none;
 					background: #F5F5F5;
 					border-radius: 10px;
 					width: 224px;
@@ -8994,6 +9002,9 @@ height: 44px;
 					.subtitle-menu-item.active {
 						border-bottom: 1px solid #0C78ED;
 					}
+				}
+				.subtitle-menu.active {
+					display: bleck;
 				}
 				.uslugi-block {
 					background: #F5F5F5;
@@ -9020,6 +9031,7 @@ height: 44px;
 						}
 					}
 					.uslugi-items {
+						display: none;
 						overflow: scroll;
 						height: 300px;
 						.servise-usluga {
@@ -9032,7 +9044,7 @@ height: 44px;
 							position: relative;
 							justify-content: left;
 							.servise-usluga-name {
-								padding-left: 30px;
+								padding-left: 10px;
 								width: 365px;
 								text-align: left;
 								//white-space: nowrap;
@@ -9058,6 +9070,9 @@ height: 44px;
 								color: $green;
 							}
 						}
+					}
+					.uslugi-items.active {
+						display: block;
 					}
 				}
 			}
@@ -9113,6 +9128,7 @@ height: 44px;
 		}
 	}
 	.about-servise {
+		display: none;
 		padding: 35px;
 		background: #F5F5F5;
 		border-radius: 20px;
@@ -9128,7 +9144,11 @@ height: 44px;
 			text-align: left;
 		}
 	}
+	.about-servise.show {
+		display: block;
+	}
 	.reviews {
+		display: none;
 		margin-bottom: 30px;
 		.review-header {
 			display: flex;
@@ -9224,8 +9244,12 @@ height: 44px;
 			
 		}
 	}
+	.reviews.show {
+		display: block;
+	}
 
 	.documents {
+		display: none;
 		padding: 35px;
 		background: #F5F5F5;
 		border-radius: 20px;
@@ -9240,9 +9264,82 @@ height: 44px;
 			}
 		}
 	}
+	.documents.show {
+		display: block;
+	}
+	.section-blog {
+		display: none;
+	}
+	.section-blog.show {
+		display: block;
+	}
 }
 
+.section-servise-near {
+	background: #F5F5F5;
+	.servise-near-items {
+		ul {
+			display: flex;
+			justify-content: space-beetwen;
+		}
+		.servise-near-item {
+			width: 300px;
+			text-align: left;
+			.foto {
+				width: 286px;
+				height: 216px;
+				border-radius: 10px;
+				margin-bottom: 15px;
+			}
+			.servise-name {
+				font-weight: 600;
+				font-size: 21px;
+				line-height: 25px;
+				color: #000000;
+				margin-bottom: 15px;
+			}
+			.servise-item-rating {
+				margin-bottom: 15px;
+			}
+			.servise-address {
+				font-weight: 400;
+				font-size: 14px;
+				line-height: 17px;
+				color: #000000;
+			}
+		}
+	}
+}
 
+.total {
+	top: 90%;
+	left: 40%;
+	position: fixed;
+	z-index: 100;
+	float:left;
+	margin: auto;
+	display: none;
+	background: #F5F5F5;
+	border-radius: 30px;
+	padding: 11px 0 11px 22px;
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+	span {
+		margin-left: 12px;
+		margin-right: 70px;
+	}
+	.submit-online {
+		color: $white;
+		right: 0;
+		background: #00A92F;
+		border: 1px solid #00A92F;
+		border-radius: 30px;
+		padding: 11px 22px;
+	}
+}
+.total.active {
+	display: block;
+
+}
 
 
 

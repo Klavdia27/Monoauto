@@ -1104,15 +1104,86 @@ flag.forEach(elem => {
     })
 })
 
+
 // servise-item uslugi menu 
-console.log("uslugi");
+
 const menuUslugi = document.querySelectorAll('.menu-uslugi-item');
-console.log(menuUslugi);
-menuUslugi.forEach(usl => {
-    usl.addEventListener('click', () => {
-        usl.classList.toggle('active')
+const titleUslugi = document.querySelectorAll('.servise-item-usluga-title');
+const subMenuUslugi = document.querySelectorAll('.subtitle-menu');
+const itemsUslugi = document.querySelectorAll('.uslugi-items');
+
+let menu = 0;
+let submenu = 0
+var subMenuItem = document.querySelectorAll(`.subtitle-menu-item[data-menu="${menu}"]`);
+
+menuUslugi.forEach((item, index) => {
+    item.addEventListener('click', () => {
+        menuUslugi.forEach((el) => el.classList.remove('active'));
+        menuUslugi[index].classList.add('active');
+        titleUslugi.forEach((el) => el.classList.add('disable'));
+        titleUslugi[index].classList.remove('disable');
+        subMenuUslugi.forEach((el) => el.classList.remove('active'));
+        subMenuUslugi[index].classList.add('active');
+        itemsUslugi.forEach((el) => {
+            el.classList.remove('active');
+            if (el.dataset["item"] == `${index}-0`) {
+                el.classList.add('active')
+            }
+        });
+
+        menu = index; 
+        subMenuItem = document.querySelectorAll(`.subtitle-menu-item[data-menu="${menu}"]`);
+
+        subMenuItem.forEach((item, index) => {
+            item.addEventListener('click', () => {
+                subMenuItem.forEach((el) => el.classList.remove('active'));
+                subMenuItem[index].classList.add('active');
+                submenu = index;
+                // console.log( "menu = ", menu, "submenu = ", submenu );
+
+                itemsUslugi.forEach((elem) => {
+                    elem.classList.remove('active');
+                    // console.log(elem.dataset["menu"]);
+                    // console.log(elem.dataset["item"]);
+                    // console.log(elem.dataset["menu"] == 0);
+                    if (elem.dataset["menu"] == menu && 
+                        elem.dataset["item"] == `${menu}-${submenu}`) {
+                        console.log("yes", menu, submenu)
+                        elem.classList.add('active')
+                    }
+                })
+            })
+        })
     })
 })
+subMenuItem.forEach((item, index) => {
+    item.addEventListener('click', () => {
+        subMenuItem.forEach((el) => el.classList.remove('active'));
+        subMenuItem[index].classList.add('active');
+        submenu = index;
+
+        itemsUslugi.forEach((el) => {
+            el.classList.remove('active');
+            itemsUslugi[index].classList.add('active')
+        })
+    })
+})
+
+
+// о компании
+const aboutItemsMenu = document.querySelectorAll(".about-servise-item");
+const aboutItems = document.querySelectorAll('.about-serv-item');
+
+aboutItemsMenu.forEach((item, index) => {
+    item.addEventListener('click', () => {
+        aboutItemsMenu.forEach((el) => el.classList.remove('active'));
+        aboutItemsMenu[index].classList.add('active');
+        aboutItems.forEach((el) => el.classList.remove('show'));  
+        aboutItems[index].classList.add('show');
+
+    })
+}) 
+
 
 // catalog-servises-map
 const mapContainer = document.querySelector('.map-container');
@@ -1136,8 +1207,4 @@ document.addEventListener('scroll', (event) => {
     if (rectEmpty.bottom < 908) {
         mapContainer.classList.remove('map-container-fixed')
     }
-});
-
-
-
-
+})
