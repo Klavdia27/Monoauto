@@ -1182,44 +1182,35 @@ aboutItemsMenu.forEach((item, index) => {
     })
 }) 
 
-// catalog-servises-map
-const mapContainer = document.querySelector('.map-container');
-const contLeft = document.querySelector('.col-list-wrap_left')
-const footer = document.querySelector('.main-footer');
-const empty = document.querySelector('.empty');
+//catalog-servises-map
+function setMapDivSize()
+{
+    var h = $("#service_list").height();            // --- высота левого блока
+    var rh = $("#service_map_inner").height();      // --- высота блока с картой
+    $("#service_map").height(h);                    // --- правый контейнер по высоте выровняем с левым
+    var leftRect = $("#service_list")[0].getBoundingClientRect();
+    if(leftRect.y<=0)
+    {
+        if(leftRect.bottom-rh>0)
+            $("#service_map_inner").css("margin-top", (0-leftRect.y));  // --- доскролили до верхнего края левого блока и ниже его
+        else
+        {
+            $("#service_map_inner").css("margin-top", (h-rh));          // --- доскролили до нижнего края и ниже его
+        }
+    }
+    else
+    {
+        $("#service_map_inner").css("margin-top", 0);                   // --- скролл выше верхнего края
+    }
 
-//let intElemScrollTop = mapContainer.scrollTop;
-const divblock = document.querySelector('.container-catalog-servises-items');
-//var br = divblock.getBoundingClientRect();
-//alert("Top:"+br.top+", Left:"+br.left+", Right:"+br.right+", Bottom:"+br.bottom);
+}
 
-document.addEventListener('scroll', (event) => {
-    let rectMap = mapContainer.getBoundingClientRect();
-    let rectFooter = footer.getBoundingClientRect();
-    let rectEmpty = empty.getBoundingClientRect();
-    let br = divblock.getBoundingClientRect();
-// console.log("div Top:"+br.top+", Left:"+br.left+", Right:"+br.right+", Bottom:"+br.bottom);
-// console.log("empty Top:"+rectEmpty.top+", Left:"+rectEmpty.left+", Right:"+rectEmpty.right+", Bottom:"+rectEmpty.bottom);
-// console.log("footer Top:"+rectFooter.top+", Left:"+rectFooter.left+", Right:"+rectFooter.right+", Bottom:"+rectFooter.bottom);
+$(document).ready(function()
+{
+    setTimeout(setMapDivSize, 200); // --- сработает точно после отрисовки контента в левом блоке мало ли добавим потом ленивую загрузку фоток
+});
 
-let space = window.innerHeight - divblock.offsetTop ;
-// console.log(space);
-    //console.log(rectMap.bottom);
-
-    if (br.top < 0) {
-        mapContainer.classList.add('map-container-fixed')
-    };
-    if (br.top > 0) {
-        mapContainer.classList.remove('map-container-fixed')
-    };
-//     console.log(typeof(space))
-// console.log(rectFooter.top < space);
-    if (rectFooter.top < space) {
-        console.log("нижняя ")
-        mapContainer.classList.remove('map-container-fixed')
-    };
-
-
-})
-
-
+$(document).on("scroll", function()
+{
+    setMapDivSize();
+});
