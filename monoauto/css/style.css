@@ -10963,7 +10963,7 @@ span.current {
 }
 .section-servise-item-uslugi .servise-item-uslugi .servise-item-uslugi-left .servise-item-usluga-subtitle .uslugi-block .uslugi-items {
   display: none;
-  overflow: scroll;
+  overflow-y: scroll;
   height: 300px;
 }
 .section-servise-item-uslugi .servise-item-uslugi .servise-item-uslugi-left .servise-item-usluga-subtitle .uslugi-block .uslugi-items .servise-usluga {
