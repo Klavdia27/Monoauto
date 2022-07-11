@@ -5430,29 +5430,13 @@ section.single-par2  .scroll-down-wrap{
 .contacts-map #singleMap {
 	height: 275px;
 }
-// .map-container #map-main{
-//     position: absolute;
-// 	top:0;
-// 	left:0;
-//     height: 100%;
-// 	width:100%;
-//     z-index: 990;
-// }
+
 .map-container.column-map {
 	width:calc(100% - 900px);
 	height: 100vh;
-	//position: fixed;
- 	//overflow: hidden;
-	// left:80px;
-	//top: 150px;
 }
 #service_map_inner {display: block; width: 100%; height: 100vh;}
 
-
-.map-container.column-map.right-position-map {
-	// left: inherit;
-	// right: 80px;
-}
 .empty {
 	display:inline;
 	height:5px;
@@ -8340,10 +8324,15 @@ span.current {
 	text-align: left;
 }
 .servise-usluga-count {
+	display: none;
 	margin-left: auto;
 	margin-right: 30px;
 	white-space: nowrap;
 }
+.servise-usluga-count.active {
+	display: block;
+}
+
 .servise-usluga-submit {
 	font-weight: 400;
 	font-size: 14px;

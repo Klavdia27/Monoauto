@@ -1088,7 +1088,6 @@ $(document).ready(function(){
 
 // время работы сервиса
 const btnServiseTime = document.querySelectorAll('.btn-servise-time-open')
-
 btnServiseTime.forEach((btn) => {
     btn.addEventListener('click', () => {
         btn.classList.toggle('open');
@@ -1097,7 +1096,6 @@ btnServiseTime.forEach((btn) => {
 
 // flag
 const flag = document.querySelectorAll('.flag');
-
 flag.forEach(elem => {
     elem.addEventListener('click', () => {
         elem.classList.toggle('active')
@@ -1138,13 +1136,9 @@ menuUslugi.forEach((item, index) => {
                 subMenuItem.forEach((el) => el.classList.remove('active'));
                 subMenuItem[index].classList.add('active');
                 submenu = index;
-                // console.log( "menu = ", menu, "submenu = ", submenu );
 
                 itemsUslugi.forEach((elem) => {
                     elem.classList.remove('active');
-                    // console.log(elem.dataset["menu"]);
-                    // console.log(elem.dataset["item"]);
-                    // console.log(elem.dataset["menu"] == 0);
                     if (elem.dataset["menu"] == menu && 
                         elem.dataset["item"] == `${menu}-${submenu}`) {
                         console.log("yes", menu, submenu)
@@ -1165,6 +1159,24 @@ subMenuItem.forEach((item, index) => {
             el.classList.remove('active');
             itemsUslugi[index].classList.add('active')
         })
+    })
+});
+
+// смена марок авто
+const carItem = document.querySelectorAll('.car-type-item');
+const countItems = document.querySelectorAll('.servise-usluga-count');
+
+carItem.forEach((el, index) => {
+    el.addEventListener('click', () => {
+        carItem.forEach((el) => el.classList.remove('active') )
+        el.classList.add('active')
+        countItems.forEach((el) => {
+            el.classList.remove('active');
+            if (el.dataset["count"] == index) {
+                el.classList.add('active')
+            }
+        })
+
     })
 })
 
@@ -1214,3 +1226,5 @@ $(document).on("scroll", function()
 {
     setMapDivSize();
 });
+
+

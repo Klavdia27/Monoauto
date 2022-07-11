@@ -10119,9 +10119,14 @@ span.current {
 }
 
 .servise-usluga-count {
+  display: none;
   margin-left: auto;
   margin-right: 30px;
   white-space: nowrap;
+}
+
+.servise-usluga-count.active {
+  display: block;
 }
 
 .servise-usluga-submit {
