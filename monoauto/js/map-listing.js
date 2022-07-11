@@ -137,16 +137,16 @@
             var index = currentInfobox;
             var marker_index = parseInt($(this).attr('href').split('#')[1], 10);
             google.maps.event.trigger(allMarkers[marker_index-1], "click");
-			if ($(this).hasClass("scroll-top-map")){
-			  $('html, body').animate({
-				scrollTop: $(".map-container").offset().top+ "-70px"
-			  }, 500)
-			}
-			else if ($(window).width()<1064){
-			  $('html, body').animate({
-				scrollTop: $(".map-container").offset().top+ "-70px"
-			  }, 500)
-			}
+			// if ($(this).hasClass("scroll-top-map")){
+			//   $('html, body').animate({
+			// 	scrollTop: $(".map-container").offset().top+ "-70px"
+			//   }, 500)
+			// }
+			// else if ($(window).width()<1064){
+			//   $('html, body').animate({
+			// 	scrollTop: $(".map-container").offset().top+ "-70px"
+			//   }, 500)
+			// }
         });
       // Scroll enabling button
       var scrollEnabling = $('.scrollContorl');

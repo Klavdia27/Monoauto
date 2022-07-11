@@ -538,12 +538,12 @@ initIsotope();
         modal.hide();
     });
     function csselem() {
-        $(".map-container.column-map").css({
-            height: $(window).outerHeight(true) - 150 + "px"
-        });
-        $(".map-container.column-map.no-top_search").css({
-            height: $(window).outerHeight(true) - 70 + "px"
-        });
+        // $(".map-container.column-map").css({
+        //     height: $(window).outerHeight(true) - 0 + "px"
+        // });
+        // $(".map-container.column-map.no-top_search").css({
+        //     height: $(window).outerHeight(true) - 0 + "px"
+        // });
         $(".slideshow-container .slideshow-item").css({
             height: $(".slideshow-container").outerHeight(true)
         });
@@ -608,9 +608,9 @@ initIsotope();
             $(".main-menu").removeClass("nav-holder");
             $(".main-menu nav").clone().addClass("menusb").appendTo(".main-menu");
             $(".menusb").menu();
-            $(".map-container.fw-map.big_map.hid-mob-map").css({
-                height: $(window).outerHeight(true) - 110 + "px"
-            });
+            // $(".map-container.fw-map.big_map.hid-mob-map").css({
+            //     height: $(window).outerHeight(true) - 110 + "px"
+            // });
             $(".novis_header-mod").removeClass("header-opt-modal");
             $(".novis_header-mod .hopmc_init").clone().addClass("header-opt-modal-container_mob").appendTo(".main-menu");
             $(".add-list_wrap a").removeClass("add-list");
@@ -1104,7 +1104,6 @@ flag.forEach(elem => {
     })
 })
 
-
 // servise-item uslugi menu 
 
 const menuUslugi = document.querySelectorAll('.menu-uslugi-item');
@@ -1169,7 +1168,6 @@ subMenuItem.forEach((item, index) => {
     })
 })
 
-
 // о компании
 const aboutItemsMenu = document.querySelectorAll(".about-servise-item");
 const aboutItems = document.querySelectorAll('.about-serv-item');
@@ -1184,27 +1182,44 @@ aboutItemsMenu.forEach((item, index) => {
     })
 }) 
 
-
 // catalog-servises-map
 const mapContainer = document.querySelector('.map-container');
 const contLeft = document.querySelector('.col-list-wrap_left')
 const footer = document.querySelector('.main-footer');
 const empty = document.querySelector('.empty');
 
-let intElemScrollTop = mapContainer.scrollTop;
+//let intElemScrollTop = mapContainer.scrollTop;
+const divblock = document.querySelector('.container-catalog-servises-items');
+//var br = divblock.getBoundingClientRect();
+//alert("Top:"+br.top+", Left:"+br.left+", Right:"+br.right+", Bottom:"+br.bottom);
 
 document.addEventListener('scroll', (event) => {
     let rectMap = mapContainer.getBoundingClientRect();
-    let rectLeft = contLeft.getBoundingClientRect();
+    let rectFooter = footer.getBoundingClientRect();
     let rectEmpty = empty.getBoundingClientRect();
+    let br = divblock.getBoundingClientRect();
+// console.log("div Top:"+br.top+", Left:"+br.left+", Right:"+br.right+", Bottom:"+br.bottom);
+// console.log("empty Top:"+rectEmpty.top+", Left:"+rectEmpty.left+", Right:"+rectEmpty.right+", Bottom:"+rectEmpty.bottom);
+// console.log("footer Top:"+rectFooter.top+", Left:"+rectFooter.left+", Right:"+rectFooter.right+", Bottom:"+rectFooter.bottom);
 
-    if (rectMap.top < 0) {
+let space = window.innerHeight - divblock.offsetTop ;
+// console.log(space);
+    //console.log(rectMap.bottom);
+
+    if (br.top < 0) {
         mapContainer.classList.add('map-container-fixed')
     };
-    if (rectLeft.top > 0) {
+    if (br.top > 0) {
         mapContainer.classList.remove('map-container-fixed')
     };
-    if (rectEmpty.bottom < 908) {
+//     console.log(typeof(space))
+// console.log(rectFooter.top < space);
+    if (rectFooter.top < space) {
+        console.log("нижняя ")
         mapContainer.classList.remove('map-container-fixed')
-    }
+    };
+
+
 })
+
+
