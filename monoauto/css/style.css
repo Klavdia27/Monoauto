@@ -11286,11 +11286,19 @@ span.current {
   color: #ffffff;
   right: 0;
   background: #00A92F;
-  border: 1px solid #00A92F;
   border-radius: 30px;
   padding: 11px 22px;
 }
 
 .total.active {
   display: block;
+}
+
+.inline-gallery-container {
+  width: 80%;
+  height: 0;
+}
+
+.d-none {
+  display: none;
 }

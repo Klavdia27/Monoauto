@@ -1227,4 +1227,39 @@ $(document).on("scroll", function()
     setMapDivSize();
 });
 
+// 
+const openGaleryServise = document.querySelector('.servise-item-count-foto')
+const galaryServ = document.querySelector('.lightgallery');
 
+openGaleryServise.addEventListener('click', () => {
+    console.log("смотреть фото");
+    galaryServ.classList.add('.active')
+})
+
+    lightGallery(document.getElementById('lightgallery'), {
+        plugins: [lgZoom, lgThumbnail],
+        speed: 500,
+        licenseKey: 'your_license_key'
+
+    });
+
+    const lgContainer = document.getElementById('inline-gallery-container');
+const inlineGallery = lightGallery(lgContainer, {
+    container: lgContainer,
+    dynamic: true,
+    hash: false,
+    closable: false,
+    showMaximizeIcon: true,
+    appendSubHtmlTo: '.lg-item',
+    slideDelay: 400,
+    slideShow  : true,
+    fullScreen : true,
+    thumbs     : true,
+    closeBtn   : true,
+    closeClickOutside: true,
+    opacity : 'auto',
+    smallBtn : 'auto',
+});
+
+// Since we are using dynamic mode, we need to programmatically open lightGallery
+inlineGallery.openGallery();

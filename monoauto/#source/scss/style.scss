@@ -9325,7 +9325,6 @@ height: 44px;
 		color: $white;
 		right: 0;
 		background: #00A92F;
-		border: 1px solid #00A92F;
 		border-radius: 30px;
 		padding: 11px 22px;
 	}
@@ -9336,4 +9335,10 @@ height: 44px;
 }
 
 
-
+.inline-gallery-container {
+	width: 80%;
+	height: 0;
+}
+.d-none {
+	display: none;
+}
