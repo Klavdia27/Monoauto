@@ -11302,3 +11302,168 @@ span.current {
 .d-none {
   display: none;
 }
+
+.registration-title {
+  font-weight: 700;
+  font-size: 31px;
+  line-height: 36px;
+  color: #000000;
+  text-align: left;
+  margin-bottom: 30px;
+}
+
+.registration-company {
+  margin-bottom: 20px;
+  width: 740px;
+}
+.registration-company label {
+  display: block;
+  text-align: left;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  color: #000000;
+  margin-bottom: 3px;
+}
+.registration-company label span {
+  color: red;
+}
+.registration-company input {
+  display: block;
+}
+.registration-company input[type=text],
+.registration-company input[type=password],
+.registration-company input[type=email] {
+  width: 100%;
+  display: block;
+  border: 1px solid #7D7D7D;
+  border-radius: 10px;
+  background: #F5F7FB;
+  padding: 15px 25px;
+  color: #000000;
+  font-size: 14px;
+  -webkit-appearance: none;
+  outline: none;
+  overflow: hidden;
+  z-index: 1;
+  font-weight: 400;
+}
+.registration-company input[type=checkbox] {
+  display: block;
+}
+.registration-company .terms-of-use {
+  color: #0C78ED;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.registration-company.checkbox {
+  text-align: left;
+}
+.registration-company.checkbox input {
+  margin-right: 15px;
+  width: 20px;
+  height: 20px;
+  background: #F5F5F5;
+  border: 1px solid #7D7D7D;
+  border-radius: 3px;
+}
+.registration-company.checkbox input, .registration-company.checkbox label {
+  display: inline;
+}
+
+.info-text {
+  text-align: left;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 12px;
+  color: #7D7D7D;
+  margin-bottom: 30px;
+}
+.info-text span {
+  color: red;
+}
+
+.registration-company-submit {
+  float: left;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  color: #ffffff;
+  background-color: #A1A1A1;
+  padding: 9px 37px;
+  border-radius: 30px;
+  white-space: nowrap;
+}
+
+.registration-company-submit.active:hover {
+  background-color: #028626;
+}
+
+.registration-company-submit.active {
+  background-color: #00A92F;
+}
+
+.steps {
+  width: 360px;
+  background: #F5F5F5;
+  border-radius: 10px;
+  padding: 30px 30px 5px 30px;
+}
+.steps .step-1, .steps .step-2, .steps .step-3 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 25px;
+}
+.steps .step-1 .descr, .steps .step-2 .descr, .steps .step-3 .descr {
+  text-align: left;
+  color: #7D7D7D;
+}
+.steps .step-1 .circle, .steps .step-2 .circle, .steps .step-3 .circle {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-right: 11px;
+  background: #7D7D7D;
+  border-radius: 30px;
+  color: white;
+  width: 37px;
+  height: 37px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: #FFFFFF;
+}
+.steps .step-1 .number, .steps .step-2 .number, .steps .step-3 .number {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+}
+.steps .step-1 .text, .steps .step-2 .text, .steps .step-3 .text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+}
+.steps .step-1.step-active .circle, .steps .step-2.step-active .circle, .steps .step-3.step-active .circle {
+  background: #0C78ED;
+}
+.steps .step-1.step-active .descr, .steps .step-2.step-active .descr, .steps .step-3.step-active .descr {
+  color: #000000;
+}
+
+.registration {
+  position: relative;
+}
+
+aside {
+  position: absolute;
+  top: 0;
+  right: 0;
+}

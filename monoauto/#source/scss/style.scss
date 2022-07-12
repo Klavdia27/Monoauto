@@ -9342,3 +9342,161 @@ height: 44px;
 .d-none {
 	display: none;
 }
+
+
+
+
+.registration-title  {
+	font-weight: 700;
+	font-size: 31px;
+	line-height: 36px;
+	color: #000000;
+	text-align: left;
+	margin-bottom: 30px;
+}
+.registration-company {
+	margin-bottom: 20px;
+  width: 740px;
+	label {
+		display: block;
+		text-align: left;
+		font-weight: 500;
+		font-size: 16px;
+		line-height: 19px;
+		color: #000000;
+		margin-bottom: 3px;
+		span {
+			color: red;
+		}
+	}
+	input {
+		display:block;
+	}
+	input[type=text],
+	input[type=password],
+	input[type=email] {
+		width: 100%;
+		display: block;
+		border: 1px solid #7D7D7D;
+		border-radius: 10px;
+		background: #F5F7FB;
+		padding: 15px 25px;
+		color: $black;
+		font-size: 14px;
+		-webkit-appearance: none;
+		outline: none;
+		overflow: hidden;
+		z-index: 1;
+		font-weight: 400;
+	}
+	input[type=checkbox] {
+		display: block;
+	}
+	.terms-of-use {
+		color: #0C78ED;
+		text-decoration: underline;
+		cursor: pointer;
+	}
+}
+.registration-company.checkbox {
+	text-align: left;
+	input {
+		margin-right: 15px;
+		width: 20px;
+		height: 20px;
+		background: #F5F5F5;
+		border: 1px solid #7D7D7D;
+		border-radius: 3px;
+	}
+	input, label {
+		display: inline;
+	}
+}
+.info-text {
+	text-align: left;
+	font-weight: 400;
+	font-size: 10px;
+	line-height: 12px;
+	color: #7D7D7D;
+	margin-bottom: 30px;
+	span {
+		color: red;
+	}
+}
+
+.registration-company-submit {
+	float: left;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 17px;
+	color: $white;
+
+	background-color: #A1A1A1;
+	padding: 9px 37px;
+	border-radius: 30px;
+	white-space: nowrap;
+}
+.registration-company-submit.active:hover {
+	background-color: $green-hover;
+}
+.registration-company-submit.active {
+	background-color: $green;
+}
+.steps {
+	width: 360px;
+	background: #F5F5F5;
+	border-radius: 10px;
+	padding: 30px 30px 5px 30px;
+	.step-1, .step-2, .step-3 {
+		display: flex;
+		margin-bottom: 25px;
+		.descr {
+			text-align: left;
+			color: #7D7D7D;
+		}
+		.circle {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			margin-right: 11px;
+			background: #7D7D7D;
+			border-radius: 30px;
+			color: white;
+			width: 37px;
+			height: 37px;
+			font-weight: 400;
+			font-size: 16px;
+			line-height: 19px;
+			color: #FFFFFF;
+		}
+		.number {
+			font-weight: 500;
+			font-size: 16px;
+			line-height: 19px;
+		}
+		.text {
+			font-weight: 400;
+			font-size: 14px;
+			line-height: 17px;
+
+		}
+	}
+	.step-1.step-active, .step-2.step-active, .step-3.step-active {
+		.circle {
+			background: #0C78ED;
+		}
+		.descr {
+			color: $black;
+		}
+	}
+}
+
+
+.registration {
+	position: relative;
+}
+aside {
+	position: absolute;
+	top: 0;
+	right: 0;
+}
