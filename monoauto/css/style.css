@@ -11418,7 +11418,9 @@ span.current {
   width: 358px;
 }
 
-.wrapper-dop-tel, .wrapper-social {
+.wrapper-dop-tel,
+.wrapper-social,
+.wrapper-cb-serv-item {
   width: 740px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -11426,6 +11428,10 @@ span.current {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+}
+
+.wrapper-dop-tel {
+  margin-top: 40px;
 }
 
 .registration-company.checkbox {
@@ -11444,6 +11450,43 @@ span.current {
 }
 .registration-company.checkbox label {
   font-weight: normal;
+}
+
+.registration-company label {
+  margin-bottom: 10px;
+}
+.registration-company .cb-serv-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 10px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  color: #000000;
+}
+.registration-company .cb-serv-item input {
+  margin-right: 10px;
+}
+
+.registration-company .add-foto-first, .registration-company .add-foto-group {
+  width: 117px;
+  height: 117px;
+  border-radius: 10px;
+  border: 1px dashed #898989;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.registration-company .add-foto-group {
+  margin-bottom: 30px;
 }
 
 .info-text {
@@ -11574,4 +11617,30 @@ aside {
   width: 100%;
   height: 100%;
   border-radius: 10px;
+}
+
+.registration-company .btn-add-tel.active {
+  float: left;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  color: #ffffff;
+  background-color: #0C78ED;
+  padding: 9px 37px;
+  border-radius: 30px;
+}
+.registration-company .btn-add-tel {
+  display: none;
+}
+.registration-company .input-tel {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.registration-company .input-tel input {
+  margin-right: 26px;
+}
+.registration-company .input-tel .btn-delete {
+  display: block;
+  cursor: pointer;
 }
