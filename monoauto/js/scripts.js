@@ -1197,6 +1197,8 @@ aboutItemsMenu.forEach((item, index) => {
 //catalog-servises-map
 function setMapDivSize()
 {
+    if($("#service_list").length==0)
+    return;
     var h = $("#service_list").height();            // --- высота левого блока
     var rh = $("#service_map_inner").height();      // --- высота блока с картой
     $("#service_map").height(h);                    // --- правый контейнер по высоте выровняем с левым
