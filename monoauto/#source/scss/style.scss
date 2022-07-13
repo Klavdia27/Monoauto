@@ -8292,6 +8292,7 @@ span.current {
 	margin: 0 7px;
 }
 .servise-bonus-icon {
+	width: 24px;
 	margin-left: 12px;
 }
 .servise-bonus-pmap {
@@ -9448,6 +9449,17 @@ height: 44px;
 		text-decoration: underline;
 		cursor: pointer;
 	}
+}
+.registration-company.dop-tel {
+	width: 230px;
+}
+.registration-company.social {
+	width: 358px;
+}
+.wrapper-dop-tel, .wrapper-social {
+	width: 740px;
+	display: flex;
+	justify-content: space-between;
 }
 .registration-company.checkbox {
 	text-align: left;

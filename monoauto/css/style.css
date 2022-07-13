@@ -10073,6 +10073,7 @@ span.current {
 }
 
 .servise-bonus-icon {
+  width: 24px;
   margin-left: 12px;
 }
 
@@ -11407,6 +11408,24 @@ span.current {
   color: #0C78ED;
   text-decoration: underline;
   cursor: pointer;
+}
+
+.registration-company.dop-tel {
+  width: 230px;
+}
+
+.registration-company.social {
+  width: 358px;
+}
+
+.wrapper-dop-tel, .wrapper-social {
+  width: 740px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .registration-company.checkbox {
