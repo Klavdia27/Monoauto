@@ -9411,6 +9411,9 @@ height: 44px;
 	input, label {
 		display: inline;
 	}
+	label {
+		font-weight: normal;
+	}
 }
 .info-text {
 	text-align: left;
@@ -9482,6 +9485,15 @@ height: 44px;
 		}
 	}
 	.step-1.step-active, .step-2.step-active, .step-3.step-active {
+		.circle {
+			background: #0C78ED;
+		}
+		.descr {
+			color: $black;
+		}
+	}
+	.step-1.step-close, .step-2.step-close, .step-3.step-close {
+		opacity: 0.4;
 		.circle {
 			background: #0C78ED;
 		}

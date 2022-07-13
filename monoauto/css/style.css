@@ -11371,6 +11371,9 @@ span.current {
 .registration-company.checkbox input, .registration-company.checkbox label {
   display: inline;
 }
+.registration-company.checkbox label {
+  font-weight: normal;
+}
 
 .info-text {
   text-align: left;
@@ -11455,6 +11458,15 @@ span.current {
   background: #0C78ED;
 }
 .steps .step-1.step-active .descr, .steps .step-2.step-active .descr, .steps .step-3.step-active .descr {
+  color: #000000;
+}
+.steps .step-1.step-close, .steps .step-2.step-close, .steps .step-3.step-close {
+  opacity: 0.4;
+}
+.steps .step-1.step-close .circle, .steps .step-2.step-close .circle, .steps .step-3.step-close .circle {
+  background: #0C78ED;
+}
+.steps .step-1.step-close .descr, .steps .step-2.step-close .descr, .steps .step-3.step-close .descr {
   color: #000000;
 }
 
