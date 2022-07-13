@@ -816,7 +816,9 @@ blockquote p {
 	width:100%;
 	color: #7d93b2;
    	font-family: 'Jost', sans-serif;
-	border: 1px solid #e5e7f2;
+	border: 1px solid #7d7d7d;
+	border-radius:10px;
+	margin-bottom: 20px;
 } 
 .header-search-wrapper .custom-form .btn {
 	color:#fff;
@@ -8324,10 +8326,12 @@ span.current {
 	text-align: left;
 }
 .servise-usluga-count {
-	display: none;
 	margin-left: auto;
 	margin-right: 30px;
 	white-space: nowrap;
+}
+.section-servise-item-uslugi .servise-item-uslugi .servise-item-uslugi-left .servise-item-usluga-subtitle .uslugi-block .uslugi-items .servise-usluga .servise-usluga-count {
+	display: none;
 }
 .servise-usluga-count.active {
 	display: block;
@@ -9372,6 +9376,38 @@ height: 44px;
 	input {
 		display:block;
 	}
+	textarea {
+		width: 100%;
+		height: 140px;
+		display: block;
+		border: 1px solid #7D7D7D;
+		border-radius: 10px;
+		background: #F5F7FB;
+		padding: 15px 25px;
+		color: $black;
+		font-size: 14px;
+		-webkit-appearance: none;
+		outline: none;
+		overflow: hidden;
+		z-index: 1;
+		font-weight: 400;
+	}
+  select {
+		width: 100%;
+		height: 140px;
+		display: block;
+		border: 1px solid #7D7D7D;
+		border-radius: 10px;
+		background: #F5F7FB;
+		padding: 15px 25px;
+		color: $black;
+		font-size: 14px;
+		-webkit-appearance: none;
+		outline: none;
+		overflow: hidden;
+		z-index: 1;
+		font-weight: 400;
+	}
 	input[type=text],
 	input[type=password],
 	input[type=email] {
@@ -9391,6 +9427,21 @@ height: 44px;
 	}
 	input[type=checkbox] {
 		display: block;
+	}
+	input[type=tel] {
+		width: 50%;
+		display: block;
+		border: 1px solid #7D7D7D;
+		border-radius: 10px;
+		background: #F5F7FB;
+		padding: 15px 25px;
+		color: $black;
+		font-size: 14px;
+		-webkit-appearance: none;
+		outline: none;
+		overflow: hidden;
+		z-index: 1;
+		font-weight: 400;
 	}
 	.terms-of-use {
 		color: #0C78ED;
@@ -9503,7 +9554,6 @@ height: 44px;
 	}
 }
 
-
 .registration {
 	position: relative;
 }
@@ -9511,4 +9561,27 @@ aside {
 	position: absolute;
 	top: 0;
 	right: 0;
+}
+
+.address-info {
+	width: 740px;
+	margin-top:-10px;
+	margin-bottom: 20px;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 17px;
+	color: #7D7D7D;
+	text-align: left;
+}
+.map-company {
+	width: 740px;
+	height: 230px;
+	border-radius: 10px;
+	border: 1px solid #7D7D7D;
+	margin-bottom: 20px;
+}
+#map-company {
+	width: 100%;
+	height: 100%;
+	border-radius: 10px;
 }
