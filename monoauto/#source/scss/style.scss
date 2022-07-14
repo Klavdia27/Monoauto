@@ -8937,7 +8937,7 @@ height: 44px;
 						font-size: 14px;
 						line-height: 17px;
 						color: black;
-						padding: 11px 37px;
+						padding: 11px 15px;
 						background: #F5F5F5;
 						border-radius: 10px;
 						margin: 0 4px;
@@ -9485,7 +9485,8 @@ height: 44px;
 	label {
 		margin-bottom: 10px;
 	}
-	.cb-serv-item {
+	.cb-serv-item, 
+	.cb-company-serv-item {
 		display: flex;
 		margin-bottom: 10px;
 		font-weight: 400;
@@ -9641,7 +9642,6 @@ aside {
 		background-color: #0C78ED;
 		padding: 9px 37px;
 		border-radius: 30px;
-
 	}
 	.btn-add-tel {
 		display: none;
@@ -9655,6 +9655,213 @@ aside {
 			display: block;
 			cursor: pointer;
 		}
-
 	}
 }
+.registration-company {
+	.auto {
+		display: flex;
+		align-items: center;
+		margin-bottom: 23px;
+	}
+	.label-auto {
+		display: inline;
+		margin-bottom: 0;
+		margin-right: 26px;
+	}
+	.checked-count-auto {
+		font-weight: 400;
+		font-size: 14px;
+		line-height: 16px;
+		color: #7D7D7D;
+	}
+	.choose-all {
+		margin-bottom: 25px;
+		font-weight: 400;
+		font-size: 14px;
+		line-height: 17px;
+		color: #000000;
+		text-align: left;
+		button {
+			border: 1px solid #00A92F;
+			border-radius: 30px;
+			width: 15px;
+			height: 15px;
+			margin-right: 10px;
+		}
+		button.btn-choose {
+			background: #00A92F;
+		}
+	}
+	.auto-items {
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		grid-gap: 10px;
+		.auto-item {
+			background: #F5F5F5;
+			border-radius: 10px;
+			display: flex;
+			font-weight: 400;
+			font-size: 14px;
+			line-height: 16px;
+			color: #000000;
+			padding: 8px;
+			align-items: center;
+			font-weight: 400;
+			font-size: 15px;
+			line-height: 27px;
+			letter-spacing: -0.01em;
+			color: #000000;
+			input {
+				margin-right: 10px;
+				border: 1px solid #7D7D7D;
+				border-radius: 30px;
+				width: 22px;
+				height: 22px;
+			}
+		}
+	}
+	.cb-company-serv-items {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		grid-gap: 10px;
+	}
+}
+
+
+.feature-wrapper {
+	width: 740px;
+	.feature-block {
+		margin-bottom: 35px;
+		.section__title.feature__title {
+			font-weight: 500;
+			font-size: 18px;
+			line-height: 35px;
+			text-align: left;
+			margin-bottom: 20px;
+			span {
+				font-weight: 400;
+				font-size: 14px;
+				line-height: 16px;
+				color: #7D7D7D;
+			}
+		}
+		.feature-list {
+			.feature__item {
+				margin-bottom: 20px;
+				.feature__link_active {
+					img {
+						transform: rotate(180deg);
+					}
+				}
+				.feature-item-wrap {
+					display: flex;
+					justify-content: space-between;
+					align-items: center;
+					padding: 17px 20px;
+					background: #F5F5F5;
+					border-radius: 10px;
+					margin-bottom: 10px;
+					.feature-item__title {
+						font-weight: 500;
+						font-size: 16px;
+						line-height: 19px;
+						color: #000000;
+					}
+					.feature-item__count {
+						font-weight: 400;
+						font-size: 14px;
+						line-height: 16px;
+						color: #7D7D7D;
+						margin-right: 30px;
+						margin-left: auto;
+					}
+				}
+				.items {
+					overflow-y: scroll;
+    			height: 250px;
+				}
+				.feature-sub {
+					background: #F5F5F5;
+					border-radius: 10px;
+					padding: 20px;
+					.show-by {
+						display: flex;
+						justify-content: end;
+						font-weight: 400;
+						font-size: 12px;
+						line-height: 15px;
+						color: #7D7D7D;
+						margin-bottom: 10px;
+						input {
+							margin-right: 5px;
+						}
+					}
+					.choose-all {
+						display: flex;
+						justify-content: space-between;
+						align-items: center;
+						margin-bottom: 20px;
+						padding: 0 0 0 15px;
+						div {
+							margin-left: 5px;
+							margin-right: auto;
+							font-weight: 400;
+							font-size: 13px;
+							line-height: 16px;
+							color: #7D7D7D;
+						}
+						img {
+							margin: 0 42px;
+						}
+					}
+					.feature-sub__item {
+						display: flex;
+						justify-content: space-between;
+						font-size: 14px;
+						line-height: 1.6;
+						margin-bottom: 10px;
+
+						.item {
+							justify-content: space-between;
+							width: 100%;
+							display: flex;
+							background: #FFFFFF;
+							border-radius: 30px;
+							padding: 8px 0 8px 15px;
+							color: black;
+							box-shadow: 0 4px 4px rgba(0,0,0,0.25);
+							.serv-text {
+								line-height: 17px;
+								margin-left: 5px;
+								margin-right: auto;
+								color: black;
+								padding: 3px 0;
+    						text-align: left;
+							}
+							input[type=text]{
+								margin: 0 23px;
+								background: #F5F5F5;
+								border-radius: 30px;
+								width: 70px;
+								color: #000000;
+								border: none;
+    						text-align: center;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+
+
+
+
+
+
+
+
+
+

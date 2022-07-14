@@ -1229,12 +1229,36 @@ $(document).on("scroll", function()
     setMapDivSize();
 });
 
-// 
+//frrf
+
+const btns = document.querySelectorAll('.feature__link');
+const lists = document.querySelectorAll('.feature-sub');
+
+btns.forEach((btnItem, index) => {
+    btnItem.addEventListener('click', () => {
+        btns.forEach((btnItem) => {
+            btnItem.classList.remove('feature__link_active');
+        })
+
+        btnItem.classList.add('feature__link_active');
+
+        lists.forEach((listItem) => {
+            listItem.classList.add('hidden');
+        })
+        
+        lists[index].classList.remove('hidden')
+    })
+})
+
+
+
+
+// на странице сервиса галерея фото сервиса
 const openGaleryServise = document.querySelector('.servise-item-count-foto')
 const galaryServ = document.querySelector('.lightgallery');
 
 openGaleryServise.addEventListener('click', () => {
-    console.log("смотреть фото");
+    //console.log("смотреть фото");
     galaryServ.classList.add('.active')
 })
 
@@ -1245,7 +1269,8 @@ openGaleryServise.addEventListener('click', () => {
 
     });
 
-    const lgContainer = document.getElementById('inline-gallery-container');
+const lgContainer = document.getElementById('inline-gallery-container');
+
 const inlineGallery = lightGallery(lgContainer, {
     container: lgContainer,
     dynamic: true,
@@ -1265,3 +1290,4 @@ const inlineGallery = lightGallery(lgContainer, {
 
 // Since we are using dynamic mode, we need to programmatically open lightGallery
 inlineGallery.openGallery();
+
