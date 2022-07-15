@@ -9867,6 +9867,10 @@ span.current {
   color: #ffffff;
   border: none;
 }
+.servise-official .service-official-icon {
+  height: 15px;
+  margin-right: 3px;
+}
 
 .servise-verified {
   background-color: #69ACF3;
@@ -9877,6 +9881,10 @@ span.current {
   line-height: 15px;
   color: #ffffff;
   border: none;
+}
+.servise-verified .servise-verified-icon {
+  height: 15px;
+  margin-right: 3px;
 }
 
 .servise-verified-item {

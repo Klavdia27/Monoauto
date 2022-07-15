@@ -8125,6 +8125,10 @@ span.current {
 	line-height: 15px;
 	color: $white;
 	border: none;
+	.service-official-icon {
+		height: 15px;
+    margin-right: 3px;
+	}
 }
 .servise-verified {
 	background-color: $blue;
@@ -8135,6 +8139,10 @@ span.current {
 	line-height: 15px;
 	color: $white;
 	border: none;
+	.servise-verified-icon {
+		height: 15px;
+    margin-right: 3px;
+	}
 }
 .servise-verified-item {
 	background-color: $blue;
