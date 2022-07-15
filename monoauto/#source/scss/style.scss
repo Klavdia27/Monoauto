@@ -8114,23 +8114,11 @@ span.current {
 	text-overflow: ellipsis;
 	height:50px;
 }
-.servise-official {
+.servise-verified-all {
 	margin-left: auto;
-	margin-right: 20px;
-	background-color: #FFC774;
-	border-radius: 10px;
-	padding: 6px 15px;
-	font-weight: 400;
-	font-size: 12px;
-	line-height: 15px;
-	color: $white;
-	border: none;
-	.service-official-icon {
-		height: 15px;
-    margin-right: 3px;
-	}
 }
 .servise-verified {
+	margin-left: 20px;
 	background-color: $blue;
 	border-radius: 10px;
 	padding: 6px 15px;
@@ -9340,6 +9328,7 @@ height: 44px;
 	display: none;
 	background: #F5F5F5;
 	border-radius: 30px;
+	border: 1px solid #d7d7d7;
 	padding: 11px 0 11px 22px;
 	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 	span {
