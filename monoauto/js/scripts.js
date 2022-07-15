@@ -1121,6 +1121,8 @@ menuUslugi.forEach((item, index) => {
         titleUslugi[index].classList.remove('disable');
         subMenuUslugi.forEach((el) => el.classList.remove('active'));
         subMenuUslugi[index].classList.add('active');
+        subMenuItem.forEach((el) => el.classList.remove('active'));
+        subMenuItem[0].classList.add('active');
         itemsUslugi.forEach((el) => {
             el.classList.remove('active');
             if (el.dataset["item"] == `${index}-0`) {
