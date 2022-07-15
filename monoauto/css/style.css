@@ -11675,14 +11675,14 @@ aside {
   color: #000000;
   text-align: left;
 }
-.registration-company .choose-all button {
+.registration-company .choose-all button.btn-choose {
   border: 1px solid #00A92F;
   border-radius: 30px;
   width: 15px;
   height: 15px;
   margin-right: 10px;
 }
-.registration-company .choose-all button.btn-choose {
+.registration-company .choose-all button.btn-choose-active {
   background: #00A92F;
 }
 .registration-company .auto-items {
@@ -11702,7 +11702,7 @@ aside {
   font-size: 14px;
   line-height: 16px;
   color: #000000;
-  padding: 8px;
+  padding: 2px 8px;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -11716,8 +11716,6 @@ aside {
   margin-right: 10px;
   border: 1px solid #7D7D7D;
   border-radius: 30px;
-  width: 22px;
-  height: 22px;
 }
 .registration-company .cb-company-serv-items {
   display: -ms-grid;
@@ -11811,22 +11809,11 @@ aside {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
   margin-bottom: 20px;
-  padding: 0 0 0 15px;
-}
-.feature-wrapper .feature-block .feature-list .feature__item .feature-sub .choose-all div {
-  margin-left: 5px;
-  margin-right: auto;
-  font-weight: 400;
-  font-size: 13px;
-  line-height: 16px;
-  color: #7D7D7D;
+  padding-right: 12px;
 }
 .feature-wrapper .feature-block .feature-list .feature__item .feature-sub .choose-all img {
   margin: 0 42px;

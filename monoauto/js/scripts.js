@@ -1229,8 +1229,7 @@ $(document).on("scroll", function()
     setMapDivSize();
 });
 
-//frrf
-
+// шаг 3 выбор услуг аккардеон
 const btns = document.querySelectorAll('.feature__link');
 const lists = document.querySelectorAll('.feature-sub');
 
@@ -1250,6 +1249,12 @@ btns.forEach((btnItem, index) => {
     })
 })
 
+// шаг 3 выбор всех авто
+$(".btn-choose").click(function() {
+    $('.btn-choose').toggleClass('btn-choose-active');
+    $('.input-auto-item').prop('checked', (i,v) => !v);
+});
+
 
 
 
@@ -1258,7 +1263,6 @@ const openGaleryServise = document.querySelector('.servise-item-count-foto')
 const galaryServ = document.querySelector('.lightgallery');
 
 openGaleryServise.addEventListener('click', () => {
-    //console.log("смотреть фото");
     galaryServ.classList.add('.active')
 })
 

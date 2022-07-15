@@ -9681,14 +9681,14 @@ aside {
 		line-height: 17px;
 		color: #000000;
 		text-align: left;
-		button {
+		button.btn-choose {
 			border: 1px solid #00A92F;
 			border-radius: 30px;
 			width: 15px;
 			height: 15px;
 			margin-right: 10px;
 		}
-		button.btn-choose {
+		button.btn-choose-active {
 			background: #00A92F;
 		}
 	}
@@ -9704,7 +9704,7 @@ aside {
 			font-size: 14px;
 			line-height: 16px;
 			color: #000000;
-			padding: 8px;
+			padding: 2px 8px;
 			align-items: center;
 			font-weight: 400;
 			font-size: 15px;
@@ -9715,8 +9715,6 @@ aside {
 				margin-right: 10px;
 				border: 1px solid #7D7D7D;
 				border-radius: 30px;
-				width: 22px;
-				height: 22px;
 			}
 		}
 	}
@@ -9798,18 +9796,9 @@ aside {
 					}
 					.choose-all {
 						display: flex;
-						justify-content: space-between;
-						align-items: center;
+						justify-content: end;
 						margin-bottom: 20px;
-						padding: 0 0 0 15px;
-						div {
-							margin-left: 5px;
-							margin-right: auto;
-							font-weight: 400;
-							font-size: 13px;
-							line-height: 16px;
-							color: #7D7D7D;
-						}
+						padding-right: 12px;
 						img {
 							margin: 0 42px;
 						}
