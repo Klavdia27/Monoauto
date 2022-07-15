@@ -9784,13 +9784,13 @@ span.current {
 }
 
 .section-catalog-items .servise-title-block .servise-title-flag {
-  width: 700px;
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
 }
 
 .servise-title-block-ligth {
@@ -9802,37 +9802,38 @@ span.current {
 }
 
 .section-catalog-items .servise-title-block-ligth .servise-title-flag {
-  width: 700px;
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
 }
 
 .content-sevrises-map .servise-title-block .servise-title-flag {
-  width: 475px;
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
 }
 
 .content-sevrises-map .servise-title-block-ligth .servise-title-flag {
-  width: 475px;
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
 }
 
 .servise-flag {
-  margin-left: 15px;
+  margin-right: 15px;
+  margin-top: 4px;
 }
 
 .flag.active .servise-flag path {
@@ -9844,8 +9845,14 @@ span.current {
   font-size: 21px;
   line-height: 25px;
   color: #000000;
-  white-space: nowrap;
   overflow: hidden;
+  text-align: left;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  height: 50px;
 }
 
 .servise-official {
@@ -9892,6 +9899,12 @@ span.current {
   display: flex;
   margin-right: auto;
   margin-bottom: 20px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.servise-item-rating .listing-rating {
+  top: -6px;
 }
 
 .rating-count {

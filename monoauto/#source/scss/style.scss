@@ -8047,9 +8047,9 @@ span.current {
 .section-catalog-items {
 	.servise-title-block {
 		.servise-title-flag {
-			width: 700px;
+			width:100%;
 			display: flex;
-			align-items: center;
+			align-items: start;
 		}
 	}
 }
@@ -8061,33 +8061,34 @@ span.current {
 .section-catalog-items {
 	.servise-title-block-ligth {
 		.servise-title-flag {
-			width: 700px;
+			width: 100%;
 			display: flex;
-			align-items: center;
+			align-items: start;
 		}
 	}
 }
 .content-sevrises-map {
 	.servise-title-block {
 		.servise-title-flag {
-			width: 475px; //поменять на 500
+			width: 100%; //поменять на 500
 			display: flex;
-			align-items: center;
+			align-items: start;
 		}
 	}
 }
 .content-sevrises-map {
 	.servise-title-block-ligth {
 		.servise-title-flag {
-			width: 475px; // поменять на 500
+			width: 100%; // поменять на 500
 			display: flex;
-			align-items: center;
+			align-items: start;
 		}
 	}
 }
 
 .servise-flag {
-	margin-left: 15px;
+	margin-right: 15px;
+	margin-top: 4px;
 }
 .flag.active {
 	.servise-flag {
@@ -8102,9 +8103,16 @@ span.current {
 	font-size: 21px;
 	line-height: 25px;
 	color: $black;
-	white-space: nowrap;
+	//white-space: nowrap;
   overflow: hidden;
-  // max-width: 650px;
+	text-align: left;
+	display: -webkit-box;
+	-webkit-line-clamp: 2;
+	-webkit-box-orient: vertical;
+	// max-width: 100px;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	height:50px;
 }
 .servise-official {
 	margin-left: auto;
@@ -8143,6 +8151,10 @@ span.current {
 	display: flex;
 	margin-right: auto;
 	margin-bottom: 20px;
+	align-items: center;
+	.listing-rating {
+		top: -6px;
+	}
 }
 .rating-count {
 	font-weight: 400;
