@@ -1087,12 +1087,46 @@ $(document).ready(function(){
 });
 
 // время работы сервиса
-const btnServiseTime = document.querySelectorAll('.btn-servise-time-open')
+const btnServiseTime = document.querySelectorAll('.btn-servise-time-open');
+
 btnServiseTime.forEach((btn) => {
     btn.addEventListener('click', () => {
         btn.classList.toggle('open');
     })
 })
+document.addEventListener("click", (event) => {
+    if (event.target.classList.contains('servise-time-open')) {
+        return;
+    }
+    btnServiseTime.forEach((el) => el.classList.remove('open'));
+    }
+  );
+
+// телефоны сервиса
+const telAll = document.querySelectorAll('.servise-coll');
+const telAllLight = document.querySelectorAll('.servise-coll-ligth');
+
+telAllLight.forEach((btn) => {
+    btn.addEventListener('click',() => {
+        btn.classList.toggle('open')
+
+    });
+});
+telAll.forEach((btn) => {
+    btn.addEventListener('click',() => {
+        btn.classList.toggle('open')
+    });
+});
+document.addEventListener("click", (event) => {
+    if (event.target.classList.contains('servise-coll-ligth')) {
+    return;
+    }
+    if (event.target.classList.contains('servise-coll')) {
+        return;
+    }
+    telAll.forEach((el) => el.classList.remove('open'));
+    telAllLight.forEach((el) => el.classList.remove('open'));
+});
 
 // flag
 const flag = document.querySelectorAll('.flag');

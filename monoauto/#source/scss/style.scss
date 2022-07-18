@@ -8228,9 +8228,8 @@ span.current {
 	position:relative;
 }
 
-.servise-info {
-	.dropdown-list-time-work,
-	.dropdown-list-company-tel {
+.servise-info, .servise-item-time {
+	.dropdown-list-time-work {
 		list-style-type: none;
 		margin: 0;
 		position: absolute;
@@ -8256,19 +8255,51 @@ span.current {
 			white-space: nowrap;
 		}
 	}
+
+}
+.servise-time {
+	.open {
+	 .dropdown-list-time-work {
+		 visibility: visible;
+		 opacity: 1;
+	 }
+ }
+}
+
+.servise-coll, .servise-coll-ligth {
 	.dropdown-list-company-tel {
+		list-style-type: none;
+		margin: 0;
+		position: absolute;
+		top: 100%;
 		left: 58%;
+		transform: translateX(-50%);
+		padding: 5px 10px;
+		background-color: #fff;
+		box-shadow: 0 0 5px rgb(0 0 0 / 30%);
+		border-radius: 10px;
+		opacity: 0;
+		visibility: hidden;
+		z-index: 15;
+		li {
+			color: #141221;
+			font-size: 14px;
+			line-height: 1.43;
+			font-family: "Commissioner Regular";
+			padding: 5px 10px;
+			text-align: center;
+			display: block;
+			cursor: pointer;
+			white-space: nowrap;
+		}
 	}
 }
 
-
-.servise-time {
-	 .open {
-		.dropdown-list-time-work {
+.servise-coll.open , .servise-coll-ligth.open{
+		.dropdown-list-company-tel {
 			visibility: visible;
 			opacity: 1;
 		}
-	}
 }
 
 .btn-servise-time-open {
