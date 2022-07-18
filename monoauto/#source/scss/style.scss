@@ -9133,7 +9133,6 @@ height: 44px;
 				}
 			}
 		}
-
 		.servise-item-uslugi-right {
 			.servise-item-social {
 				margin-top: 20px;
@@ -9199,6 +9198,66 @@ height: 44px;
 			line-height: 17px;
 			color: #000000;
 			text-align: left;
+			strong, b {
+				font-weight: bold;
+			}
+			h1, h2, h3, h4, h5, h6 {
+				display: block;
+				margin-left: 0;
+				margin-right: 0;
+				font-weight: bold;
+			}
+			h1 {
+				font-size: 2em;
+				margin-top: 0.67em;
+				margin-bottom: 0.67em;
+			}
+			h2 {
+				font-size: 1.5em;
+				margin-top: 0.83em;
+				margin-bottom: 0.83em;
+			}
+			h3 {
+				font-size: 1.17em;
+				margin-top: 1em;
+				margin-bottom: 1em;
+			}
+			h4 {
+				font-size: 1em;
+				margin-top: 1.33em;
+				margin-bottom: 1.33em;
+			}
+			h5 {
+				font-size: .83em;
+				margin-top: 1.67em;
+				margin-bottom: 1.67em;
+			}
+			h6 {
+				font-size: .67em;
+				margin-top: 2.33em;
+				margin-bottom: 2.33em;
+			}
+			ul {
+				display: block;
+				list-style-type: disc;
+				margin-top: 1em;
+				margin-bottom: 1 em;
+				margin-left: 0;
+				margin-right: 0;
+				padding-left: 40px;
+			}
+			li {
+				display: list-item;
+			}
+			ol {
+				display: block;
+				list-style-type: decimal;
+				margin-top: 1em;
+				margin-bottom: 1em;
+				margin-left: 0;
+				margin-right: 0;
+				padding-left: 40px;
+			}
 		}
 	}
 	.about-servise.show {
@@ -9917,7 +9976,54 @@ aside {
 }
 
 
-
+.breadcrumbs {
+  background-color: #f2f2f2;
+  min-height: 8px;
+  a {
+    color: #4f4f4f;
+  }
+  &__list {
+    // display: none;
+		display: flex;
+    padding: 8px 0;
+    list-style: none;
+    // @include md {
+    //   display: flex;
+    // }
+  }
+  &__item {
+    position: relative;
+		padding-right: 35px;
+    a {
+			font-weight: 400;
+			font-size: 15px;
+			line-height: 18px;
+			letter-spacing: -0.01em;
+			color: #7D7D7D;
+      // @include hover {
+      //   color: $red;
+      // }
+    }
+		a:hover {
+			color: black;
+		}
+    .arrow {
+      position: absolute;
+      right: 15px;
+      top: 50%;
+      transform: translate(0, -40%);
+    }
+  }
+  &__item.current {
+    a {
+      color: #4f4f4f;
+      font-weight: 700;
+    }
+    .arrow {
+      display: none;
+    }
+  }
+}
 
 
 
