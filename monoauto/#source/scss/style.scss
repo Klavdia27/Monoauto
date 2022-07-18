@@ -8228,8 +8228,9 @@ span.current {
 	position:relative;
 }
 
-.servise-time {
-	.dropdown-list-time-work {
+.servise-info {
+	.dropdown-list-time-work,
+	.dropdown-list-company-tel {
 		list-style-type: none;
 		margin: 0;
 		position: absolute;
@@ -8255,16 +8256,17 @@ span.current {
 			white-space: nowrap;
 		}
 	}
+	.dropdown-list-company-tel {
+		left: 58%;
+	}
 }
+
 
 .servise-time {
 	 .open {
 		.dropdown-list-time-work {
 			visibility: visible;
 			opacity: 1;
-			// transform: rotate(180deg);
-			// top: -224px;
-			// left:10px;
 		}
 	}
 }
@@ -8391,6 +8393,7 @@ span.current {
 .servise-coll, .servise-coll-ligth {
 	margin-bottom: 13px;
 	cursor: pointer;
+	position: relative;
 }
 .servise-coll-ligth {
 	margin:0;
@@ -9097,6 +9100,7 @@ height: 44px;
 				justify-content: center;
 				img {
 					margin: 0 10px;
+					height: 25px;
 				}
 			}
 		}

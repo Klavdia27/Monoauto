@@ -10008,7 +10008,8 @@ span.current {
   position: relative;
 }
 
-.servise-time .dropdown-list-time-work {
+.servise-info .dropdown-list-time-work,
+.servise-info .dropdown-list-company-tel {
   list-style-type: none;
   margin: 0;
   position: absolute;
@@ -10025,7 +10026,8 @@ span.current {
   visibility: hidden;
   z-index: 15;
 }
-.servise-time .dropdown-list-time-work li {
+.servise-info .dropdown-list-time-work li,
+.servise-info .dropdown-list-company-tel li {
   color: #141221;
   font-size: 14px;
   line-height: 1.43;
@@ -10035,6 +10037,9 @@ span.current {
   display: block;
   cursor: pointer;
   white-space: nowrap;
+}
+.servise-info .dropdown-list-company-tel {
+  left: 58%;
 }
 
 .servise-time .open .dropdown-list-time-work {
@@ -10202,6 +10207,7 @@ span.current {
 .servise-coll, .servise-coll-ligth {
   margin-bottom: 13px;
   cursor: pointer;
+  position: relative;
 }
 
 .servise-coll-ligth {
@@ -11052,6 +11058,7 @@ span.current {
 }
 .section-servise-item-uslugi .servise-item-uslugi .servise-item-uslugi-right .servise-item-social img {
   margin: 0 10px;
+  height: 25px;
 }
 
 .section-about-servise .about-servise-item-menu {
