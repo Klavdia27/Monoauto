@@ -9725,14 +9725,14 @@ aside {
 		line-height: 17px;
 		color: #000000;
 		text-align: left;
-		button.btn-choose {
+		span.btn-choose {
 			border: 1px solid #00A92F;
 			border-radius: 30px;
-			width: 15px;
-			height: 15px;
 			margin-right: 10px;
+			padding: 0px 6px;
+			font-size: 8px;
 		}
-		button.btn-choose-active {
+		span.btn-choose-active {
 			background: #00A92F;
 		}
 	}

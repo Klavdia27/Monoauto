@@ -11721,14 +11721,14 @@ aside {
   color: #000000;
   text-align: left;
 }
-.registration-company .choose-all button.btn-choose {
+.registration-company .choose-all span.btn-choose {
   border: 1px solid #00A92F;
   border-radius: 30px;
-  width: 15px;
-  height: 15px;
   margin-right: 10px;
+  padding: 0px 6px;
+  font-size: 8px;
 }
-.registration-company .choose-all button.btn-choose-active {
+.registration-company .choose-all span.btn-choose-active {
   background: #00A92F;
 }
 .registration-company .auto-items {
