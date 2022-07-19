@@ -1302,7 +1302,89 @@ $(".btn-choose").click(function() {
 });
 
 
-// на странице сервиса галерея фото сервиса
+
+
+//
+function reinit()
+{
+    $(".btn-servise-time-open, .servise-coll, .servise-coll-ligth").unbind("click");
+    $(".btn-servise-time-open, .servise-coll, .servise-coll-ligth").on("click", function (e) {
+        e.preventDefault();
+        $(this).toggleClass('open');
+        return false;
+    });
+
+    $(document).on("click", function () {
+        $(".btn-servise-time-open.open,  .servise-coll.open, .servise-coll-ligth.open").removeClass("open");
+    });
+}
+
+
+// множественная загрузка фото на странице сервиса
+jQuery(document).ready(function () {
+    ImgUpload();
+  });
+  
+  function ImgUpload() {
+    let imgWrap = "";
+    let imgArray = [];
+  
+    $('.upload__inputfile').each(function () {
+      $(this).on('change', function (e) {
+        imgWrap = $(this).closest('.upload__box').find('.upload__img-wrap');
+        let maxLength = $(this).attr('data-max_length');
+  
+        let files = e.target.files;
+        let filesArr = Array.prototype.slice.call(files);
+        let iterator = 0;
+        filesArr.forEach(function (f, index) {
+  
+          if (!f.type.match('image.*')) {
+            return;
+          }
+  
+          if (imgArray.length > maxLength) {
+            return false
+          } else {
+            let len = 0;
+            for (let i = 0; i < imgArray.length; i++) {
+              if (imgArray[i] !== undefined) {
+                len++;
+              }
+            }
+            if (len > maxLength) {
+              return false;
+            } else {
+              imgArray.push(f);
+  
+              let reader = new FileReader();
+              reader.onload = function (e) {
+                let html = "<div class='upload__img-box'><div style='background-image: url(" + e.target.result + ")' data-number='" + $(".upload__img-close").length + "' data-file='" + f.name + "' class='img-bg'><div class='upload__img-close'></div></div></div>";
+                imgWrap.append(html);
+                iterator++;
+              }
+              reader.readAsDataURL(f);
+            }
+          }
+        });
+      });
+    });
+  
+    $('body').on('click', ".upload__img-close", function (e) {
+      let file = $(this).parent().data("file");
+      for (let i = 0; i < imgArray.length; i++) {
+        if (imgArray[i].name === file) {
+          imgArray.splice(i, 1);
+          break;
+        }
+      }
+      $(this).parent().parent().remove();
+    });
+  }
+
+
+
+  // на странице сервиса галерея фото сервиса
 const openGaleryServise = document.querySelector('.servise-item-count-foto')
 const galaryServ = document.querySelector('.lightgallery');
 
@@ -1338,18 +1420,3 @@ const inlineGallery = lightGallery(lgContainer, {
 
 // Since we are using dynamic mode, we need to programmatically open lightGallery
 inlineGallery.openGallery();
-
-//
-function reinit()
-{
-    $(".btn-servise-time-open, .servise-coll, .servise-coll-ligth").unbind("click");
-    $(".btn-servise-time-open, .servise-coll, .servise-coll-ligth").on("click", function (e) {
-        e.preventDefault();
-        $(this).toggleClass('open');
-        return false;
-    });
-
-    $(document).on("click", function () {
-        $(".btn-servise-time-open.open,  .servise-coll.open, .servise-coll-ligth.open").removeClass("open");
-    });
-}

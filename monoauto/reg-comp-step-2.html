@@ -229,21 +229,34 @@
                 </div>
               </div>
 
-              <div class="registration-company">
-                <label>Главное фото компании <span>*</span></label>
-                <div class="add-foto-first">
-                  <a href="#">
-                    <img src="../images/svg/add.svg" alt="add icon">
-                  </a>
+              <div class="upload__box">
+                <div class="upload__btn-box">
+                  <div class="upload__btn-text">Главное фото компании <span>*</span> </div>
+                  <label class="upload__btn">
+                    <div class="add-foto-group">
+                      <a href="#">
+                        <img src="../images/svg/add.svg" alt="add icon">
+                      </a>
+                    </div>
+                    <input type="file" data-max_length="20" class="upload__inputfile">
+                  </label>
                 </div>
+                <div class="upload__img-wrap"></div>
               </div>
-              <div class="registration-company">
-                <label>Галерея фотографий </label>
-                <div class="add-foto-group">
-                  <a href="#">
-                    <img src="../images/svg/add.svg" alt="add icon">
-                  </a>
+    
+              <div class="upload__box">
+                <div class="upload__btn-box">
+                  <div class="upload__btn-text">Галерея фотографий</div>
+                  <label class="upload__btn">
+                    <div class="add-foto-group">
+                      <a href="#">
+                        <img src="../images/svg/add.svg" alt="add icon">
+                      </a>
+                    </div>
+                    <input type="file" multiple="" data-max_length="20" class="upload__inputfile">
+                  </label>
                 </div>
+                <div class="upload__img-wrap"></div>
               </div>
 
               <div class="registration-company checkbox">
@@ -252,6 +265,7 @@
                   <a href="#" class="terms-of-use">обработку персональных данных</a>
                 </label>
               </div>
+
 
               <div class="info-text"><span>*</span> - обозначены поля обязательные для заполнения</div>
 
