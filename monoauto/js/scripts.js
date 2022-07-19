@@ -841,6 +841,7 @@ initIsotope();
     });
 }
 
+
 $.fn.duplicate = function (a, b) {
     var c = [];
     for (var d = 0; d < a; d++) $.merge(c, this.clone(b).get());
@@ -971,14 +972,7 @@ function initparallax() {
         }, 1);	
 	}
 }
-document.addEventListener('gesturestart', function (e) {
-	e.preventDefault();
-});
-//   Init All ------------------
-$(document).ready(function () {
-    initHomeradar();
-    initparallax();
-});
+
 
 // слайдер на странице каталога
 $(document).ready(function(){
@@ -1071,6 +1065,19 @@ $(document).ready(function(){
         dots: false,
         adaptiveHeight:true,
         slidesToShow: 3,
+        slidesToScroll: 1,
+        speed: 200,
+        easing: 'linear',
+        infinite: true, 
+    });
+  })
+    // слайдер на странице сервиса sertificate
+$(document).ready(function(){
+    $('.slider-servise-sertificate').slick({
+        arrows: true,
+        dots: false,
+        adaptiveHeight:true,
+        slidesToShow: 5,
         slidesToScroll: 1,
         speed: 200,
         easing: 'linear',
@@ -1238,6 +1245,7 @@ aboutItemsMenu.forEach((item, index) => {
         aboutItems[index].classList.add('show');
 
     })
+
 }) 
 
 //catalog-servises-map
@@ -1304,7 +1312,7 @@ $(".btn-choose").click(function() {
 
 
 
-//
+//реинициализация 
 function reinit()
 {
     $(".btn-servise-time-open, .servise-coll, .servise-coll-ligth").unbind("click");
@@ -1382,7 +1390,14 @@ jQuery(document).ready(function () {
     });
   }
 
-
+  document.addEventListener('gesturestart', function (e) {
+	e.preventDefault();
+});
+//   Init All ------------------
+$(document).ready(function () {
+    initHomeradar();
+    initparallax();
+});
 
   // на странице сервиса галерея фото сервиса
 const openGaleryServise = document.querySelector('.servise-item-count-foto')
