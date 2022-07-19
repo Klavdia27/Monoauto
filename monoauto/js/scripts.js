@@ -1103,47 +1103,20 @@ $(document).ready(function(){
     }, "xml");
 });
 
-// время работы сервиса
-const btnServiseTime = document.querySelectorAll('.btn-servise-time-open');
-
-btnServiseTime.forEach((btn) => {
-    btn.addEventListener('click', () => {
-        btn.classList.toggle('open');
-    })
-})
-document.addEventListener("click", (event) => {
-    if (event.target.classList.contains('servise-time-open')) {
-        return;
-    }
-    btnServiseTime.forEach((el) => el.classList.remove('open'));
-    }
-  );
-
-// телефоны сервиса
-const telAll = document.querySelectorAll('.servise-coll');
-const telAllLight = document.querySelectorAll('.servise-coll-ligth');
-
-telAllLight.forEach((btn) => {
-    btn.addEventListener('click',() => {
-        btn.classList.toggle('open')
-
+//реинициализация (время работы, телефоны сервиса)
+function reinit()
+{
+    $(".btn-servise-time-open, .servise-coll, .servise-coll-ligth").unbind("click");
+    $(".btn-servise-time-open, .servise-coll, .servise-coll-ligth").on("click", function (e) {
+        e.preventDefault();
+        $(this).toggleClass('open');
+        return false;
     });
-});
-telAll.forEach((btn) => {
-    btn.addEventListener('click',() => {
-        btn.classList.toggle('open')
+
+    $(document).on("click", function () {
+        $(".btn-servise-time-open.open,  .servise-coll.open, .servise-coll-ligth.open").removeClass("open");
     });
-});
-document.addEventListener("click", (event) => {
-    if (event.target.classList.contains('servise-coll-ligth')) {
-    return;
-    }
-    if (event.target.classList.contains('servise-coll')) {
-        return;
-    }
-    telAll.forEach((el) => el.classList.remove('open'));
-    telAllLight.forEach((el) => el.classList.remove('open'));
-});
+}
 
 // flag
 const flag = document.querySelectorAll('.flag');
@@ -1229,7 +1202,6 @@ carItem.forEach((el, index) => {
                 el.classList.add('active')
             }
         })
-
     })
 })
 
@@ -1243,7 +1215,9 @@ aboutItemsMenu.forEach((item, index) => {
         aboutItemsMenu[index].classList.add('active');
         aboutItems.forEach((el) => el.classList.remove('show'));  
         aboutItems[index].classList.add('show');
-
+        setTimeout(function(){
+            $('.slick-prev', '.slider-servise-sertificate').trigger('click');
+          }, 200);
     })
 
 }) 
@@ -1309,23 +1283,6 @@ $(".btn-choose").click(function() {
     $('.input-auto-item').prop('checked', (i,v) => !v);
 });
 
-
-
-
-//реинициализация 
-function reinit()
-{
-    $(".btn-servise-time-open, .servise-coll, .servise-coll-ligth").unbind("click");
-    $(".btn-servise-time-open, .servise-coll, .servise-coll-ligth").on("click", function (e) {
-        e.preventDefault();
-        $(this).toggleClass('open');
-        return false;
-    });
-
-    $(document).on("click", function () {
-        $(".btn-servise-time-open.open,  .servise-coll.open, .servise-coll-ligth.open").removeClass("open");
-    });
-}
 
 
 // множественная загрузка фото на странице сервиса
@@ -1397,7 +1354,9 @@ jQuery(document).ready(function () {
 $(document).ready(function () {
     initHomeradar();
     initparallax();
+    reinit()
 });
+
 
   // на странице сервиса галерея фото сервиса
 const openGaleryServise = document.querySelector('.servise-item-count-foto')
