@@ -28,21 +28,7 @@ function initHomeradar() {
         });
     }
     cardRaining();
-    function cardRaining2() {
-        var cr2 = $(".card-popup-rainingvis"),
-            sts = $(".price-level-item");
-        cr2.each(function () {
-            var starcount2 = $(this).attr("data-starrating2");
-            $("<i class='fas fa-star'></i>").duplicate(starcount2).prependTo(this);
-        });
-        sts.each(function () {
-            var pricecount = $(this).attr("data-pricerating");
-            $("<strong>$</strong>").duplicate(pricecount).prependTo(this);
-        });
-        $("<div class='card-popup-rainingvis_bg'><div>").appendTo(".card-popup-rainingvis");
-        $("<span class='card-popup-rainingvis_bg_item'></span>").duplicate(5).prependTo(".card-popup-rainingvis_bg");
-    }
-    cardRaining2();
+
     $(".eye").on("click touchstart", function () {
         var epi = $(this).parent(".pass-input-wrap").find("input");
         if (epi.attr("type") === "password") {
@@ -854,6 +840,30 @@ initIsotope();
         $(".dashboard-submenu").toggleClass("db_submenu_open-init");
     });
 }
+
+$.fn.duplicate = function (a, b) {
+    var c = [];
+    for (var d = 0; d < a; d++) $.merge(c, this.clone(b).get());
+    return this.pushStack(c);
+};
+
+function cardRaining2() {
+    var cr2 = $(".card-popup-rainingvis").empty(),
+        sts = $(".price-level-item");
+    cr2.each(function () {
+        var starcount2 = $(this).attr("data-starrating2");
+        $("<i class='fas fa-star'></i>").duplicate(starcount2).prependTo(this);
+    });
+    sts.each(function () {
+        var pricecount = $(this).attr("data-pricerating");
+        $("<strong>$</strong>").duplicate(pricecount).prependTo(this);
+    });
+    $("<div class='card-popup-rainingvis_bg'><div>").appendTo(".card-popup-rainingvis");
+    $("<span class='card-popup-rainingvis_bg_item'></span>").duplicate(5).prependTo(".card-popup-rainingvis_bg");
+}
+cardRaining2();
+
+
 //   Uplaod ------------------
 $('.fuzone input').each(function () {
     $(this).on('change', function () {
@@ -1292,8 +1302,6 @@ $(".btn-choose").click(function() {
 });
 
 
-
-
 // на странице сервиса галерея фото сервиса
 const openGaleryServise = document.querySelector('.servise-item-count-foto')
 const galaryServ = document.querySelector('.lightgallery');
@@ -1331,3 +1339,17 @@ const inlineGallery = lightGallery(lgContainer, {
 // Since we are using dynamic mode, we need to programmatically open lightGallery
 inlineGallery.openGallery();
 
+//
+function reinit()
+{
+    $(".btn-servise-time-open, .servise-coll, .servise-coll-ligth").unbind("click");
+    $(".btn-servise-time-open, .servise-coll, .servise-coll-ligth").on("click", function (e) {
+        e.preventDefault();
+        $(this).toggleClass('open');
+        return false;
+    });
+
+    $(document).on("click", function () {
+        $(".btn-servise-time-open.open,  .servise-coll.open, .servise-coll-ligth.open").removeClass("open");
+    });
+}
