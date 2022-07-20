@@ -1116,7 +1116,6 @@ function reinit()
         $(".dropdown-list-time-work, .dropdown-list-company-tel").on("click", function(e)
         {
             e.preventDefault();
-            console.log('dropdown-list-time-work');
             return false;
         });
     });
