@@ -937,6 +937,7 @@ $(".use-current-price").on("click", function () {
     var curproppr = $(".list-single-header-price").attr("data-propertyprise");
     $("#amt").val(curproppr);
 });
+
 //   Parallax ------------------
 function initparallax() {
     var a = {
@@ -973,7 +974,6 @@ function initparallax() {
 	}
 }
 
-
 // слайдер на странице каталога
 $(document).ready(function(){
     $('.slider-servise').slick({
@@ -987,7 +987,6 @@ $(document).ready(function(){
         infinite: false, //слайдер  бесконечный
     });
   })
-
 // слайдер на странице каталога c map
 $(document).ready(function(){
     $('.slider-servise-map').slick({
@@ -1001,7 +1000,6 @@ $(document).ready(function(){
         infinite: false, 
     });
   })
-
   // слайдер на странице сервиса (будет в мадольном окне)
 $(document).ready(function(){
     $('.slider-servise-item').slick({
@@ -1015,7 +1013,6 @@ $(document).ready(function(){
         infinite: true, 
     });
   })
-
 // слайдер на странице сервиса акции
 $(document).ready(function(){
     $('.slider-servise-sale').slick({
@@ -1043,7 +1040,6 @@ $(document).ready(function(){
         infinite: true, 
     });
     })
-
 
 // слайдер на странице сервиса марки авто
 $(document).ready(function(){
@@ -1115,7 +1111,16 @@ function reinit()
 
     $(document).on("click", function () {
         $(".btn-servise-time-open.open,  .servise-coll.open, .servise-coll-ligth.open").removeClass("open");
+        
+        $(".dropdown-list-time-work, .dropdown-list-company-tel").unbind("click");
+        $(".dropdown-list-time-work, .dropdown-list-company-tel").on("click", function(e)
+        {
+            e.preventDefault();
+            console.log('dropdown-list-time-work');
+            return false;
+        });
     });
+
 }
 
 // flag
@@ -1283,8 +1288,6 @@ $(".btn-choose").click(function() {
     $('.input-auto-item').prop('checked', (i,v) => !v);
 });
 
-
-
 // множественная загрузка фото на странице сервиса
 jQuery(document).ready(function () {
     ImgUpload();
@@ -1347,15 +1350,7 @@ jQuery(document).ready(function () {
     });
   }
 
-  document.addEventListener('gesturestart', function (e) {
-	e.preventDefault();
-});
-//   Init All ------------------
-$(document).ready(function () {
-    initHomeradar();
-    initparallax();
-    reinit()
-});
+
 
 
   // на странице сервиса галерея фото сервиса
@@ -1410,4 +1405,16 @@ $(document).ready(function () {
         opacity : 'auto',
         smallBtn : 'auto',
         thumbnail : true,  // должны быть миниатюры
+    });
+
+
+
+    document.addEventListener('gesturestart', function (e) {
+        e.preventDefault();
+    });
+    //   Init All ------------------
+    $(document).ready(function () {
+        initHomeradar();
+        initparallax();
+        reinit()
     });
