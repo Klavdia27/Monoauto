@@ -11446,11 +11446,6 @@ span.current {
   display: block;
 }
 
-.inline-gallery-container {
-  width: 80%;
-  height: 0;
-}
-
 .d-none {
   display: none;
 }

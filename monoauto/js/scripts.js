@@ -1058,7 +1058,7 @@ $(document).ready(function(){
         infinite: true, 
     });
   })
-  // слайдер на странице сервиса марки авто
+  // слайдер на странице сервиса фотогалерея
 $(document).ready(function(){
     $('.slider-servise-fotos').slick({
         arrows: true,
@@ -1068,7 +1068,7 @@ $(document).ready(function(){
         slidesToScroll: 1,
         speed: 200,
         easing: 'linear',
-        infinite: true, 
+        infinite: false, //слайдер  бесконечный - должен быть отключен если подключаем fancybox gallery
     });
   })
     // слайдер на странице сервиса sertificate
@@ -1081,7 +1081,7 @@ $(document).ready(function(){
         slidesToScroll: 1,
         speed: 200,
         easing: 'linear',
-        infinite: true, 
+        infinite: false, 
     });
   })
 
@@ -1359,38 +1359,55 @@ $(document).ready(function () {
 
 
   // на странице сервиса галерея фото сервиса
-const openGaleryServise = document.querySelector('.servise-item-count-foto')
-const galaryServ = document.querySelector('.lightgallery');
-
-openGaleryServise.addEventListener('click', () => {
-    galaryServ.classList.add('.active')
-})
-
-    lightGallery(document.getElementById('lightgallery'), {
-        plugins: [lgZoom, lgThumbnail],
-        speed: 500,
-        licenseKey: 'your_license_key'
-
+    $("#inline-gallery-container").lightGallery({
+        dynamic: true,
+        hash: false,
+        closable: false,
+        showMaximizeIcon: true,
+        appendSubHtmlTo: '.lg-item',
+        slideDelay: 400,
+        slideShow  : true,
+        fullScreen : true,
+        thumbs     : true,
+        closeBtn   : true,
+        closeClickOutside: true,
+        opacity : 'auto',
+        smallBtn : 'auto',
+        thumbnail : true, // должны быть миниатюры
     });
 
-const lgContainer = document.getElementById('inline-gallery-container');
+    // на странице сервиса лайтгалерея в слайдере фотогалереи сервиса
+    $("#gallery-fotos").lightGallery({
+        dynamic: true,
+        hash: false,
+        closable: false,
+        showMaximizeIcon: true,
+        appendSubHtmlTo: '.lg-item',
+        slideDelay: 400,
+        slideShow  : true,
+        fullScreen : true,
+        thumbs     : true,
+        closeBtn   : true,
+        closeClickOutside: true,
+        opacity : 'auto',
+        smallBtn : 'auto',
+        thumbnail : true,  // должны быть миниатюры
+    });
 
-const inlineGallery = lightGallery(lgContainer, {
-    container: lgContainer,
-    dynamic: true,
-    hash: false,
-    closable: false,
-    showMaximizeIcon: true,
-    appendSubHtmlTo: '.lg-item',
-    slideDelay: 400,
-    slideShow  : true,
-    fullScreen : true,
-    thumbs     : true,
-    closeBtn   : true,
-    closeClickOutside: true,
-    opacity : 'auto',
-    smallBtn : 'auto',
-});
-
-// Since we are using dynamic mode, we need to programmatically open lightGallery
-inlineGallery.openGallery();
+        // на странице сервиса лайтгалерея в слайдере сертификатов сервиса
+    $("#gallery-sertificate").lightGallery({
+        dynamic: true,
+        hash: false,
+        closable: false,
+        showMaximizeIcon: true,
+        appendSubHtmlTo: '.lg-item',
+        slideDelay: 400,
+        slideShow  : true,
+        fullScreen : true,
+        thumbs     : true,
+        closeBtn   : true,
+        closeClickOutside: true,
+        opacity : 'auto',
+        smallBtn : 'auto',
+        thumbnail : true,  // должны быть миниатюры
+    });
