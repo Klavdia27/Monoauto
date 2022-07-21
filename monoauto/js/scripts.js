@@ -1292,67 +1292,68 @@ jQuery(document).ready(function () {
     ImgUpload();
   });
   
-  function ImgUpload() {
-    let imgWrap = "";
-    let imgArray = [];
-  
-    $('.upload__inputfile').each(function () {
-      $(this).on('change', function (e) {
-        imgWrap = $(this).closest('.upload__box').find('.upload__img-wrap');
-        let maxLength = $(this).attr('data-max_length');
-  
-        let files = e.target.files;
-        let filesArr = Array.prototype.slice.call(files);
-        let iterator = 0;
-        filesArr.forEach(function (f, index) {
-  
-          if (!f.type.match('image.*')) {
-            return;
-          }
-  
-          if (imgArray.length > maxLength) {
-            return false
-          } else {
-            let len = 0;
-            for (let i = 0; i < imgArray.length; i++) {
-              if (imgArray[i] !== undefined) {
-                len++;
-              }
-            }
-            if (len > maxLength) {
-              return false;
-            } else {
-              imgArray.push(f);
-  
-              let reader = new FileReader();
-              reader.onload = function (e) {
-                let html = "<div class='upload__img-box'><div style='background-image: url(" + e.target.result + ")' data-number='" + $(".upload__img-close").length + "' data-file='" + f.name + "' class='img-bg'><div class='upload__img-close'></div></div></div>";
-                imgWrap.append(html);
-                iterator++;
-              }
-              reader.readAsDataURL(f);
-            }
-          }
-        });
-      });
-    });
-  
-    $('body').on('click', ".upload__img-close", function (e) {
-      let file = $(this).parent().data("file");
-      for (let i = 0; i < imgArray.length; i++) {
-        if (imgArray[i].name === file) {
-          imgArray.splice(i, 1);
-          break;
+function ImgUpload() {
+let imgWrap = "";
+let imgArray = [];
+
+$('.upload__inputfile').each(function () {
+    $(this).on('change', function (e) {
+    imgWrap = $(this).closest('.upload__box').find('.upload__img-wrap');
+    let maxLength = $(this).attr('data-max_length');
+
+    let files = e.target.files;
+    let filesArr = Array.prototype.slice.call(files);
+    let iterator = 0;
+    filesArr.forEach(function (f, index) {
+
+        if (!f.type.match('image.*')) {
+        return;
         }
-      }
-      $(this).parent().parent().remove();
+
+        if (imgArray.length > maxLength) {
+        return false
+        } else {
+        let len = 0;
+        for (let i = 0; i < imgArray.length; i++) {
+            if (imgArray[i] !== undefined) {
+            len++;
+            }
+        }
+        if (len > maxLength) {
+            return false;
+        } else {
+            imgArray.push(f);
+
+            let reader = new FileReader();
+            reader.onload = function (e) {
+            let html = "<div class='upload__img-box'><div style='background-image: url(" + e.target.result + ")' data-number='" + $(".upload__img-close").length + "' data-file='" + f.name + "' class='img-bg'><div class='upload__img-close'></div></div></div>";
+            imgWrap.append(html);
+            iterator++;
+            }
+            reader.readAsDataURL(f);
+        }
+        }
     });
-  }
+    });
+});
+
+$('body').on('click', ".upload__img-close", function (e) {
+    let file = $(this).parent().data("file");
+    for (let i = 0; i < imgArray.length; i++) {
+    if (imgArray[i].name === file) {
+        imgArray.splice(i, 1);
+        break;
+    }
+    }
+    $(this).parent().parent().remove();
+});
+}
 
 
 
+jQuery(document).ready(function () {
 
-  // на странице сервиса галерея фото сервиса
+    //на странице сервиса галерея фото сервиса
     $("#inline-gallery-container").lightGallery({
         dynamic: true,
         hash: false,
@@ -1370,7 +1371,7 @@ jQuery(document).ready(function () {
         thumbnail : true, // должны быть миниатюры
     });
 
-    // на странице сервиса лайтгалерея в слайдере фотогалереи сервиса
+    //на странице сервиса лайтгалерея в слайдере фотогалереи сервиса
     $("#gallery-fotos").lightGallery({
         dynamic: true,
         hash: false,
@@ -1388,7 +1389,7 @@ jQuery(document).ready(function () {
         thumbnail : true,  // должны быть миниатюры
     });
 
-        // на странице сервиса лайтгалерея в слайдере сертификатов сервиса
+    // на странице сервиса лайтгалерея в слайдере сертификатов сервиса
     $("#gallery-sertificate").lightGallery({
         dynamic: true,
         hash: false,
@@ -1406,14 +1407,14 @@ jQuery(document).ready(function () {
         thumbnail : true,  // должны быть миниатюры
     });
 
+});
 
-
-    document.addEventListener('gesturestart', function (e) {
-        e.preventDefault();
-    });
-    //   Init All ------------------
-    $(document).ready(function () {
-        initHomeradar();
-        initparallax();
-        reinit()
-    });
+document.addEventListener('gesturestart', function (e) {
+    e.preventDefault();
+});
+//   Init All ------------------
+$(document).ready(function () {
+    initHomeradar();
+    initparallax();
+    reinit()
+});
