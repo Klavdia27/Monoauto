@@ -9117,7 +9117,7 @@ section.single-par2 .scroll-down-wrap {
     grid-template-columns: 1fr;
   }
   .container .row .col-md-4 {
-    width: 300px;
+    width: 100%;
   }
   .container .row .col-md-4 .services-item__where {
     -webkit-box-orient: vertical;
