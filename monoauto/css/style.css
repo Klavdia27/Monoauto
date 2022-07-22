@@ -10936,6 +10936,10 @@ span.current {
   background: url("/images/icon/arrow-next.svg") 0 0/100% no-repeat;
 }
 
+.slider-servise-marki .slick-track {
+  margin-left: 0px;
+}
+
 .catalog-servise-item-pmap {
   border-radius: 0;
   margin-bottom: 0;

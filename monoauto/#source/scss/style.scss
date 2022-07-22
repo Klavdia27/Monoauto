@@ -8279,6 +8279,7 @@ span.current {
 	line-height: 17px;
 	color: $black;
 }
+
 .servise-address, .servise-item-address {
 	display: flex;
 	align-items: center;
@@ -8594,7 +8595,6 @@ height: 44px;
 .carusel-servise-item {
 	position: relative;
 }
-
 
 /* slader-servise */
 .slider-servise, 
@@ -8990,6 +8990,14 @@ height: 44px;
 	right: -43px;
 	background: url('/images/icon/arrow-next.svg') 0 0 / 100% no-repeat;
 }
+
+.slider-servise-marki .slick-track {margin-left: 0px; } 
+// .slider-servise-serv .slick-track {
+// 	margin-left: 0px; 
+// }  
+// .slider-servise-marki .slick-track {
+// 	//margin-left: 0px;
+// }  
 // конец по слайдерам
 
 

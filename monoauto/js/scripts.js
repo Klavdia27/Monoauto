@@ -221,7 +221,22 @@ function initHomeradar() {
         selector: "this",
         cssEasing: "cubic-bezier(0.25, 0, 0.25, 1)",
         download: false,
-        counter: false
+        counter: false,
+        dynamic: true,
+        hash: false,
+        closable: false,
+        showMaximizeIcon: true,
+        appendSubHtmlTo: '.lg-item',
+        slideDelay: 400,
+        slideShow  : true,
+        fullScreen : true,
+        thumbs     : true,
+        closeBtn   : true,
+        closeClickOutside: true,
+        opacity : 'auto',
+        smallBtn : 'auto',
+        thumbnail : true, 
+        
     });
     var o = $(".lightgallery");
     o.lightGallery({
@@ -229,7 +244,7 @@ function initHomeradar() {
         cssEasing: "cubic-bezier(0.25, 0, 0.25, 1)",
         download: false,
         loop: false,
-        counter: false
+        counter: false,
     });
     $(".dynamic-gal").on('click', function () {
         var dynamicgal = eval($(this).attr("data-dynamicPath"));
@@ -241,6 +256,7 @@ function initHomeradar() {
             counter: false
         });
     });
+
     //   Appear------------------
     $(".stats").appear(function () {
         $(".num").countTo();
@@ -1220,10 +1236,21 @@ aboutItemsMenu.forEach((item, index) => {
         aboutItems.forEach((el) => el.classList.remove('show'));  
         aboutItems[index].classList.add('show');
         setTimeout(function(){
-            $('.slick-prev', '.slider-servise-sertificate').trigger('click');
+            $(".slider-servise-sertificate").slick("unslick");
+            $(".slider-servise-sertificate").slick({
+                arrow: true,
+                dots: false,
+                adaptiveHeight: true,
+                slidesToShow: 5,
+                slidesToScroll: 1,
+                speed: 200,
+                easing: 'linear',
+                infinitive: false,
+            });
+            $("#gallery-sertificate").lightGallery();
           }, 200);
     })
-
+    
 }) 
 
 //catalog-servises-map
@@ -1348,66 +1375,6 @@ $('body').on('click', ".upload__img-close", function (e) {
     $(this).parent().parent().remove();
 });
 }
-
-
-
-jQuery(document).ready(function () {
-
-    //на странице сервиса галерея фото сервиса
-    $("#inline-gallery-container").lightGallery({
-        dynamic: true,
-        hash: false,
-        closable: false,
-        showMaximizeIcon: true,
-        appendSubHtmlTo: '.lg-item',
-        slideDelay: 400,
-        slideShow  : true,
-        fullScreen : true,
-        thumbs     : true,
-        closeBtn   : true,
-        closeClickOutside: true,
-        opacity : 'auto',
-        smallBtn : 'auto',
-        thumbnail : true, // должны быть миниатюры
-    });
-
-    //на странице сервиса лайтгалерея в слайдере фотогалереи сервиса
-    $("#gallery-fotos").lightGallery({
-        dynamic: true,
-        hash: false,
-        closable: false,
-        showMaximizeIcon: true,
-        appendSubHtmlTo: '.lg-item',
-        slideDelay: 400,
-        slideShow  : true,
-        fullScreen : true,
-        thumbs     : true,
-        closeBtn   : true,
-        closeClickOutside: true,
-        opacity : 'auto',
-        smallBtn : 'auto',
-        thumbnail : true,  // должны быть миниатюры
-    });
-
-    // на странице сервиса лайтгалерея в слайдере сертификатов сервиса
-    $("#gallery-sertificate").lightGallery({
-        dynamic: true,
-        hash: false,
-        closable: false,
-        showMaximizeIcon: true,
-        appendSubHtmlTo: '.lg-item',
-        slideDelay: 400,
-        slideShow  : true,
-        fullScreen : true,
-        thumbs     : true,
-        closeBtn   : true,
-        closeClickOutside: true,
-        opacity : 'auto',
-        smallBtn : 'auto',
-        thumbnail : true,  // должны быть миниатюры
-    });
-
-});
 
 document.addEventListener('gesturestart', function (e) {
     e.preventDefault();
