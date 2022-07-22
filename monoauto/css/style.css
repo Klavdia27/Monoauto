@@ -9103,6 +9103,9 @@ section.single-par2 .scroll-down-wrap {
   .container .row .col-md-4 {
     width: 520px;
   }
+  .container .row .col-md-4 .services-item__desc {
+    max-width: 350px;
+  }
 }
 @media only screen and (max-width: 564px) {
   section {

@@ -7566,6 +7566,9 @@ section.single-par2  .scroll-down-wrap{
 			grid-template-columns: 1fr ;
 			.col-md-4 {
 				width: 520px;
+				.services-item__desc {
+					max-width: 350px;
+				}
 			}
 		}
 	}
