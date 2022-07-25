@@ -1376,6 +1376,14 @@ $('body').on('click', ".upload__img-close", function (e) {
 });
 }
 
+// menu adaptive
+$('.btn-menu').on('click', () => {
+    console.log("click menu")
+    $('.nav-header').toggleClass('open')
+})
+
+
+
 document.addEventListener('gesturestart', function (e) {
     e.preventDefault();
 });
