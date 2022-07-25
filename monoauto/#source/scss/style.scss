@@ -176,11 +176,10 @@ blockquote p {
 	max-width:1024px;
 }
 #wrapper {
-    float: left;
-    width: 100%;
-
-    position: relative; 
-    z-index: 25; 
+	float: left;
+	width: 100%;
+	position: relative; 
+	z-index: 25; 
 }
 .respimg {
 	width: 100%;
@@ -6484,7 +6483,7 @@ section.single-par2  .scroll-down-wrap{
 }
 .text-carousel-item:before {
     font-family: Font Awesome\ 5 Pro;
-	content: "\f10e";
+		content: "\f10e";
     top: 30px;
     right: 20px;
     position: absolute;
