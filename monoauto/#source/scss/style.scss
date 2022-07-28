@@ -32,7 +32,15 @@ body {
 	color: #000;
 	font-family: 'Jost', sans-serif;
 }
-
+.blur {
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 35;
+	width: 100vw;
+	height: 100vh;
+	backdrop-filter: blur(4px); 
+}
 
 @-o-viewport {
 	width: device-width;
@@ -6923,6 +6931,12 @@ section.single-par2  .scroll-down-wrap{
 	align-items: center;
 	display: flex;
 }
+.nav-header-item:first-child {
+	display: none;
+}
+.burger {
+	display: none;
+}
 .nav-header-item a {
 	color: white;
 	font-size: 16px;
@@ -9379,7 +9393,7 @@ aside {
 			top: 0;
 			right: 20px;
 			z-index: 100;
-			background-color: grey;
+			background-color: white;
 			flex-direction: column;
 			transition: right 0.3s;
 		}
@@ -9404,11 +9418,11 @@ aside {
 }
 .btn-menu {
 	display: none;
-	color: #fff;
-	background-color: grey;
+	color: $red;
+	background-color: $white;
 	padding: 7px;
 	position: absolute;
-	top: 0px;
+	top: 14px;
 	right: 25px;
 	cursor: pointer;
 	transition: left .23s;
@@ -9420,7 +9434,7 @@ aside {
 .btn-menu span {
 	display: block;
 	height: 3px;
-	background-color: #fff;
+	background-color: $red;
 	margin: 5px 0 0;
 	transition: all .1s linear .23s;
 	position: relative;
@@ -9649,13 +9663,28 @@ aside {
 }
 
 @media only screen and (max-width: 1175px) {
+	.nav-header-item:first-child {
+		display: flex;
+	}
 	.nav-header {
-		 display: none;
+		display: none;
 	}
 	.btn-menu {
 		display: block;
 	}
-
+	.nav-header-item a {
+		color: black;
+	}
+	.header-login {
+		display: none;
+	}
+	.header-auth {
+		margin-left: auto;
+    margin-right: 50px;
+	}
+	.burger {
+		display: block;
+	}
 }
 
 @media only screen and (max-width: 1070px) {
@@ -10266,7 +10295,9 @@ aside {
 				}
 			}
 		}
-	
+	.btn-menu {
+		top: 6px;
+	}
 	.main-footer .footer-logo {
     padding: 0 0 30px;
     text-align: center;
@@ -10510,6 +10541,14 @@ aside {
     bottom: -20px;
 }
 }
+
+@media only screen and (max-width: 358px) {
+	.btn-menu {
+		top: 12px;
+	}
+}
+
+
 @media only screen and (-webkit-min-device-pixel-ratio: 2) {
 	.bg {
 		background-attachment: scroll !important;

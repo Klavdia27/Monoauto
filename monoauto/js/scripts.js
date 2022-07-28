@@ -1376,10 +1376,22 @@ $('body').on('click', ".upload__img-close", function (e) {
 });
 }
 
+
+// menu adaptive добавление Личный кабинет
+let firstLi = document.createElement('li');
+firstLi.className = "nav-header-item";
+firstLi.innerHTML = "<a href=&#34#&#34>Личный кабинет</a>";
+const menuHeaderUl = document.querySelector('.nav-header nav ul')
+menuHeaderUl.prepend(firstLi);
+
+let divBlur = document.createElement('div');
+divBlur.className = "div-blur";
+$('#main').append(divBlur);
+
 // menu adaptive
 $('.btn-menu').on('click', () => {
-    console.log("click menu")
-    $('.nav-header').toggleClass('open')
+    $('.nav-header').toggleClass('open');
+    $('.div-blur, .div-blur').toggleClass('blur');
 })
 
 
@@ -1391,5 +1403,6 @@ document.addEventListener('gesturestart', function (e) {
 $(document).ready(function () {
     initHomeradar();
     initparallax();
-    reinit()
+    reinit();
+    reinit2();
 });
