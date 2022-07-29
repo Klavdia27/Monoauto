@@ -7406,6 +7406,9 @@ span.current {
 	margin-right: auto;
 	margin-bottom: 20px;
 	align-items: center;
+	.rating-company {
+		display: flex;
+	}
 	.listing-rating {
 		top: -6px;
 	}
@@ -9491,9 +9494,11 @@ aside {
 				margin-bottom: 0;
 				.catalog-list {
 					display: block;
+					padding: 15px;
 				}
 				.catalog-map {
 					display: block;
+					padding: 15px;
 				}
 			}
 			.main-search-input-wrap {
@@ -10596,6 +10601,19 @@ aside {
 						.servise-title {
 							-webkit-line-clamp: 3;
 							height: 75px;
+						}
+					}
+				}
+				.servise-item-rating {
+					display: flex;
+					flex-direction: column;
+					text-align: left;
+					.servise-verified-all {
+						display: flex;
+						flex-direction: column;
+						.servise-verified:first-child {
+							margin-top: 5px;
+							margin-bottom: 10px;
 						}
 					}
 				}

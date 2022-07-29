@@ -8997,6 +8997,11 @@ span.current {
       -ms-flex-align: center;
           align-items: center;
 }
+.servise-item-rating .rating-company {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
 .servise-item-rating .listing-rating {
   top: -6px;
 }
@@ -11389,9 +11394,11 @@ aside {
   }
   .section-catalog-search-auto .container-search-auto .toggle-catalog .catalog-list {
     display: block;
+    padding: 15px;
   }
   .section-catalog-search-auto .container-search-auto .toggle-catalog .catalog-map {
     display: block;
+    padding: 15px;
   }
   .section-catalog-search-auto .container-search-auto .main-search-input-wrap {
     margin: auto;
@@ -12634,6 +12641,29 @@ aside {
   .section-catalog-items .container-catalog-servises-items .catalog-servise-item .servise-title-block .servise-title-flag .servise-title {
     -webkit-line-clamp: 3;
     height: 75px;
+  }
+  .section-catalog-items .container-catalog-servises-items .catalog-servise-item .servise-item-rating {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: left;
+  }
+  .section-catalog-items .container-catalog-servises-items .catalog-servise-item .servise-item-rating .servise-verified-all {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .section-catalog-items .container-catalog-servises-items .catalog-servise-item .servise-item-rating .servise-verified-all .servise-verified:first-child {
+    margin-top: 5px;
+    margin-bottom: 10px;
   }
   .section-catalog-items .container-catalog-servises-items .catalog-servise-item .servise-info-all .servise-bonus .servise-bonus-icon {
     width: 15px;
