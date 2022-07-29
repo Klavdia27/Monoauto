@@ -2509,11 +2509,6 @@ nav li ul a:before, nav li ul a:after {
   max-width: 900px;
   position: relative;
 }
-@media (max-width: 1220px) {
-  .main-search-input-wrap {
-    width: 800px;
-  }
-}
 
 .main-search-input-wrap.msiw-center {
   margin: 0 auto;
@@ -6481,6 +6476,7 @@ section.single-par2 .scroll-down-wrap {
   display: none;
   overflow: auto;
   -webkit-transform: translate3d(0, 0, 0);
+          transform: translate3d(0, 0, 0);
 }
 
 .map-modal-wrap-overlay {
@@ -6492,6 +6488,7 @@ section.single-par2 .scroll-down-wrap {
   z-index: 1;
   background: rgba(0, 0, 0, 0.41);
   -webkit-transform: translate3d(0, 0, 0);
+          transform: translate3d(0, 0, 0);
 }
 
 .map-modal-item {
@@ -6629,6 +6626,7 @@ section.single-par2 .scroll-down-wrap {
   line-height: 43px;
   border-radius: 4px;
   -webkit-transform: translate3d(0, 0, 0);
+          transform: translate3d(0, 0, 0);
   display: none;
   background: #fff;
   -webkit-box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1);
@@ -8785,6 +8783,26 @@ span.current {
       -ms-flex-align: center;
           align-items: center;
   padding: 15px 30px;
+}
+
+.btn-filter {
+  display: none;
+  width: 100%;
+  background-color: #F5F5F5;
+  border-radius: 10px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  color: #000000;
+  margin-bottom: 8px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 15px 30px;
+}
+
+.btn-filter.open {
+  display: block;
 }
 
 .catalog-list-icon {
@@ -11349,6 +11367,38 @@ aside {
     width: 270px;
     height: 148px;
   }
+
+  .section-catalog-search-auto .container-search-auto {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .section-catalog-search-auto .container-search-auto .toggle-catalog {
+    margin-left: auto;
+    width: 100%;
+    margin-bottom: 0;
+  }
+  .section-catalog-search-auto .container-search-auto .toggle-catalog .catalog-list {
+    display: block;
+  }
+  .section-catalog-search-auto .container-search-auto .toggle-catalog .catalog-map {
+    display: block;
+  }
+  .section-catalog-search-auto .container-search-auto .main-search-input-wrap {
+    margin: auto;
+  }
+
+  .content-sevrises-map {
+    margin-top: 30px;
+  }
+
+  .content-sevrises-map .servise-info-uslugi .servise-usluga {
+    padding: 10px;
+  }
+  .content-sevrises-map .servise-info-uslugi .servise-usluga .servise-usluga-submit {
+    padding: 9px;
+  }
 }
 @media only screen and (max-width: 1270px) {
   .container .row .col-md-4 .services-item .services-item__desc {
@@ -11574,6 +11624,10 @@ aside {
   }
 }
 @media only screen and (max-width: 1175px) {
+  .slider-servise .slider__item {
+    height: 192px;
+  }
+
   .nav-header-item:first-child {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -11606,6 +11660,16 @@ aside {
   }
 }
 @media only screen and (max-width: 1070px) {
+  #service_map {
+    position: absolute;
+    top: 30px;
+    left: 0;
+  }
+
+  .content-sevrises-map .col-list-wrap.col-list-wrap_left.no-top-pad {
+    left: -100%;
+  }
+
   .container .row {
     display: -ms-grid;
     display: grid;
@@ -11616,6 +11680,48 @@ aside {
   }
   .container .row:before {
     display: none;
+  }
+
+  .section-catalog-items .container-catalog-servises-items .catalog-servise-item .servise-info-all {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    margin-bottom: 15px;
+  }
+  .section-catalog-items .container-catalog-servises-items .catalog-servise-item .servise-info-all .servise-info-auto {
+    margin-top: 15px;
+  }
+  .section-catalog-items .container-catalog-servises-items .catalog-servise-item .servise-info-uslugi {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  .section-catalog-items .container-catalog-servises-items .catalog-servise-item .servise-info-uslugi .servise-usluga {
+    margin-top: 15px;
+    width: 755px;
+  }
+  .section-catalog-items .container-catalog-servises-items .catalog-servise-item .servise-info-uslugi .servise-usluga .servise-usluga-count {
+    margin-left: 8px;
+    margin-right: 8px;
+  }
+  .section-catalog-items .container-catalog-servises-items .catalog-servise-item .servise-info-uslugi .servise-info-tel {
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  .section-catalog-items .container-catalog-servises-items .catalog-servise-item-ligth .servise-info-all {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .section-catalog-items .container-catalog-servises-items .catalog-servise-item-ligth .servise-info-all .servise-info-auto {
+    margin-top: 15px;
   }
 
   .main-footer .footer-logo {
@@ -11958,6 +12064,14 @@ aside {
   }
 }
 @media only screen and (max-width: 895px) {
+  section {
+    padding: 40px 0;
+  }
+
+  .slider-servise .slider__item {
+    height: 171px;
+  }
+
   .half-carousel-title, .half-carousel-conatiner,
 .header-search-wrapper, .main-search-input-wrap,
 .main-search-input-wrap .main-search-input-item,
@@ -11971,6 +12085,10 @@ aside {
     grid-row-gap: 15px;
   }
 
+  .container .row .col-md-4 .services-item__where {
+    margin-bottom: 10px;
+  }
+
   .main-footer .row {
     -ms-grid-columns: 1fr 1fr;
     grid-template-columns: 1fr 1fr;
@@ -11980,6 +12098,44 @@ aside {
   }
   .main-footer .footer-info p {
     font-size: 12px;
+  }
+
+  .section-catalog-search-auto .container-search-auto .btn-filter {
+    display: block;
+  }
+  .section-catalog-search-auto .container-search-auto .main-search-input-wrap {
+    display: none;
+  }
+  .section-catalog-search-auto .container-search-auto .main-search-input-wrap.show {
+    display: block;
+  }
+  .section-catalog-search-auto .container-search-auto .container-index-page-search {
+    margin-bottom: 8px;
+  }
+
+  .section-catalog-items .container-catalog-servises-items .catalog-servise-item .servise-info-all .servise-bonus .servise-bonus-icon {
+    width: 20px;
+    margin-left: 6px;
+  }
+  .section-catalog-items .container-catalog-servises-items .catalog-servise-item .servise-info-uslugi .servise-usluga {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 450px;
+    padding: 10px;
+  }
+  .section-catalog-items .container-catalog-servises-items .catalog-servise-item .servise-info-uslugi .servise-usluga .servise-usluga-name {
+    text-align: center;
+  }
+  .section-catalog-items .container-catalog-servises-items .catalog-servise-item-ligth {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  .section-catalog-items .container-catalog-servises-items .catalog-servise-item-ligth .catalog-servise-item-ligth-foto {
+    margin-bottom: 15px;
   }
 
   .main-search-input-wrap .main-search-button {
@@ -12344,8 +12500,49 @@ aside {
     margin-bottom: 10px;
   }
 
+  .slider-servise .slider__item {
+    height: 194px;
+  }
+
+  .pagination .pagination__prev {
+    padding: 0;
+  }
+
   .btn-menu {
     top: 6px;
+  }
+
+  .container-search-auto .container-index-page-search .hero-title h1 {
+    margin-top: 0;
+  }
+
+  .section-catalog-items .container-catalog-servises-items .catalog-servise-item {
+    padding: 10px;
+    border-radius: 10px;
+  }
+  .section-catalog-items .container-catalog-servises-items .catalog-servise-item .servise-title-block .servise-title-flag .servise-title {
+    -webkit-line-clamp: 3;
+    height: 75px;
+  }
+  .section-catalog-items .container-catalog-servises-items .catalog-servise-item .servise-info-all .servise-bonus .servise-bonus-icon {
+    width: 15px;
+    margin-left: 4px;
+  }
+  .section-catalog-items .container-catalog-servises-items .catalog-servise-item .servise-info-uslugi .servise-usluga {
+    display: none;
+  }
+  .section-catalog-items .container-catalog-servises-items .catalog-servise-item-ligth {
+    padding: 10px;
+    border-radius: 10px;
+  }
+  .section-catalog-items .container-catalog-servises-items .catalog-servise-item-ligth .servise-info-tel-ligth {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  .section-catalog-items .container-catalog-servises-items .catalog-servise-item-ligth .servise-info-tel-ligth .servise-coll-ligth {
+    margin-bottom: 15px;
   }
 
   .main-footer .footer-logo {

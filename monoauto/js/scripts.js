@@ -1001,6 +1001,37 @@ $(document).ready(function(){
         speed: 200,
         easing: 'linear',
         infinite: false, //слайдер  бесконечный
+        responsive: [
+        {
+            breakpoint: 990,
+            settings: {
+                slidesToShow: 3,
+                centerMode: false,
+            }
+        },
+        {
+            breakpoint: 680,
+            settings: {
+                slidesToShow: 2,
+                centerMode: false,
+            }
+        },
+        {
+            breakpoint: 530,
+            settings: {
+                slidesToShow: 1.5,
+                centerMode: false,
+            }
+        },
+        {
+            breakpoint: 400,
+            settings: {
+                slidesToShow: 1,
+                centerMode: false,
+                arrows: false,
+            }
+        }
+    ]
     });
   })
 // слайдер на странице каталога c map
@@ -1381,8 +1412,7 @@ $('body').on('click', ".upload__img-close", function (e) {
 let firstLi = document.createElement('li');
 firstLi.className = "nav-header-item";
 firstLi.innerHTML = "<a href=&#34#&#34>Личный кабинет</a>";
-const menuHeaderUl = document.querySelector('.nav-header nav ul')
-menuHeaderUl.prepend(firstLi);
+$('.nav-header nav ul').prepend(firstLi);
 
 let divBlur = document.createElement('div');
 divBlur.className = "div-blur";
@@ -1394,6 +1424,15 @@ $('.btn-menu').on('click', () => {
     $('.div-blur, .div-blur').toggleClass('blur');
 })
 
+// меню фильтр
+let divFilter = document.createElement('div');
+divFilter.className = "btn-filter"
+divFilter.innerHTML = "Фильтр";
+$('.section-catalog-search-auto .container-search-auto .search-auto').after(divFilter)
+// btn-filter
+$('.btn-filter').on('click', () => {
+    $('.main-search-input-wrap').toggleClass('show')
+})
 
 
 document.addEventListener('gesturestart', function (e) {
@@ -1404,5 +1443,4 @@ $(document).ready(function () {
     initHomeradar();
     initparallax();
     reinit();
-    reinit2();
 });
