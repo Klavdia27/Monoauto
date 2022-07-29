@@ -7803,6 +7803,7 @@ height: 44px;
 		width: 121px;
 		.item {
 			width: 95%;
+			height: 80px;
 			background: #F5F5F5;
 			border-radius: 10px;
 			padding: 10px 15px;
@@ -8432,7 +8433,7 @@ height: 44px;
 		margin-bottom: 20px;
 		ul {
 			display: grid;
-			grid-template-columns: repeat(5, 1fr);
+			grid-template-columns: repeat(4, 1fr);
 			grid-gap: 10px;
 			justify-items: space-beetween;
 			padding: 10px 15px;
@@ -9350,32 +9351,21 @@ aside {
 
 
 .breadcrumbs {
-  background-color: #f2f2f2;
-  min-height: 8px;
-  a {
-    color: #4f4f4f;
-  }
+  min-height: 8px;    color: #4f4f4f;
   &__list {
-    // display: none;
 		display: flex;
     padding: 8px 0;
     list-style: none;
-    // @include md {
-    //   display: flex;
-    // }
   }
   &__item {
     position: relative;
 		padding-right: 35px;
     a {
+			color: #4f4f4f;
 			font-weight: 400;
 			font-size: 15px;
 			line-height: 18px;
 			letter-spacing: -0.01em;
-			color: #7D7D7D;
-      // @include hover {
-      //   color: $red;
-      // }
     }
 		a:hover {
 			color: black;
@@ -9388,10 +9378,6 @@ aside {
     }
   }
   &__item.current {
-    a {
-      color: #4f4f4f;
-      font-weight: 700;
-    }
     .arrow {
       display: none;
     }
@@ -9477,6 +9463,21 @@ aside {
 /*------responsive------------------------------------------------*/ 
 
 @media only screen and (max-width: 1324px) {
+	.section-servise-item-uslugi {
+		display: none; // временно
+	}
+	.section-servise-near {
+		.servise-near-items {
+			ul {
+				flex-wrap: wrap;
+				justify-content: space-around;
+				li {
+					margin-bottom: 20px;
+				}
+			}
+		}
+	}
+
 	.section-blog .blog-items .blog-item-img {
 		width: 270px;
 		height: 148px;
@@ -9713,7 +9714,6 @@ aside {
 			height: 192px;
 			}
 		}
-	
 	.nav-header-item:first-child {
 		display: flex;
 	}
@@ -9736,7 +9736,20 @@ aside {
 	.burger {
 		display: block;
 	}
-
+	.servise-item-block-name {
+		.servise-item-fotos {
+			.servise-item-foto {
+				width: 214px;
+				height: 171px;
+			}
+			.servise-item-foto:first-child {
+				display: none;
+			}
+			.servise-item-count-foto {
+				height: 171px;
+			}
+		}
+	}
 }
 
 @media only screen and (max-width: 1070px) {
@@ -9745,6 +9758,17 @@ aside {
     top: 30px;
     left: 0;
 	}
+	.section-about-servise {
+		.about-servise-item-menu {
+			ul {
+				grid-gap: 5px;
+				li {
+					padding: 11px;
+				}
+			}
+		}
+	}
+
 	.content-sevrises-map {
 		.col-list-wrap.col-list-wrap_left.no-top-pad {
 			left: -100%
@@ -10076,7 +10100,35 @@ aside {
 	section {
 		padding: 40px 0;
 	}
+	.total {
+		left: 26%;
+	}
+	.section-about-servise {
+		.about-servise-item-menu {
+			ul {
+				grid-template-columns: repeat(2, 1fr);
+			}
+		}
+	}
 
+	.servise-item-block-name {
+		flex-direction: column;
+		.servise-item-fotos {
+			.servise-item-foto {
+				width: 180px;
+				height:144px;
+			}
+			.servise-item-foto:first-child {
+				display: block;
+			}
+			.servise-item-count-foto {
+				height: 144px;
+				span {
+					padding: 20px 14px 20px 14px;
+				}
+			}
+		}
+	}
 	.slider-servise {
 		.slider__item {
 			height: 171px;
@@ -10445,6 +10497,29 @@ aside {
 	section {
 		padding: 30px 0;
 	}
+	.section-about-servise {
+		.about-servise-item-menu {
+			ul {
+				grid-template-columns: repeat(1, 1fr);
+			}
+		}
+	}
+	.section-title h2 {
+		font-size: 21px;
+		line-height: 25px;
+	}
+	.total {
+		left: 20%;
+		top: 85%;
+		padding: 11px 0 0px 0;
+		img {
+			margin-left: 5px; 
+		}
+		.submit-online {
+			display: block;
+			margin-top: 4px;
+		}
+	}
 		//где обслуживать
 		.container {
 			.row {
@@ -10459,7 +10534,36 @@ aside {
 				}
 			}
 		}
-
+		.servise-item-block-name {
+			flex-direction: column;
+			.servise-item-descr {
+				.servise-item-singup {
+					flex-direction: column;
+					width: 220px;
+					.servise-item-info-tel {
+						margin-left: 0;
+						margin-top: 15px;
+						text-align: left;
+					}
+				}
+			}
+			.servise-item-fotos {
+				.servise-item-foto {
+					width: 166px;
+					height: 133px;
+				}
+				.servise-item-foto:first-child {
+					display: none;
+				}
+				.servise-item-count-foto {
+					height: 133px;
+					width: 84px;
+					span {
+						padding: 20px 10px 20px 10px;
+					}
+				}
+			}
+		}
 	.slider-servise {
 		.slider__item {
 			height: 194px;

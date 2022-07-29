@@ -1071,6 +1071,39 @@ $(document).ready(function(){
         speed: 200,
         easing: 'linear',
         infinite: true, 
+        responsive: [
+            {
+                breakpoint: 990,
+                settings: {
+                    slidesToShow: 2.5,
+                    centerMode: true,
+                }
+            },
+            {
+                breakpoint: 880,
+                settings: {
+                    slidesToShow: 2,
+                    centerMode: false,
+                    arrows: false,
+                }
+            },
+            {
+                breakpoint: 530,
+                settings: {
+                    slidesToShow: 1.5,
+                    centerMode: false,
+                    arrows: false,
+                }
+            },
+            {
+                breakpoint: 400,
+                settings: {
+                    slidesToShow: 1,
+                    centerMode: false,
+                    arrows: false,
+                }
+            }
+        ]
     });
 })
 
@@ -1085,6 +1118,35 @@ $(document).ready(function(){
         speed: 200,
         easing: 'linear',
         infinite: true, 
+        responsive: [
+            {
+                breakpoint: 1175,
+                settings: {
+                    slidesToShow: 5,
+                }
+            },
+            {
+                breakpoint: 880,
+                settings: {
+                    slidesToShow: 4,
+                    centerMode: false,
+                }
+            },
+            {
+                breakpoint: 570,
+                settings: {
+                    slidesToShow: 3,
+                    centerMode: false,
+                }
+            },
+            {
+                breakpoint: 480,
+                settings: {
+                    slidesToShow: 2,
+                    centerMode: false,
+                }
+            },
+        ]
     });
     })
 
@@ -1099,6 +1161,35 @@ $(document).ready(function(){
         speed: 200,
         easing: 'linear',
         infinite: true, 
+        responsive: [
+            {
+                breakpoint: 1175,
+                settings: {
+                    slidesToShow: 7,
+                }
+            },
+            {
+                breakpoint: 880,
+                settings: {
+                    slidesToShow: 5,
+                    centerMode: false,
+                }
+            },
+            {
+                breakpoint: 570,
+                settings: {
+                    slidesToShow: 4,
+                    centerMode: false,
+                }
+            },
+            {
+                breakpoint: 480,
+                settings: {
+                    slidesToShow: 2.5,
+                    centerMode: false,
+                }
+            },
+        ]
     });
   })
   // слайдер на странице сервиса фотогалерея
@@ -1112,6 +1203,39 @@ $(document).ready(function(){
         speed: 200,
         easing: 'linear',
         infinite: false, //слайдер  бесконечный - должен быть отключен если подключаем fancybox gallery
+        responsive: [
+            {
+                breakpoint: 990,
+                settings: {
+                    slidesToShow: 2.5,
+                    centerMode: true,
+                }
+            },
+            {
+                breakpoint: 880,
+                settings: {
+                    slidesToShow: 2,
+                    centerMode: false,
+                    arrows: false,
+                }
+            },
+            {
+                breakpoint: 530,
+                settings: {
+                    slidesToShow: 1.5,
+                    centerMode: false,
+                    arrows: false,
+                }
+            },
+            {
+                breakpoint: 400,
+                settings: {
+                    slidesToShow: 1,
+                    centerMode: false,
+                    arrows: false,
+                }
+            }
+        ]
     });
   })
     // слайдер на странице сервиса sertificate
