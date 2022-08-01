@@ -10570,6 +10570,7 @@ span.current {
 .registration-company {
   margin-bottom: 20px;
   width: 740px;
+  max-width: 100%;
 }
 .registration-company label {
   display: block;
@@ -12184,7 +12185,8 @@ aside {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    width: 450px;
+    max-width: 740px;
+    width: 100%;
     padding: 10px;
   }
   .section-catalog-items .container-catalog-servises-items .catalog-servise-item .servise-info-uslugi .servise-usluga .servise-usluga-name {
@@ -12652,6 +12654,12 @@ aside {
             flex-direction: column;
     text-align: left;
   }
+  .section-catalog-items .container-catalog-servises-items .catalog-servise-item .servise-item-rating .rating-company {
+    margin-right: auto;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
   .section-catalog-items .container-catalog-servises-items .catalog-servise-item .servise-item-rating .servise-verified-all {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -12660,6 +12668,8 @@ aside {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    margin-right: auto;
+    margin-left: 0;
   }
   .section-catalog-items .container-catalog-servises-items .catalog-servise-item .servise-item-rating .servise-verified-all .servise-verified:first-child {
     margin-top: 5px;

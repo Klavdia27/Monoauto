@@ -8746,6 +8746,7 @@ height: 44px;
 .registration-company {
 	margin-bottom: 20px;
   width: 740px;
+	max-width: 100%;
 	label {
 		display: block;
 		text-align: left;
@@ -10199,7 +10200,8 @@ aside {
 				.servise-info-uslugi {
 					.servise-usluga {
 						flex-direction: column;
-						width: 450px;
+						max-width: 740px;
+						width: 100%;
 						padding: 10px;
 						.servise-usluga-name {
 							text-align: center;
@@ -10608,9 +10610,15 @@ aside {
 					display: flex;
 					flex-direction: column;
 					text-align: left;
+					.rating-company {
+						margin-right: auto;
+						align-items: center;
+					}
 					.servise-verified-all {
 						display: flex;
 						flex-direction: column;
+						margin-right: auto;
+						margin-left: 0;
 						.servise-verified:first-child {
 							margin-top: 5px;
 							margin-bottom: 10px;

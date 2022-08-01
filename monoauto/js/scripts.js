@@ -1535,7 +1535,7 @@ $('body').on('click', ".upload__img-close", function (e) {
 // menu adaptive добавление Личный кабинет
 let firstLi = document.createElement('li');
 firstLi.className = "nav-header-item";
-firstLi.innerHTML = "<a href=&#34#&#34>Личный кабинет</a>";
+firstLi.innerHTML = "<a href='/cabinet'>Личный кабинет</a>";
 $('.nav-header nav ul').prepend(firstLi);
 
 let divBlur = document.createElement('div');
@@ -1552,7 +1552,7 @@ $('.btn-menu').on('click', () => {
 let divFilter = document.createElement('div');
 divFilter.className = "btn-filter"
 divFilter.innerHTML = "Фильтр";
-$('.section-catalog-search-auto .container-search-auto .search-auto').after(divFilter)
+$('.section-catalog-search-auto .container-search-auto .search-auto .container-index-page-search').after(divFilter)
 // btn-filter
 $('.btn-filter').on('click', () => {
     $('.main-search-input-wrap').toggleClass('show')
