@@ -9967,7 +9967,7 @@ span.current {
 
 .servise-item-descr {
   width: 100%;
-  width: 670px;
+  max-width: 670px;
   display: block;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
@@ -11363,8 +11363,14 @@ aside {
 
 /*------responsive------------------------------------------------*/
 @media only screen and (max-width: 1324px) {
-  .section-servise-item-uslugi {
-    display: none;
+  .servise-item-uslugi {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .servise-item-uslugi .servise-item-uslugi-right {
+    margin-top: 20px;
   }
 
   .section-servise-near .servise-near-items ul {
@@ -11943,10 +11949,6 @@ aside {
     margin: 0 0 20px 0;
   }
 
-  .section-title, .search-sb {
-    margin-bottom: 30px;
-  }
-
   .gallery-item {
     width: 50%;
   }
@@ -12095,6 +12097,59 @@ aside {
 
   .dashboard-submenu {
     right: 70px;
+  }
+}
+@media only screen and (max-width: 980px) {
+  .section-servise-item-uslugi .servise-item-uslugi .servise-item-uslugi-left {
+    width: 100%;
+  }
+  .section-servise-item-uslugi .servise-item-uslugi .servise-item-uslugi-left .servise-item-menu {
+    max-width: 650px;
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  .section-servise-item-uslugi .servise-item-uslugi .servise-item-uslugi-left .servise-item-menu ul {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 10px 1fr 10px 1fr;
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .section-servise-item-uslugi .servise-item-uslugi .servise-item-uslugi-left .servise-item-usluga-subtitle {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .section-servise-item-uslugi .servise-item-uslugi .servise-item-uslugi-left .servise-item-usluga-subtitle .subtitle-menu {
+    padding: 15px;
+  }
+  .section-servise-item-uslugi .servise-item-uslugi .servise-item-uslugi-left .servise-item-usluga-subtitle .subtitle-menu.active {
+    max-width: 650px;
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  .section-servise-item-uslugi .servise-item-uslugi .servise-item-uslugi-left .servise-item-usluga-subtitle .subtitle-menu.active ul {
+    overflow-y: scroll;
+    height: 100px;
+  }
+  .section-servise-item-uslugi .servise-item-uslugi .servise-item-uslugi-left .servise-item-usluga-subtitle .subtitle-menu.active ul li {
+    width: 95%;
+  }
+  .section-servise-item-uslugi .servise-item-uslugi .servise-item-uslugi-left .servise-item-usluga-subtitle .subtitle-menu.active ul::-webkit-scrollbar {
+    width: 7px;
+  }
+  .section-servise-item-uslugi .servise-item-uslugi .servise-item-uslugi-left .servise-item-usluga-subtitle .subtitle-menu.active ul::-webkit-scrollbar-track {
+    -webkit-box-shadow: 5px 5px 5px -5px rgba(34, 60, 80, 0.2) inset;
+            box-shadow: 5px 5px 5px -5px rgba(34, 60, 80, 0.2) inset;
+    background-color: #f9f9fd;
+  }
+  .section-servise-item-uslugi .servise-item-uslugi .servise-item-uslugi-left .servise-item-usluga-subtitle .subtitle-menu.active ul::-webkit-scrollbar-thumb {
+    background-color: grey;
+    border-radius: 30px;
+  }
+  .section-servise-item-uslugi .servise-item-uslugi .servise-item-uslugi-left .servise-item-usluga-subtitle .uslugi-block {
+    max-width: 650px;
+    width: 100%;
   }
 }
 @media only screen and (max-width: 895px) {
@@ -12543,9 +12598,81 @@ aside {
     max-width: 350px;
   }
 }
+@media only screen and (max-width: 740px) {
+  .section-servise-item-uslugi .servise-item-uslugi .servise-item-uslugi-left .servise-item-menu ul {
+    grid-gap: 5px;
+  }
+  .section-servise-item-uslugi .servise-item-uslugi .servise-item-uslugi-left .servise-item-menu ul li {
+    padding: 11px;
+  }
+  .section-servise-item-uslugi .servise-item-uslugi .servise-item-uslugi-left .servise-item-usluga-subtitle .uslugi-block .uslugi-items {
+    overflow-x: hidden;
+  }
+  .section-servise-item-uslugi .servise-item-uslugi .servise-item-uslugi-left .servise-item-usluga-subtitle .uslugi-block .uslugi-items .servise-usluga {
+    max-width: 600px;
+    width: 96%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  .section-servise-item-uslugi .servise-item-uslugi .servise-item-uslugi-left .servise-item-usluga-subtitle .uslugi-block .uslugi-items .servise-usluga .servise-usluga-name {
+    max-width: 310px;
+    width: 100%;
+  }
+  .section-servise-item-uslugi .servise-item-uslugi .servise-item-uslugi-left .servise-item-usluga-subtitle .uslugi-block .uslugi-items .servise-usluga .servise-usluga-count {
+    padding-left: 20px;
+  }
+  .section-servise-item-uslugi .servise-item-uslugi .servise-item-uslugi-left .servise-item-usluga-subtitle .uslugi-block .uslugi-items .servise-usluga .servise-usluga-submit {
+    top: 0;
+  }
+}
 @media only screen and (max-width: 564px) {
   section {
     padding: 30px 0;
+  }
+
+  .section-servise-item-uslugi .servise-item-uslugi .servise-item-uslugi-left .servise-item-menu ul {
+    -ms-grid-columns: 1fr 5px 1fr;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 5px;
+    padding: 10px 5px;
+  }
+  .section-servise-item-uslugi .servise-item-uslugi .servise-item-uslugi-left .servise-item-menu ul li {
+    padding: 11px 4px;
+    white-space: break-spaces;
+  }
+  .section-servise-item-uslugi .servise-item-uslugi .servise-item-uslugi-left .servise-item-usluga-title {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-top: 10px;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  .section-servise-item-uslugi .servise-item-uslugi .servise-item-uslugi-left .servise-item-usluga-subtitle .uslugi-block .uslugi-items .servise-usluga .servise-usluga-name {
+    max-width: 280px;
+    margin-right: 0;
+  }
+  .section-servise-item-uslugi .servise-item-uslugi .servise-item-uslugi-left .servise-item-usluga-subtitle .uslugi-block .uslugi-items .servise-usluga .servise-usluga-count {
+    margin-bottom: 40px;
+  }
+  .section-servise-item-uslugi .servise-item-uslugi .servise-item-uslugi-left .servise-item-usluga-subtitle .uslugi-block .uslugi-items .servise-usluga .servise-usluga-submit {
+    top: calc(100% - 40px);
+    height: 40px;
+    width: 100%;
+  }
+  .section-servise-item-uslugi .servise-item-uslugi .servise-item-uslugi-right .servise-item-map {
+    width: 100%;
+    max-width: 564px;
+  }
+  .section-servise-item-uslugi .servise-item-uslugi .servise-item-uslugi-right .servise-item-map img {
+    width: 100%;
   }
 
   .section-about-servise .about-servise-item-menu ul {

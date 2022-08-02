@@ -1208,7 +1208,7 @@ $(document).ready(function(){
                 breakpoint: 990,
                 settings: {
                     slidesToShow: 2.5,
-                    centerMode: true,
+                    centerMode: false,
                 }
             },
             {
