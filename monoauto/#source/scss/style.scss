@@ -9721,6 +9721,24 @@ aside {
 }
 
 @media only screen and (max-width: 1175px) {
+	.section-about-servise {
+		.about-serv-item.reviews {
+			.review-header {
+				.review-title {
+					.servise-ratings {
+						flex-direction: column;
+						.rating-client {
+							margin-bottom: 10px;
+						}
+						.rating-quality {
+							margin-bottom: 10px;
+						}
+					}
+				}
+			}
+		}
+	}
+
 	.slider-servise {
 		.slider__item {
 			height: 192px;
@@ -10158,7 +10176,6 @@ aside {
 				}
 			}
 		}
-
 	}
 }
 
@@ -10599,11 +10616,66 @@ aside {
 			}
 		}
 	}
+
+	.section-about-servise {
+		.reviews {
+			.review-header {
+				flex-direction: column;
+				.review-submit {
+					margin-top: 30px;
+				}
+			}
+		}
+	}
 }
 
 @media only screen and (max-width: 564px) {
 	section {
 		padding: 30px 0;
+	}
+	.slider-servise-fotos {
+		.slider__item-fotos {
+			img {
+				height: 200px;
+			}
+		}
+	}
+	.section-about-servise {
+		.reviews {
+			.review-header {
+				padding: 10px;
+				.review-title {
+					.servise-ratings {
+						.rating-client, .rating-quality, .rating-price {
+							margin-right: 0;
+							justify-content: space-between;
+							.text {
+								text-align: left;
+								margin-right: 0;
+							}
+						}
+					}
+				}
+			}
+			.review-submit {
+				margin-bottom: 20px;
+			}
+			.review-wrapper {
+				.review-item {
+					.review-client-header {
+						flex-direction: column;
+						align-items: flex-start;
+						.client {
+							margin-left: 0;
+							margin-top: 8px;
+						}
+						.rating-client {
+							margin-left: auto;
+						}
+					}
+				}
+			}
+		}
 	}
 
 	.section-servise-item-uslugi {

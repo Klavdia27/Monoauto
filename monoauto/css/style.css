@@ -11646,6 +11646,19 @@ aside {
   }
 }
 @media only screen and (max-width: 1175px) {
+  .section-about-servise .about-serv-item.reviews .review-header .review-title .servise-ratings {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .section-about-servise .about-serv-item.reviews .review-header .review-title .servise-ratings .rating-client {
+    margin-bottom: 10px;
+  }
+  .section-about-servise .about-serv-item.reviews .review-header .review-title .servise-ratings .rating-quality {
+    margin-bottom: 10px;
+  }
+
   .slider-servise .slider__item {
     height: 192px;
   }
@@ -12629,10 +12642,57 @@ aside {
   .section-servise-item-uslugi .servise-item-uslugi .servise-item-uslugi-left .servise-item-usluga-subtitle .uslugi-block .uslugi-items .servise-usluga .servise-usluga-submit {
     top: 0;
   }
+
+  .section-about-servise .reviews .review-header {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .section-about-servise .reviews .review-header .review-submit {
+    margin-top: 30px;
+  }
 }
 @media only screen and (max-width: 564px) {
   section {
     padding: 30px 0;
+  }
+
+  .slider-servise-fotos .slider__item-fotos img {
+    height: 200px;
+  }
+
+  .section-about-servise .reviews .review-header {
+    padding: 10px;
+  }
+  .section-about-servise .reviews .review-header .review-title .servise-ratings .rating-client, .section-about-servise .reviews .review-header .review-title .servise-ratings .rating-quality, .section-about-servise .reviews .review-header .review-title .servise-ratings .rating-price {
+    margin-right: 0;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .section-about-servise .reviews .review-header .review-title .servise-ratings .rating-client .text, .section-about-servise .reviews .review-header .review-title .servise-ratings .rating-quality .text, .section-about-servise .reviews .review-header .review-title .servise-ratings .rating-price .text {
+    text-align: left;
+    margin-right: 0;
+  }
+  .section-about-servise .reviews .review-submit {
+    margin-bottom: 20px;
+  }
+  .section-about-servise .reviews .review-wrapper .review-item .review-client-header {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  .section-about-servise .reviews .review-wrapper .review-item .review-client-header .client {
+    margin-left: 0;
+    margin-top: 8px;
+  }
+  .section-about-servise .reviews .review-wrapper .review-item .review-client-header .rating-client {
+    margin-left: auto;
   }
 
   .section-servise-item-uslugi .servise-item-uslugi .servise-item-uslugi-left .servise-item-menu ul {

@@ -1401,6 +1401,37 @@ aboutItemsMenu.forEach((item, index) => {
                 speed: 200,
                 easing: 'linear',
                 infinitive: false,
+                responsive: [
+                    {
+                        breakpoint: 1170,
+                        settings: {
+                            slidesToShow: 4,
+                            centerMode: false,
+                        }
+                    },
+                    {
+                        breakpoint: 990,
+                        settings: {
+                            slidesToShow: 3,
+                            centerMode: false,
+                        }
+                    },
+                    {
+                        breakpoint: 760,
+                        settings: {
+                            slidesToShow: 2,
+                            centerMode: false,
+                        }
+                    },
+                    {
+                        breakpoint: 500,
+                        settings: {
+                            slidesToShow: 1,
+                            centerMode: false,
+                            arrows: false,
+                        }
+                    },
+                ]
             });
             $("#gallery-sertificate").lightGallery();
           }, 200);
