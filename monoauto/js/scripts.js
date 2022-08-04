@@ -1442,26 +1442,27 @@ aboutItemsMenu.forEach((item, index) => {
 //catalog-servises-map
 function setMapDivSize()
 {
-    if($("#service_list").length==0)
-    return;
-    var h = $("#service_list").height();            // --- высота левого блока
-    var rh = $("#service_map_inner").height();      // --- высота блока с картой
-    $("#service_map").height(h);                    // --- правый контейнер по высоте выровняем с левым
-    var leftRect = $("#service_list")[0].getBoundingClientRect();
-    if(leftRect.y<=0)
-    {
-        if(leftRect.bottom-rh>0)
-            $("#service_map_inner").css("margin-top", (0-leftRect.y));  // --- доскролили до верхнего края левого блока и ниже его
+    if ($(window).width() > 1070 )  {
+        if($("#service_list").length==0)
+        return;
+        var h = $("#service_list").height();            // --- высота левого блока
+        var rh = $("#service_map_inner").height();      // --- высота блока с картой
+        $("#service_map").height(h);                    // --- правый контейнер по высоте выровняем с левым
+        var leftRect = $("#service_list")[0].getBoundingClientRect();
+        if(leftRect.y<=0)
+        {
+            if(leftRect.bottom-rh>0)
+                $("#service_map_inner").css("margin-top", (0-leftRect.y));  // --- доскролили до верхнего края левого блока и ниже его
+            else
+            {
+                $("#service_map_inner").css("margin-top", (h-rh));          // --- доскролили до нижнего края и ниже его
+            }
+        }
         else
         {
-            $("#service_map_inner").css("margin-top", (h-rh));          // --- доскролили до нижнего края и ниже его
+            $("#service_map_inner").css("margin-top", 0);                   // --- скролл выше верхнего края
         }
     }
-    else
-    {
-        $("#service_map_inner").css("margin-top", 0);                   // --- скролл выше верхнего края
-    }
-
 }
 
 $(document).ready(function()
