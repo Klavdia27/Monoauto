@@ -11326,7 +11326,7 @@ aside {
   padding: 7px;
   position: absolute;
   top: 14px;
-  right: 25px;
+  right: 7px;
   cursor: pointer;
   -webkit-transition: left 0.23s;
   transition: left 0.23s;
@@ -11353,7 +11353,7 @@ aside {
 }
 
 .hidden-menu-ticker:checked ~ .btn-menu {
-  right: 25px;
+  right: 7px;
 }
 
 .hidden-menu-ticker:checked ~ .hidden-menu {
@@ -11721,10 +11721,15 @@ aside {
   }
 }
 @media only screen and (max-width: 1070px) {
-  #service_map {
-    position: absolute;
-    top: 30px;
-    left: 0;
+  .section-catalog-search-auto {
+    padding-top: 10px;
+  }
+  .section-catalog-search-auto .container-index-page-search {
+    margin-bottom: 25px;
+  }
+  .section-catalog-search-auto .hero-title h1 {
+    font-size: 24px;
+    line-height: 26px;
   }
 
   .section-about-servise .about-servise-item-menu ul {
@@ -11735,6 +11740,16 @@ aside {
   }
 
   .content-sevrises-map .col-list-wrap.col-list-wrap_left.no-top-pad {
+    display: none;
+  }
+
+  #service_map {
+    position: fixed;
+    left: 0;
+    top: 295px;
+  }
+
+  .main-footer-page-map {
     display: none;
   }
 
@@ -12183,6 +12198,10 @@ aside {
 @media only screen and (max-width: 895px) {
   section {
     padding: 40px 0;
+  }
+
+  #service_map {
+    top: 215px;
   }
 
   .total {
@@ -12893,16 +12912,17 @@ aside {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    margin-left: 0;
     margin-right: auto;
+    margin-top: 8px;
+  }
+  .section-catalog-items .container-catalog-servises-items .catalog-servise-item .servise-item-rating .servise-verified-all .servise-verified {
+    padding: 6px;
+    font-size: 10px;
     margin-left: 0;
   }
   .section-catalog-items .container-catalog-servises-items .catalog-servise-item .servise-item-rating .servise-verified-all .servise-verified:first-child {
-    margin-top: 5px;
-    margin-bottom: 10px;
+    margin-right: 8px;
   }
   .section-catalog-items .container-catalog-servises-items .catalog-servise-item .servise-info-all .servise-bonus .servise-bonus-icon {
     width: 15px;

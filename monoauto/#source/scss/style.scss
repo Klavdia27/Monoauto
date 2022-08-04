@@ -9436,7 +9436,7 @@ aside {
 	padding: 7px;
 	position: absolute;
 	top: 14px;
-	right: 25px;
+	right: 7px;
 	cursor: pointer;
 	transition: left .23s;
 	z-index: 101;
@@ -9456,7 +9456,7 @@ aside {
 	margin-top: 0;
 }
 .hidden-menu-ticker:checked ~ .btn-menu {
-	right: 25px;
+	right: 7px;
 }
 .hidden-menu-ticker:checked ~ .hidden-menu {
 	left: 0;
@@ -9793,10 +9793,17 @@ aside {
 }
 
 @media only screen and (max-width: 1070px) {
-	#service_map {
-		position: absolute;
-    top: 30px;
-    left: 0;
+	.section-catalog-search-auto {
+		.container-index-page-search {
+			margin-bottom: 25px;
+		}
+		padding-top: 10px;
+		.hero-title {
+			h1 {
+				font-size: 24px;
+				line-height: 26px;
+			}
+		}
 	}
 	.section-about-servise {
 		.about-servise-item-menu {
@@ -9815,6 +9822,14 @@ aside {
 		}
 	}
 
+	#service_map {
+		position: fixed;
+    left: 0;
+    top: 295px;
+	}
+	.main-footer-page-map {
+		display: none;
+	}
 	//где обслуживать
 	.container {
 		.row {
@@ -10191,8 +10206,12 @@ aside {
 
 
 @media only screen and (max-width: 895px) {
+
 	section {
 		padding: 40px 0;
+	}
+	#service_map {
+    top: 215px;
 	}
 	.total {
 		left: 26%;
@@ -10871,12 +10890,16 @@ aside {
 					}
 					.servise-verified-all {
 						display: flex;
-						flex-direction: column;
-						margin-right: auto;
 						margin-left: 0;
+						margin-right: auto;
+						margin-top: 8px;
+						.servise-verified {
+							padding: 6px;
+							font-size: 10px;
+							margin-left: 0;
+						}
 						.servise-verified:first-child {
-							margin-top: 5px;
-							margin-bottom: 10px;
+							margin-right: 8px;
 						}
 					}
 				}
