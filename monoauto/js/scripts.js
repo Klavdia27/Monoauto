@@ -1142,7 +1142,7 @@ $(document).ready(function(){
             {
                 breakpoint: 480,
                 settings: {
-                    slidesToShow: 2,
+                    slidesToShow: 1.8,
                     centerMode: false,
                 }
             },
@@ -1230,7 +1230,7 @@ $(document).ready(function(){
             {
                 breakpoint: 400,
                 settings: {
-                    slidesToShow: 1,
+                    slidesToShow: 1.2,
                     centerMode: false,
                     arrows: false,
                 }

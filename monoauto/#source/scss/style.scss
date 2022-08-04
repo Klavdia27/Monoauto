@@ -6908,7 +6908,7 @@ section.single-par2  .scroll-down-wrap{
 	justify-content: space-between;
 }
 .header-top {
-	padding: 10px;
+	padding: 10px 0;
 }
 .header-auth {
 	display: flex;
@@ -7830,7 +7830,7 @@ height: 44px;
 	width: 90%;
 	margin: auto;
 	.slider__item-fotos {
-		height: 272px;
+		height: 100%; 
 		width: 370px;
 	}
 }
@@ -7848,7 +7848,8 @@ height: 44px;
 			img {
 				border-radius: 10px;
 				width: 100%;
-				height: 185px;
+				height: 154px;
+				object-fit: cover;
 			}
 			.sale-title {
 				margin-top: 20px;
@@ -7893,33 +7894,41 @@ height: 44px;
 	height: 100%;
 	width: 95%;
 	border-radius: 10px;
+	object-fit: cover;
+	margin: auto;
 }
 .slider-servise-map .slider__item img{
 	height: 100%;
 	width: 95%;
 	border-radius: 10px;
+	object-fit: cover;
 }
 .slider-servise-item .slider__item img{
 	height: 100%;
 	width: 95%;
 	border-radius: 10px;
+	object-fit: cover;
 }
 .slider-servise-marki .slider__item img{
 	height: 24px;
 	display: inline;
+	object-fit: cover;
 }
 .slider-servise-serv .slider__item img{
 	height: 20px;
 	margin-bottom: 10px;
+
 }
 .slider-servise-fotos .slider__item img{
 	height: 100%;
 	width: 94%;
 	border-radius: 10px;
+	object-fit: cover;
 }
 .slider-servise-sertificate .slider__item img{
 	height: 100%;
 	width: 94%;
+	object-fit: cover;
 }
 /* Ограничивающая оболочка */
 .slider-servise .slick-list {
@@ -8332,6 +8341,7 @@ height: 44px;
 					.car-type {
 						display: flex;
 						margin-bottom: 12px;
+						margin-left: 10px;
 						.car-type-item {
 							margin-right: 55px;
 							width: 60px;
@@ -8464,7 +8474,7 @@ height: 44px;
 		padding: 35px;
 		background: #F5F5F5;
 		border-radius: 20px;
-		margin-bottom: 30px;
+
 		.section-title {
 			margin-bottom: 25px;
 		}
@@ -8678,7 +8688,7 @@ height: 44px;
 			text-align: left;
 			.foto {
 				width: 286px;
-				height: 216px;
+				height: 226px;
 				border-radius: 10px;
 				margin-bottom: 15px;
 			}
@@ -10605,6 +10615,7 @@ aside {
 								}
 								.servise-usluga-count {
 									padding-left: 20px;
+									padding-top: 10px;
 								}
 								.servise-usluga-submit {
 									top: 0;
@@ -10633,14 +10644,20 @@ aside {
 	section {
 		padding: 30px 0;
 	}
+	.header-top {
+		padding: 10px 0;
+	}
 	.slider-servise-fotos {
 		.slider__item-fotos {
 			img {
-				height: 200px;
+				height: 186px;
 			}
 		}
 	}
 	.section-about-servise {
+		.about-servise {
+			padding: 10px;
+		}
 		.reviews {
 			.review-header {
 				padding: 10px;
@@ -10662,6 +10679,7 @@ aside {
 			}
 			.review-wrapper {
 				.review-item {
+					padding: 10px;
 					.review-client-header {
 						flex-direction: column;
 						align-items: flex-start;
@@ -10701,17 +10719,19 @@ aside {
 					.uslugi-block {
 						.uslugi-items {
 							.servise-usluga {
+								display: grid;
+								grid-template-columns: repeat(2, 1fr);
+								grid-gap: 5px;
+								padding: 10px 0 0 0;
 								.servise-usluga-name {
+									grid-column-start: 1;
+									grid-column-end: 3;
 									max-width: 280px;
 									margin-right: 0;
 								}
-								.servise-usluga-count {
-									margin-bottom: 40px;
-								}
 								.servise-usluga-submit {
-									top: calc(100% - 40px);
+									position: relative;
 									height: 40px;
-									width: 100%;
 								}
 							}
 						}
@@ -10721,11 +10741,17 @@ aside {
 			}
 			.servise-item-uslugi-right {
 				.servise-item-map {
+					height: 275px;
 					width: 100%;
 					max-width: 564px;
 					img {
 						width: 100%;
+						height: 100%;
+						object-fit: cover;
 					}
+				}
+				.servise-item-social {
+					width: 100%;
 				}
 			}
 		}
@@ -10744,14 +10770,16 @@ aside {
 	}
 	.total {
 		left: 20%;
-		top: 85%;
+		bottom: 0%;
 		padding: 11px 0 0px 0;
 		img {
 			margin-left: 5px; 
 		}
 		.submit-online {
-			display: block;
-			margin-top: 4px;
+			position: absolute;
+			bottom: 0;
+			width: 100%;
+
 		}
 	}
 		//где обслуживать

@@ -8339,7 +8339,7 @@ section.single-par2 .scroll-down-wrap {
 }
 
 .header-top {
-  padding: 10px;
+  padding: 10px 0;
 }
 
 .header-auth {
@@ -9502,7 +9502,7 @@ span.current {
   margin: auto;
 }
 .slider-servise-fotos .slider__item-fotos {
-  height: 272px;
+  height: 100%;
   width: 370px;
 }
 
@@ -9522,7 +9522,9 @@ span.current {
 .slider-servise-sale .slider__item-sale .sale img {
   border-radius: 10px;
   width: 100%;
-  height: 185px;
+  height: 154px;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .slider-servise-sale .slider__item-sale .sale .sale-title {
   margin-top: 20px;
@@ -9565,23 +9567,32 @@ span.current {
   height: 100%;
   width: 95%;
   border-radius: 10px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  margin: auto;
 }
 
 .slider-servise-map .slider__item img {
   height: 100%;
   width: 95%;
   border-radius: 10px;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .slider-servise-item .slider__item img {
   height: 100%;
   width: 95%;
   border-radius: 10px;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .slider-servise-marki .slider__item img {
   height: 24px;
   display: inline;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .slider-servise-serv .slider__item img {
@@ -9593,11 +9604,15 @@ span.current {
   height: 100%;
   width: 94%;
   border-radius: 10px;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .slider-servise-sertificate .slider__item img {
   height: 100%;
   width: 94%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 /* Ограничивающая оболочка */
@@ -10144,6 +10159,7 @@ span.current {
   display: -ms-flexbox;
   display: flex;
   margin-bottom: 12px;
+  margin-left: 10px;
 }
 .section-servise-item-uslugi .servise-item-uslugi .servise-item-uslugi-left .servise-item-usluga-subtitle .uslugi-block .car-type .car-type-item {
   margin-right: 55px;
@@ -10275,7 +10291,6 @@ span.current {
   padding: 35px;
   background: #F5F5F5;
   border-radius: 20px;
-  margin-bottom: 30px;
 }
 .section-about-servise .about-servise .section-title {
   margin-bottom: 25px;
@@ -10502,7 +10517,7 @@ span.current {
 }
 .section-servise-near .servise-near-items .servise-near-item .foto {
   width: 286px;
-  height: 216px;
+  height: 226px;
   border-radius: 10px;
   margin-bottom: 15px;
 }
@@ -12638,6 +12653,7 @@ aside {
   }
   .section-servise-item-uslugi .servise-item-uslugi .servise-item-uslugi-left .servise-item-usluga-subtitle .uslugi-block .uslugi-items .servise-usluga .servise-usluga-count {
     padding-left: 20px;
+    padding-top: 10px;
   }
   .section-servise-item-uslugi .servise-item-uslugi .servise-item-uslugi-left .servise-item-usluga-subtitle .uslugi-block .uslugi-items .servise-usluga .servise-usluga-submit {
     top: 0;
@@ -12658,10 +12674,17 @@ aside {
     padding: 30px 0;
   }
 
-  .slider-servise-fotos .slider__item-fotos img {
-    height: 200px;
+  .header-top {
+    padding: 10px 0;
   }
 
+  .slider-servise-fotos .slider__item-fotos img {
+    height: 186px;
+  }
+
+  .section-about-servise .about-servise {
+    padding: 10px;
+  }
   .section-about-servise .reviews .review-header {
     padding: 10px;
   }
@@ -12677,6 +12700,9 @@ aside {
   }
   .section-about-servise .reviews .review-submit {
     margin-bottom: 20px;
+  }
+  .section-about-servise .reviews .review-wrapper .review-item {
+    padding: 10px;
   }
   .section-about-servise .reviews .review-wrapper .review-item .review-client-header {
     -webkit-box-orient: vertical;
@@ -12715,23 +12741,38 @@ aside {
         -ms-flex-align: start;
             align-items: flex-start;
   }
+  .section-servise-item-uslugi .servise-item-uslugi .servise-item-uslugi-left .servise-item-usluga-subtitle .uslugi-block .uslugi-items .servise-usluga {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 5px 1fr;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 5px;
+    padding: 10px 0 0 0;
+  }
   .section-servise-item-uslugi .servise-item-uslugi .servise-item-uslugi-left .servise-item-usluga-subtitle .uslugi-block .uslugi-items .servise-usluga .servise-usluga-name {
+    -ms-grid-column: 1;
+        grid-column-start: 1;
+    -ms-grid-column-span: 2;
+    grid-column-end: 3;
     max-width: 280px;
     margin-right: 0;
   }
-  .section-servise-item-uslugi .servise-item-uslugi .servise-item-uslugi-left .servise-item-usluga-subtitle .uslugi-block .uslugi-items .servise-usluga .servise-usluga-count {
-    margin-bottom: 40px;
-  }
   .section-servise-item-uslugi .servise-item-uslugi .servise-item-uslugi-left .servise-item-usluga-subtitle .uslugi-block .uslugi-items .servise-usluga .servise-usluga-submit {
-    top: calc(100% - 40px);
+    position: relative;
     height: 40px;
-    width: 100%;
   }
   .section-servise-item-uslugi .servise-item-uslugi .servise-item-uslugi-right .servise-item-map {
+    height: 275px;
     width: 100%;
     max-width: 564px;
   }
   .section-servise-item-uslugi .servise-item-uslugi .servise-item-uslugi-right .servise-item-map img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .section-servise-item-uslugi .servise-item-uslugi .servise-item-uslugi-right .servise-item-social {
     width: 100%;
   }
 
@@ -12747,15 +12788,16 @@ aside {
 
   .total {
     left: 20%;
-    top: 85%;
+    bottom: 0%;
     padding: 11px 0 0px 0;
   }
   .total img {
     margin-left: 5px;
   }
   .total .submit-online {
-    display: block;
-    margin-top: 4px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
   }
 
   .container .row {
