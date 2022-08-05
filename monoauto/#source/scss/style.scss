@@ -10213,6 +10213,15 @@ aside {
 	#service_map {
     top: 215px;
 	}
+	.section-catalog-search-auto {
+		.container-search-auto {
+			.main-search-input {
+				position: absolute;
+				z-index: 200;
+				margin-top: 7px;
+			}
+		}
+	}
 	.total {
 		left: 26%;
 	}
@@ -10673,6 +10682,7 @@ aside {
 			}
 		}
 	}
+
 	.section-about-servise {
 		.about-servise {
 			padding: 10px;

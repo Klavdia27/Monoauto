@@ -12204,6 +12204,12 @@ aside {
     top: 215px;
   }
 
+  .section-catalog-search-auto .container-search-auto .main-search-input {
+    position: absolute;
+    z-index: 200;
+    margin-top: 7px;
+  }
+
   .total {
     left: 26%;
   }
