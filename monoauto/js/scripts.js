@@ -1279,14 +1279,20 @@ function reinit()
         $(this).toggleClass('open');
         return false;
     });
+    $(".btn-filter").on("click", function (e) {
+        e.preventDefault();
+        $(".main-search-input").addClass('open');
+        return false;
+    })
 
     $(document).on("click", function () {
-        $(".btn-servise-time-open.open,  .servise-coll.open, .servise-coll-ligth.open").removeClass("open");
-        
-        $(".dropdown-list-time-work, .dropdown-list-company-tel").unbind("click");
-        $(".dropdown-list-time-work, .dropdown-list-company-tel").on("click", function(e)
+        $(".btn-servise-time-open.open,  .servise-coll.open, .servise-coll-ligth.open, .main-search-input.open").removeClass("open");
+        $(".main-search-input-wrap").removeClass('show');
+        $(".dropdown-list-time-work, .dropdown-list-company-tel, .main-search-input").unbind("click");
+        $(".dropdown-list-time-work, .dropdown-list-company-tel, .main-search-input").on("click", function(e)
         {
             e.preventDefault();
+
             return false;
         });
     });
