@@ -1288,11 +1288,11 @@ function reinit()
     $(document).on("click", function () {
         $(".btn-servise-time-open.open,  .servise-coll.open, .servise-coll-ligth.open, .main-search-input.open").removeClass("open");
         $(".main-search-input-wrap").removeClass('show');
+        $('.div-empty').removeClass('open');
         $(".dropdown-list-time-work, .dropdown-list-company-tel, .main-search-input").unbind("click");
         $(".dropdown-list-time-work, .dropdown-list-company-tel, .main-search-input").on("click", function(e)
         {
             e.preventDefault();
-
             return false;
         });
     });
@@ -1592,7 +1592,12 @@ divFilter.className = "btn-filter"
 divFilter.innerHTML = "Фильтр";
 $('.section-catalog-search-auto .container-search-auto .search-auto .container-index-page-search').after(divFilter)
 // btn-filter
+let divEmpty = document.createElement('div');
+divEmpty.className = "div-empty";
+$('#service_map').prepend(divEmpty);
+
 $('.btn-filter').on('click', () => {
+    $('.div-empty').addClass('open');
     $('.main-search-input-wrap').toggleClass('show')
 })
 

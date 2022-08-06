@@ -9472,7 +9472,16 @@ aside {
 	transform: rotate(-45deg);
 	top: -8px;    
 }
-
+.div-empty {
+	display: none;
+}
+.div-empty.open {
+	display: block;
+	position: absolute;
+	z-index: 199;
+	width: 100vw;
+	height: 100vh;
+}
 
 /*------responsive------------------------------------------------*/ 
 
@@ -10211,9 +10220,9 @@ aside {
 		padding: 40px 0;
 	}
 	#service_map {
-    top: 215px;
+    top: 220px;
 	}
-	.section-catalog-search-auto {
+	.section-catalog-search-auto.page-catalog-map {
 		.container-search-auto {
 			.main-search-input.open {
 				position: absolute;

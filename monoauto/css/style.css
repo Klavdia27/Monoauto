@@ -11376,6 +11376,18 @@ aside {
   top: -8px;
 }
 
+.div-empty {
+  display: none;
+}
+
+.div-empty.open {
+  display: block;
+  position: absolute;
+  z-index: 199;
+  width: 100vw;
+  height: 100vh;
+}
+
 /*------responsive------------------------------------------------*/
 @media only screen and (max-width: 1324px) {
   .servise-item-uslugi {
@@ -12201,10 +12213,10 @@ aside {
   }
 
   #service_map {
-    top: 215px;
+    top: 220px;
   }
 
-  .section-catalog-search-auto .container-search-auto .main-search-input.open {
+  .section-catalog-search-auto.page-catalog-map .container-search-auto .main-search-input.open {
     position: absolute;
     z-index: 200;
     margin-top: 7px;
