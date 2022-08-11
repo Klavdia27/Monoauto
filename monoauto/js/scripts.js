@@ -1289,8 +1289,8 @@ function reinit()
         $(".btn-servise-time-open.open,  .servise-coll.open, .servise-coll-ligth.open, .main-search-input.open").removeClass("open");
         $(".main-search-input-wrap").removeClass('show');
         $('.div-empty').removeClass('open');
-        $(".dropdown-list-time-work, .dropdown-list-company-tel, .main-search-input").unbind("click");
-        $(".dropdown-list-time-work, .dropdown-list-company-tel, .main-search-input").on("click", function(e)
+        $(".dropdown-list-time-work, .dropdown-list-company-tel").unbind("click");
+        $(".dropdown-list-time-work, .dropdown-list-company-tel").on("click", function(e)
         {
             e.preventDefault();
             return false;
